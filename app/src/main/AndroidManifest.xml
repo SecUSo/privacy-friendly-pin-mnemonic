@@ -25,6 +25,14 @@
             android:name=".EnterPinActivity"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ShowHintActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
