@@ -103,6 +103,7 @@ public class EnterPinActivity extends ActionBarActivity {
 
     public void clickDoneButton() {
         Intent intent = new Intent(EnterPinActivity.this, ShowHintActivity.class);
+        intent.putExtra("currentPin", pin);
         EnterPinActivity.this.startActivity(intent);
     }
 
