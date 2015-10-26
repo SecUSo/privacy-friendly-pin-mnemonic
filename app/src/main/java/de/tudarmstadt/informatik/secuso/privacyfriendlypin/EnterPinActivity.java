@@ -2,9 +2,12 @@ package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 /**
  * Created by yonjuni on 26.10.15.
@@ -13,6 +16,7 @@ public class EnterPinActivity extends ActionBarActivity {
 
     private String pin;
     private int pinLength;
+    EditText pinEditText;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +24,9 @@ public class EnterPinActivity extends ActionBarActivity {
 
         pin = "";
         pinLength = 0;
+
+        pinEditText = (EditText) findViewById(R.id.displayPin);
+        pinEditText.setInputType(InputType.TYPE_NULL);
 
         Button[] numpad = new Button[10];
 
@@ -41,10 +48,12 @@ public class EnterPinActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
 
+                    //PIN length could be extended here
                     if (pinLength < 4) {
                         pin = pin += tempInt;
                         Log.d("PIN:", pin);
                         pinLength++;
+                        pinEditText.setText(pin, TextView.BufferType.EDITABLE);
                     }
                 }
             });

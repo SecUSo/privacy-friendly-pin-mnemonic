@@ -13,12 +13,14 @@
 
     <EditText
         android:id="@+id/displayPin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:inputType="numberPassword"
-        android:layout_toRightOf="@+id/pin_message"
-        android:layout_alignRight="@+id/pin_message"
-        android:layout_alignEnd="@+id/pin_message" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_message"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
 <GridLayout
     android:layout_width="fill_parent"
@@ -58,6 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/numbers"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button" />
 
 </RelativeLayout>
