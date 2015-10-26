@@ -43,7 +43,6 @@
             android:id="@+id/button_nine"/>
         <Button android:text="0"
             android:id="@+id/button_zero"/>
-
     </GridLayout>
 
 </RelativeLayout>
