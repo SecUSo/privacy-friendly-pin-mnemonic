@@ -14,13 +14,10 @@
     <EditText
         android:id="@+id/displayPin"
         android:inputType="numberPassword"
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/pin_message"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignRight="@+id/button"
-        android:layout_alignEnd="@+id/button" />
+        android:layout_toRightOf="@+id/pin_message"
+        android:layout_alignBottom="@+id/pin_message" />
 
 <GridLayout
     android:layout_width="fill_parent"
