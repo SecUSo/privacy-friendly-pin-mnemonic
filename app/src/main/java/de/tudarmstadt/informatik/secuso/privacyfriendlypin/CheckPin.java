@@ -1,5 +1,7 @@
 package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
 
+import android.util.Log;
+
 /**
  * Created by yonjuni on 27.10.15.
  */
@@ -8,7 +10,7 @@ public class CheckPin {
     public String pin;
     String firstTwo = "12";
     String secondTwo = "12";
-    String result = "";
+    String resultDate = "";
 
     public boolean determineDate() {
 
@@ -50,8 +52,8 @@ public class CheckPin {
                 }
             }
         }
-        result = resultDate;
-        System.out.println("ANSWER " + resultDate);
+        this.resultDate = resultDate;
+        Log.d("ANSWER ", resultDate);
         return isDate;
     }
 
