@@ -51,4 +51,21 @@
             android:id="@+id/button_zero"/>
     </GridLayout>
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordTextView"
+        android:layout_below="@+id/numbers"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateTextView"
+        android:layout_below="@+id/wordTextView"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mathTextView"
+        android:layout_below="@+id/dateTextView"/>
 </RelativeLayout>

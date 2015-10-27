@@ -28,6 +28,7 @@ public class EnterPinActivity extends ActionBarActivity {
         setContentView(R.layout.activity_enter_pin);
 
         //ActionBar
+        //TODO Logo einfügen
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setLogo(R.mipmap.ic_launcher);

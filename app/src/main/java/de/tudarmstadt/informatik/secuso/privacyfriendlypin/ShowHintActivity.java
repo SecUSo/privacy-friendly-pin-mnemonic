@@ -19,14 +19,29 @@ public class ShowHintActivity extends ActionBarActivity {
         setContentView(R.layout.activity_show_hint);
 
         Intent intent = getIntent();
-        String tempPin = intent.getStringExtra("currentPin");
+        String pin = intent.getStringExtra("currentPin");
 
         TextView pinTextView = (TextView) findViewById(R.id.current_pin);
-        pinTextView.setText(tempPin);
+        pinTextView.setText(pin);
 
+        //Actionbar
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
+
+        CheckPin checkPin = new CheckPin(pin);
+        checkPin.determineCalculation();
+        checkPin.determineDate();
+        checkPin.determineWord();
+
+        TextView wordTextView = (TextView) findViewById(R.id.wordTextView);
+        TextView dateTextView = (TextView) findViewById(R.id.dateTextView);
+        TextView mathTextView = (TextView) findViewById(R.id.mathTextView);
+
+        wordTextView.setText(checkPin.resultWord);
+        dateTextView.setText(checkPin.resultDate);
+        mathTextView.setText(checkPin.resultCalculation);
+
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {

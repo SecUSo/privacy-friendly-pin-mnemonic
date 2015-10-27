@@ -19,6 +19,21 @@ public class CheckPin {
     String resultWord = "";
     String[] input = new String[4];
 
+    public CheckPin (String pin) {
+        for (int i=0; i<4; i++) {
+            input[i] = Character.toString(pin.charAt(i));
+        }
+
+        String tmp1 = input[0];
+        String tmp2 = input[2];
+        firstTwo = tmp1 += input[1];
+        secondTwo = tmp2 += input[3];
+
+        for (int i=0;i<4;i++) {
+            System.out.println("INPUT: " + input[i]);
+        }
+    }
+
     public boolean determineDate() {
 
         boolean isDate = false;
@@ -81,6 +96,7 @@ public class CheckPin {
         int[] userInput = new int[] {a, b, c, d};
 
         String[] getKeysArray = intArrayToStringArray(userInput);
+        System.out.println("PIN AHHHHHHHHH " + Integer.toString(a));
 
         List<String> wordList = mapKeysToWords(getKeysArray);
 
@@ -194,16 +210,15 @@ public class CheckPin {
     }
 
     public String[] intArrayToStringArray(int[] intArray) {
-        final String[] emptyArray = {};
-        String[] result = new String[4];
 
         if (intArray.length == 0) {
-            return emptyArray;
+            return new String[0];
         }
 
+        String[] result = new String[4];
         String[] keyboard = new String[] {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"} ;
 
-        for (int i=0;i<intArray.length;i++) {
+        for (int i=0; i<intArray.length; i++) {
             result[i] = keyboard[intArray[i]];
             System.out.println(i + " Pin Digit " + intArray[i] + " Keypad " + result[i]);
             System.out.println("Keyboardstelle " + keyboard[intArray[i]]);
