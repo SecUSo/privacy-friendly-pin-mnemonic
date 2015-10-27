@@ -4,10 +4,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.MenuItem;
 
-/**
- * Created by yonjuni on 26.10.15.
- */
 public class HelpActivity extends ActionBarActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +15,18 @@ public class HelpActivity extends ActionBarActivity {
         //ActionBar
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setLogo(R.mipmap.ic_launcher);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

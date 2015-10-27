@@ -4,11 +4,9 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 
-/**
- * Created by yonjuni on 26.10.15.
- */
 public class AboutActivity extends ActionBarActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +19,18 @@ public class AboutActivity extends ActionBarActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
     }
 
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_about, menu);
+        return true;
+    }
+
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             // Respond to the action bar's Up/Home button
             case android.R.id.home:
                 finish();
                 return true;
+            //case android.R.id.action_help:
         }
         return super.onOptionsItemSelected(item);
     }

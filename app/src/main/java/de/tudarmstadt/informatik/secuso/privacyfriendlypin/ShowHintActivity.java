@@ -9,9 +9,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-/**
- * Created by yonjuni on 26.10.15.
- */
 public class ShowHintActivity extends ActionBarActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

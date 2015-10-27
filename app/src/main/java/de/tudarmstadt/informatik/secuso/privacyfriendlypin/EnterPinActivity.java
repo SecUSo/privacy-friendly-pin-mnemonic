@@ -14,9 +14,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-/**
- * Created by yonjuni on 26.10.15.
- */
 public class EnterPinActivity extends ActionBarActivity {
 
     private String pin;
