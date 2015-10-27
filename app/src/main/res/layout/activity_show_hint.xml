@@ -55,17 +55,20 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/wordTextView"
-        android:layout_below="@+id/numbers"/>
+        android:layout_below="@+id/numbers"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/dateTextView"
-        android:layout_below="@+id/wordTextView"/>
+        android:layout_below="@+id/wordTextView"
+        android:layout_marginLeft="20dp" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/mathTextView"
-        android:layout_below="@+id/dateTextView"/>
+        android:layout_below="@+id/dateTextView"
+        android:layout_marginLeft="20dp" />
 </RelativeLayout>
