@@ -12,7 +12,6 @@ import java.util.List;
  */
 public class CheckPin {
 
-    public String pin;
     String firstTwo;
     String secondTwo;
     String resultDate = "";
@@ -107,10 +106,77 @@ public class CheckPin {
 
         }
         System.out.println("Your word is " + word);
+        this.resultWord = word;
         return isWord;
     }
 
+    public boolean determineCalculation() {
 
+        String result = "";
+        boolean isCalculable = false;
+
+        int differenceAB = 0;
+        int differenceBA = 0;
+
+        int tmp1 = Integer.parseInt(firstTwo);
+        int tmp2 = Integer.parseInt(secondTwo);
+
+        if (firstTwo.equals("00")) {
+            tmp1 = 1;
+
+        } else if (secondTwo.equals("00")) {
+            tmp2 = 1;
+        }
+
+        int firstHalf = tmp1;
+        int secondHalf = tmp2;
+
+        differenceAB = firstHalf - secondHalf;
+        differenceBA = secondHalf - firstHalf;
+
+        for (int i = 2; i < 11; i++) {
+            if (firstHalf % secondHalf == 0) {
+                if (firstHalf == i * secondHalf) {
+                    result = firstTwo + " is " + Integer.toString(i) + " times as large as " + secondTwo;
+                    System.out.println(result);
+                    isCalculable = true;
+                }
+            }
+        }
+
+        for (int j = 2; j < 11; j++) {
+            if (secondHalf % firstHalf == 0) {
+                if (secondHalf == j * firstHalf) {
+                    result = secondTwo + " is " + Integer.toString(j) + " times as large as " + firstTwo;
+                    System.out.println(result);
+                    isCalculable = true;
+                }
+            }
+        }
+
+        if (differenceBA == 22 || differenceAB == 22) {
+            result = "This is a stepping PIN: " + firstTwo + secondTwo;
+            System.out.println(result);
+            isCalculable = true;
+        }
+
+        for (int k = 3; k > 0; k--) {
+            if (differenceAB == k) {
+
+                result = firstTwo + " is larger than " + secondTwo + " by " + Integer.toString(k);
+                System.out.println(result);
+                isCalculable = true;
+            } else if (differenceBA == k) {
+                result = firstTwo + " is smaller than " + secondTwo + " by " + Integer.toString(k);
+                System.out.println(result);
+                isCalculable = true;
+            }
+        }
+
+        System.out.println(isCalculable);
+        this.resultCalculation = result;
+        return isCalculable;
+    }
 
     //Helper Functions
     public String[] createYearsArray() {
