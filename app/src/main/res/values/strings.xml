@@ -5,6 +5,7 @@
     <string name="action_help">Help</string>
     <string name="about">About</string>
     <string name="display_word">Your word is </string>
+    <string name="display_no_word">No word found </string>
     <string name="display_date_ddmm">Date in DD-MM format </string>
     <string name="display_date_mmdd">Date in MM-DD format </string>
     <string name="display_date_mmyy">Date in MM-YY format </string>

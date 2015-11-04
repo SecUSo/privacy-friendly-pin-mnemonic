@@ -113,6 +113,9 @@ public class CheckPin {
 
         }
         System.out.println("Your word is " + word);
+        if (word.equals("")) {
+            return context.getString(R.string.display_no_word);
+        }
         return context.getString(R.string.display_word) + " " + word;
     }
 

@@ -36,7 +36,6 @@ public class EnterPinActivity extends ActionBarActivity {
         pinEditText.setInputType(InputType.TYPE_NULL);
 
         //Buttons
-
         Button[] numpad = new Button[10];
 
         numpad[0] = (Button) findViewById(R.id.button_zero);

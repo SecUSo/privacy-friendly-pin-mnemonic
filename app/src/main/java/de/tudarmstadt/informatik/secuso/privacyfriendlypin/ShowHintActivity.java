@@ -27,9 +27,6 @@ public class ShowHintActivity extends ActionBarActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
-        //checkPin.determineCalculation();
-        //checkPin.determineDate();
-        //checkPin.determineWord();
 
         TextView wordTextView = (TextView) findViewById(R.id.wordTextView);
         TextView dateTextView = (TextView) findViewById(R.id.dateTextView);
