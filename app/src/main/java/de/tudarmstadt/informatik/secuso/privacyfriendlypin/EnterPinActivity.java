@@ -17,7 +17,6 @@ import android.widget.TextView;
 public class EnterPinActivity extends ActionBarActivity {
 
     private String pin;
-    private int pinLength;
     EditText pinEditText;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +31,13 @@ public class EnterPinActivity extends ActionBarActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         pin = "";
-        pinLength = 0;
 
         pinEditText = (EditText) findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
 
 
         //Buttons
+
         Button[] numpad = new Button[10];
 
         numpad[0] = (Button) findViewById(R.id.button_zero);
@@ -60,10 +59,9 @@ public class EnterPinActivity extends ActionBarActivity {
                 public void onClick(View v) {
 
                     //PIN length could be extended here
-                    if (pinLength < 4) {
+                    if (pinEditText.getText().length() < 4) {
                         pin = pin += tempInt;
                         Log.d("PIN:", pin);
-                        pinLength++;
                         pinEditText.setText(pin, TextView.BufferType.EDITABLE);
                     }
                 }

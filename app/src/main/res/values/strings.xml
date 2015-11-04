@@ -4,6 +4,14 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_help">Help</string>
     <string name="about">About</string>
+    <string name="display_word">Your word is </string>
+    <string name="display_date_ddmm">Date in DD-MM format </string>
+    <string name="display_date_mmdd">Date in MM-DD format </string>
+    <string name="display_date_mmyy">Date in MM-YY format </string>
+    <string name="display_date_year_1900s">Valid year in the 1900s </string>
+    <string name="display_date_year_2000s">Valid year in this century </string>
+    <string name="display_math_large">times as large as </string>
+    <string name="display_math_is">is </string>
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>

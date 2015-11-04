@@ -1,5 +1,6 @@
 package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
 
+import android.content.Context;
 import android.util.Log;
 
 import java.util.ArrayList;
@@ -18,8 +19,12 @@ public class CheckPin {
     String resultCalculation = "";
     String resultWord = "";
     String[] input = new String[4];
+    Context context;
 
-    public CheckPin (String pin) {
+    public CheckPin (String pin, Context context) {
+
+        this.context = context;
+
         for (int i=0; i<4; i++) {
             input[i] = Character.toString(pin.charAt(i));
         }
@@ -34,11 +39,8 @@ public class CheckPin {
         }
     }
 
-    public boolean determineDate() {
+    public void determineDate() {
 
-        boolean isDate = false;
-
-        String resultDate = "";
         String[] monthsArray = new String[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
         String[] daysArray = new String[] {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
                 "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24",
@@ -49,8 +51,7 @@ public class CheckPin {
         for (int i=0; i<monthsArray.length;i++) {
             for (int j=0; j<yearsArray.length;j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
-                    resultDate = "Date in MM-YY format: " + firstTwo + secondTwo;
-                    isDate = true;
+                    this.resultDate = context.getString(R.string.display_date_mmyy) + " " + firstTwo + secondTwo;
                 }
             }
         }
@@ -58,25 +59,19 @@ public class CheckPin {
         for (int i=0; i<daysArray.length;i++) {
             for (int j=0;j<monthsArray.length;j++) {
                 if ((firstTwo.equals(daysArray[i])) && (secondTwo.equals(monthsArray[j]))) {
-                    resultDate ="Date in DD-MM format: " + firstTwo + secondTwo;
-                    isDate = true;
+                    this.resultDate = context.getString(R.string.display_date_ddmm) + " " + firstTwo + secondTwo;
                     break;
                 } else if ((firstTwo.equals(monthsArray[j])) && (secondTwo.equals(daysArray[i]))) {
-                    resultDate ="Date in MM-DD format: " + firstTwo + secondTwo;
-                    isDate = true;
+                    this.resultDate = context.getString(R.string.display_date_mmdd) + " " + firstTwo + secondTwo;
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
-                    resultDate = "Valid year in 1900s";
-                    isDate = true;
+                    this.resultDate = context.getString(R.string.display_date_year_1900s);
                 } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
-                    resultDate = "Valid year in this century.";
-                    isDate = true;
+                    this.resultDate = context.getString(R.string.display_date_year_2000s);
                 }
             }
         }
-        this.resultDate = resultDate;
         Log.d("ANSWER ", resultDate);
-        return isDate;
     }
 
     public boolean determineWord() {
@@ -122,7 +117,7 @@ public class CheckPin {
 
         }
         System.out.println("Your word is " + word);
-        this.resultWord = word;
+        this.resultWord = context.getString(R.string.display_word) + " " + word;
         return isWord;
     }
 

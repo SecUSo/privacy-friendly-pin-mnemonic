@@ -26,7 +26,7 @@ public class ShowHintActivity extends ActionBarActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
-        CheckPin checkPin = new CheckPin(pin);
+        CheckPin checkPin = new CheckPin(pin, getBaseContext());
         checkPin.determineCalculation();
         checkPin.determineDate();
         checkPin.determineWord();
