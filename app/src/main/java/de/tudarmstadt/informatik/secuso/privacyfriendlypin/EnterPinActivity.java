@@ -37,6 +37,8 @@ public class EnterPinActivity extends ActionBarActivity {
         pinEditText = (EditText) findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
 
+
+        //Buttons
         Button[] numpad = new Button[10];
 
         numpad[0] = (Button) findViewById(R.id.button_zero);
@@ -87,7 +89,7 @@ public class EnterPinActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent = new Intent();
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.about:
                 intent.setClass(this, AboutActivity.class);
                 startActivityForResult(intent, 0);
@@ -102,9 +104,12 @@ public class EnterPinActivity extends ActionBarActivity {
     }
 
     public void clickDoneButton() {
-        Intent intent = new Intent(EnterPinActivity.this, ShowHintActivity.class);
-        intent.putExtra("currentPin", pin);
-        EnterPinActivity.this.startActivity(intent);
+
+        if (pinEditText.getText().length() == 4) {
+            Intent intent = new Intent(EnterPinActivity.this, ShowHintActivity.class);
+            intent.putExtra("currentPin", pin);
+            EnterPinActivity.this.startActivity(intent);
+        }
     }
 
 }
