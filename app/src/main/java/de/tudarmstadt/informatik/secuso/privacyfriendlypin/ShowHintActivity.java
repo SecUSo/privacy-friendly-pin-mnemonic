@@ -27,17 +27,17 @@ public class ShowHintActivity extends ActionBarActivity {
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
-        checkPin.determineCalculation();
-        checkPin.determineDate();
-        checkPin.determineWord();
+        //checkPin.determineCalculation();
+        //checkPin.determineDate();
+        //checkPin.determineWord();
 
         TextView wordTextView = (TextView) findViewById(R.id.wordTextView);
         TextView dateTextView = (TextView) findViewById(R.id.dateTextView);
         TextView mathTextView = (TextView) findViewById(R.id.mathTextView);
 
-        wordTextView.setText(checkPin.resultWord);
-        dateTextView.setText(checkPin.resultDate);
-        mathTextView.setText(checkPin.resultCalculation);
+        wordTextView.setText(checkPin.determineWord());
+        dateTextView.setText(checkPin.determineDate());
+        mathTextView.setText(checkPin.determineCalculation());
 
     }
 

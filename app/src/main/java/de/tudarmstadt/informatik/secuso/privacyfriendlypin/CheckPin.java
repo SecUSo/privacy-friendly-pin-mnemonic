@@ -15,9 +15,6 @@ public class CheckPin {
 
     String firstTwo;
     String secondTwo;
-    String resultDate = "";
-    String resultCalculation = "";
-    String resultWord = "";
     String[] input = new String[4];
     Context context;
 
@@ -39,7 +36,9 @@ public class CheckPin {
         }
     }
 
-    public void determineDate() {
+    public String determineDate() {
+
+        String resultDate = "";
 
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
         String[] daysArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
@@ -51,7 +50,7 @@ public class CheckPin {
         for (int i = 0; i < monthsArray.length; i++) {
             for (int j = 0; j < yearsArray.length; j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
-                    this.resultDate = context.getString(R.string.display_date_mmyy) + " " + firstTwo + secondTwo;
+                    resultDate = context.getString(R.string.display_date_mmyy) + " " + firstTwo + secondTwo;
                 }
             }
         }
@@ -59,22 +58,23 @@ public class CheckPin {
         for (int i = 0; i < daysArray.length; i++) {
             for (int j = 0; j < monthsArray.length; j++) {
                 if ((firstTwo.equals(daysArray[i])) && (secondTwo.equals(monthsArray[j]))) {
-                    this.resultDate = context.getString(R.string.display_date_ddmm) + " " + firstTwo + secondTwo;
+                    resultDate = context.getString(R.string.display_date_ddmm) + " " + firstTwo + secondTwo;
                     break;
                 } else if ((firstTwo.equals(monthsArray[j])) && (secondTwo.equals(daysArray[i]))) {
-                    this.resultDate = context.getString(R.string.display_date_mmdd) + " " + firstTwo + secondTwo;
+                    resultDate = context.getString(R.string.display_date_mmdd) + " " + firstTwo + secondTwo;
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
-                    this.resultDate = context.getString(R.string.display_date_year_1900s);
+                    resultDate = context.getString(R.string.display_date_year_1900s);
                 } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
-                    this.resultDate = context.getString(R.string.display_date_year_2000s);
+                    resultDate = context.getString(R.string.display_date_year_2000s);
                 }
             }
         }
         Log.d("ANSWER ", resultDate);
+        return resultDate;
     }
 
-    public void determineWord() {
+    public String determineWord() {
 
         String word = "";
 
@@ -113,12 +113,12 @@ public class CheckPin {
 
         }
         System.out.println("Your word is " + word);
-        this.resultWord = context.getString(R.string.display_word) + " " + word;
+        return context.getString(R.string.display_word) + " " + word;
     }
 
-    public void determineCalculation() {
+    public String determineCalculation() {
 
-        String result = "";
+        String resultCalculation = "";
 
         int differenceAB = 0;
         int differenceBA = 0;
@@ -142,8 +142,8 @@ public class CheckPin {
         for (int i = 2; i < 11; i++) {
             if (firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
-                    result = firstTwo + " is " + Integer.toString(i) + " times as large as " + secondTwo;
-                    System.out.println(result);
+                    resultCalculation = firstTwo + " is " + Integer.toString(i) + " times as large as " + secondTwo;
+                    System.out.println(resultCalculation);
                 }
             }
         }
@@ -151,28 +151,28 @@ public class CheckPin {
         for (int j = 2; j < 11; j++) {
             if (secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
-                    result = secondTwo + " is " + Integer.toString(j) + " times as large as " + firstTwo;
-                    System.out.println(result);
+                    resultCalculation = secondTwo + " is " + Integer.toString(j) + " times as large as " + firstTwo;
+                    System.out.println(resultCalculation);
                 }
             }
         }
 
         if (differenceBA == 22 || differenceAB == 22) {
-            result = "This is a stepping PIN: " + firstTwo + secondTwo;
-            System.out.println(result);
+            resultCalculation = "This is a stepping PIN: " + firstTwo + secondTwo;
+            System.out.println(resultCalculation);
         }
 
         for (int k = 3; k > 0; k--) {
             if (differenceAB == k) {
 
-                result = firstTwo + " is larger than " + secondTwo + " by " + Integer.toString(k);
-                System.out.println(result);
+                resultCalculation = firstTwo + " is larger than " + secondTwo + " by " + Integer.toString(k);
+                System.out.println(resultCalculation);
             } else if (differenceBA == k) {
-                result = firstTwo + " is smaller than " + secondTwo + " by " + Integer.toString(k);
-                System.out.println(result);
+                resultCalculation = firstTwo + " is smaller than " + secondTwo + " by " + Integer.toString(k);
+                System.out.println(resultCalculation);
             }
         }
-        this.resultCalculation = result;
+        return resultCalculation;
     }
 
     //Helper Functions
