@@ -90,44 +90,56 @@
         android:text="@string/your_pin_heading"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/wordTextView"
+    <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/yourPinHeading"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#024265"
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        android:textSize="15sp" />
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/yourPinHeading">
 
-    <Button
-        android:id="@+id/dateTextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/wordTextView"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:background="#024265"
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        android:textSize="15sp" />
+        <Button
+            android:id="@+id/wordTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:background="#024265"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp" />
 
-    <Button
-        android:id="@+id/mathTextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/dateTextView"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="5dp"
-        android:background="#024265"
-        android:gravity="center"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        android:textSize="15sp" />
+        <Button
+            android:id="@+id/dateTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wordTextView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#024265"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:id="@+id/mathTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTextView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="#024265"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
 </RelativeLayout>
