@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Privacy Friendly PIN</string>
-    <string name="app_name_long">Privacy Friendly PIN</string>
+    <string name="app_name_long">Privacy Friendly PIN Helper</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_help">Help</string>
     <string name="about">About</string>
@@ -12,7 +12,10 @@
     <string name="display_date_year_1900s">Valid year in the 1900s </string>
     <string name="display_date_year_2000s">Valid year in this century </string>
     <string name="display_math_large">times as large as </string>
+    <string name="display_math_small">is smaller than</string>
     <string name="display_math_is">is </string>
+    <string name="display_math_by">by </string>
+    <string name="display_math_stepping">This is a stepping PIN: </string>
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>

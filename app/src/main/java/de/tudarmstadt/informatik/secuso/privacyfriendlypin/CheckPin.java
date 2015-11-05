@@ -120,8 +120,8 @@ public class CheckPin {
 
         String resultCalculation = "";
 
-        int differenceAB = 0;
-        int differenceBA = 0;
+        //int differenceAB = 0;
+        //int differenceBA = 0;
 
         int tmp1 = Integer.parseInt(firstTwo);
         int tmp2 = Integer.parseInt(secondTwo);
@@ -136,13 +136,14 @@ public class CheckPin {
         int firstHalf = tmp1;
         int secondHalf = tmp2;
 
-        differenceAB = firstHalf - secondHalf;
-        differenceBA = secondHalf - firstHalf;
+        int differenceAB = firstHalf - secondHalf;
+        int differenceBA = secondHalf - firstHalf;
 
         for (int i = 2; i < 11; i++) {
             if (firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
-                    resultCalculation = firstTwo + " is " + Integer.toString(i) + " times as large as " + secondTwo;
+                    //resultCalculation = firstTwo + " is " + Integer.toString(i) + " times as large as " + secondTwo;
+                    resultCalculation = firstTwo + " " + context.getString(R.string.display_math_is) + " " + Integer.toString(i) + context.getString(R.string.display_math_large) + " " + secondTwo;
                     System.out.println(resultCalculation);
                 }
             }
@@ -151,24 +152,28 @@ public class CheckPin {
         for (int j = 2; j < 11; j++) {
             if (secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
-                    resultCalculation = secondTwo + " is " + Integer.toString(j) + " times as large as " + firstTwo;
+                    //resultCalculation = secondTwo + " is " + Integer.toString(j) + " times as large as " + firstTwo;
+                    resultCalculation = secondTwo + " " + context.getString(R.string.display_math_is) + " " + Integer.toString(j) + " " + context.getString(R.string.display_math_large) + " " + firstTwo;
                     System.out.println(resultCalculation);
                 }
             }
         }
 
         if (differenceBA == 22 || differenceAB == 22) {
-            resultCalculation = "This is a stepping PIN: " + firstTwo + secondTwo;
+            resultCalculation = context.getString(R.string.display_math_stepping) + " " + firstTwo + secondTwo;
+            //resultCalculation = "This is a stepping PIN: " + firstTwo + secondTwo;
             System.out.println(resultCalculation);
         }
 
         for (int k = 3; k > 0; k--) {
             if (differenceAB == k) {
 
-                resultCalculation = firstTwo + " is larger than " + secondTwo + " by " + Integer.toString(k);
+                //resultCalculation = firstTwo + " is larger than " + secondTwo + " by " + Integer.toString(k);
+                resultCalculation = firstTwo + " "+ context.getString(R.string.display_math_large) + " " + secondTwo + " " + context.getString(R.string.display_math_by) + " " + Integer.toString(k);
                 System.out.println(resultCalculation);
             } else if (differenceBA == k) {
-                resultCalculation = firstTwo + " is smaller than " + secondTwo + " by " + Integer.toString(k);
+                //resultCalculation = firstTwo + " is smaller than " + secondTwo + " by " + Integer.toString(k);
+                resultCalculation = firstTwo + " " + context.getString(R.string.display_math_small) + " " + secondTwo + " " + context.getString(R.string.display_math_by) + " " + Integer.toString(k);
                 System.out.println(resultCalculation);
             }
         }
