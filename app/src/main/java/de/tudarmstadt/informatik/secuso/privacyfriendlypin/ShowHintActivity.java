@@ -19,10 +19,11 @@ public class ShowHintActivity extends ActionBarActivity {
         setContentView(R.layout.activity_show_hint);
 
         Intent intent = getIntent();
-        String pin = intent.getStringExtra("currentPin");
+        String pin = intent.getStringExtra("currentVisiblePin");
+        String pinHyphen = intent.getStringExtra("currentPin");
 
         TextView pinTextView = (TextView) findViewById(R.id.current_pin);
-        pinTextView.setText(pin);
+        pinTextView.setText(pinHyphen);
 
         //secure against Screenshot
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,

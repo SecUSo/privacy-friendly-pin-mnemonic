@@ -17,6 +17,7 @@ import android.widget.TextView;
 public class EnterPinActivity extends ActionBarActivity {
 
     private String pin;
+    private String visiblePin;
     EditText pinEditText;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +30,6 @@ public class EnterPinActivity extends ActionBarActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setLogo(R.mipmap.ic_launcher);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
-
-        pin = "";
 
         pinEditText = (EditText) findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
@@ -49,6 +48,9 @@ public class EnterPinActivity extends ActionBarActivity {
         numpad[8] = (Button) findViewById(R.id.button_eight);
         numpad[9] = (Button) findViewById(R.id.button_nine);
 
+        visiblePin = "";
+        pin = "";
+
         for (int i = 0; i < numpad.length; i++) {
             final Button temp = numpad[i];
             final int tempInt = i;
@@ -57,9 +59,13 @@ public class EnterPinActivity extends ActionBarActivity {
                 public void onClick(View v) {
 
                     if (pinEditText.getText().length() < 4) {
+                        visiblePin = visiblePin += tempInt;
                         pin = pin += tempInt;
-                        Log.d("PIN:", pin);
-                        pinEditText.setText(pin, TextView.BufferType.EDITABLE);
+                        if (pin.length() == 2) {
+                            pin += "-";
+                        }
+                        Log.d("PIN:", visiblePin);
+                        pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
                     }
                 }
             });
@@ -78,6 +84,7 @@ public class EnterPinActivity extends ActionBarActivity {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();
+                visiblePin = "";
                 pin = "";
             }
         });
@@ -111,6 +118,7 @@ public class EnterPinActivity extends ActionBarActivity {
         if (pinEditText.getText().length() == 4) {
             Intent intent = new Intent(EnterPinActivity.this, ShowHintActivity.class);
             intent.putExtra("currentPin", pin);
+            intent.putExtra("currentVisiblePin", visiblePin);
             EnterPinActivity.this.startActivity(intent);
         }
     }

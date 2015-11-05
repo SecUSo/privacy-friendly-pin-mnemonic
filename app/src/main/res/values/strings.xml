@@ -19,7 +19,7 @@
     <string name="display_math_by">by </string>
     <string name="display_math_stepping">This is a stepping PIN: </string>
     <string name="display_entered_pin">Your PIN is: </string>
-    <string name="enter_pin">Please enter your PIN: </string>
+    <string name="enter_pin">Enter your PIN: </string>
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>
