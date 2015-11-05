@@ -67,4 +67,8 @@ public class ShowHintActivity extends ActionBarActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void changeButtonColor(){
+
+    }
 }
