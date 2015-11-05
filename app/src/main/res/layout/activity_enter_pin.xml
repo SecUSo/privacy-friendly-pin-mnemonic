@@ -123,12 +123,28 @@
             android:textColor="@color/white"/>
 
         <Button
+            android:id="@+id/button_zero_space_left"
+            android:layout_width="60dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/invisible_button"
+            android:text="0"
+            android:textColor="@color/white" />
+
+        <Button
             android:layout_width="60dp"
             android:id="@+id/button_zero"
             android:layout_margin="1dp"
             android:background="@drawable/hints_numpad"
             android:text="0"
             android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/button_zero_space_right"
+            android:layout_width="60dp"
+            android:layout_margin="1dp"
+            android:background="@drawable/invisible_button"
+            android:text="0"
+            android:textColor="@color/white" />
 
     </GridLayout>
 
