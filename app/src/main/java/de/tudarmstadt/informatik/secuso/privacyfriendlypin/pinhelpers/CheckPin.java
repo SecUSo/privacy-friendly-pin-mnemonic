@@ -19,10 +19,16 @@ public class CheckPin {
     String secondTwo;
     String[] input;
     Context context;
+    public boolean isWord;
+    public boolean isCalculatable;
+    public boolean isDate;
 
     public CheckPin(String pin, Context context) {
 
         this.context = context;
+        this.isCalculatable = false;
+        this.isDate = false;
+        this.isWord = false;
 
         input = new String[4];
 
@@ -55,6 +61,7 @@ public class CheckPin {
             for (int j = 0; j < yearsArray.length; j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
                     resultDate = context.getString(R.string.display_date_mmyy) + " " + firstTwo + secondTwo;
+                    this.isDate = true;
                 }
             }
         }
@@ -63,14 +70,18 @@ public class CheckPin {
             for (int j = 0; j < monthsArray.length; j++) {
                 if ((firstTwo.equals(daysArray[i])) && (secondTwo.equals(monthsArray[j]))) {
                     resultDate = context.getString(R.string.display_date_ddmm) + " " + firstTwo + secondTwo;
+                    this.isDate = true;
                     break;
                 } else if ((firstTwo.equals(monthsArray[j])) && (secondTwo.equals(daysArray[i]))) {
                     resultDate = context.getString(R.string.display_date_mmdd) + " " + firstTwo + secondTwo;
+                    this.isDate = true;
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
                     resultDate = context.getString(R.string.display_date_year_1900s);
+                    this.isDate = true;
                 } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
                     resultDate = context.getString(R.string.display_date_year_2000s);
+                    this.isDate = true;
                 }
             }
         }
@@ -117,6 +128,7 @@ public class CheckPin {
         if (word.equals("")) {
             return context.getString(R.string.display_no_word);
         }
+        isWord = true;
         return context.getString(R.string.display_word) + " " + word;
     }
 
@@ -147,6 +159,7 @@ public class CheckPin {
                             firstTwo + " " + context.getString(R.string.display_math_is)
                                     + " " + Integer.toString(i)
                                     + context.getString(R.string.display_math_large) + " " + secondTwo;
+                    isCalculatable = true;
                     System.out.println(resultCalculation);
                 }
             }
@@ -159,6 +172,7 @@ public class CheckPin {
                             secondTwo + " " + context.getString(R.string.display_math_is)
                                     + " " + Integer.toString(j) + " "
                                     + context.getString(R.string.display_math_large) + " " + firstTwo;
+                    isCalculatable = true;
                     System.out.println(resultCalculation);
                 }
             }
@@ -166,6 +180,7 @@ public class CheckPin {
 
         if (differenceBA == 22 || differenceAB == 22) {
             resultCalculation = context.getString(R.string.display_math_stepping) + " " + firstTwo + secondTwo;
+            isCalculatable = true;
             System.out.println(resultCalculation);
         }
 
@@ -176,12 +191,14 @@ public class CheckPin {
                         firstTwo + " " + context.getString(R.string.display_math_large)
                                 + " " + secondTwo + " " + context.getString(R.string.display_math_by)
                                 + " " + Integer.toString(k);
+                isCalculatable = true;
                 System.out.println(resultCalculation);
             } else if (differenceBA == k) {
                 resultCalculation =
                         firstTwo + " " + context.getString(R.string.display_math_small)
                                 + " " + secondTwo + " " + context.getString(R.string.display_math_by)
                                 + " " + Integer.toString(k);
+                isCalculatable = true;
                 System.out.println(resultCalculation);
             }
         }

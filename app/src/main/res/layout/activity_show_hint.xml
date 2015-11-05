@@ -93,7 +93,7 @@
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
             android:text="0&#10;"
-            android:textColor="@color/white" />
+            android:textColor="@color/transparent" />
 
         <Button
             android:id="@+id/button_zero_hint"
@@ -109,7 +109,7 @@
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
             android:text="0&#10;"
-            android:textColor="@color/white" />
+            android:textColor="@color/transparent" />
     </GridLayout>
 
     <RelativeLayout
@@ -154,7 +154,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/wordTextView"
+            android:id="@+id/showWordButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -166,10 +166,10 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/dateTextView"
+            android:id="@+id/showDateButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/wordTextView"
+            android:layout_below="@+id/showWordButton"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="7dp"
             android:background="@drawable/hints_display"
@@ -178,10 +178,10 @@
             android:textSize="15sp" />
 
         <Button
-            android:id="@+id/mathTextView"
+            android:id="@+id/showMathButton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/dateTextView"
+            android:layout_below="@+id/showDateButton"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="7dp"
             android:background="@drawable/hints_display"
