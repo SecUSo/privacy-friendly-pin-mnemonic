@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 
+import de.tudarmstadt.informatik.secuso.privacyfriendlypin.R;
+
 /**
  * Created by yonjuni on 27.10.15.
  */
@@ -15,12 +17,14 @@ public class CheckPin {
 
     String firstTwo;
     String secondTwo;
-    String[] input = new String[4];
+    String[] input;
     Context context;
 
     public CheckPin(String pin, Context context) {
 
         this.context = context;
+
+        input = new String[4];
 
         for (int i = 0; i < 4; i++) {
             input[i] = Character.toString(pin.charAt(i));
@@ -139,7 +143,10 @@ public class CheckPin {
         for (int i = 2; i < 11; i++) {
             if (firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
-                    resultCalculation = firstTwo + " " + context.getString(R.string.display_math_is) + " " + Integer.toString(i) + context.getString(R.string.display_math_large) + " " + secondTwo;
+                    resultCalculation =
+                            firstTwo + " " + context.getString(R.string.display_math_is)
+                                    + " " + Integer.toString(i)
+                                    + context.getString(R.string.display_math_large) + " " + secondTwo;
                     System.out.println(resultCalculation);
                 }
             }
@@ -148,7 +155,10 @@ public class CheckPin {
         for (int j = 2; j < 11; j++) {
             if (secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
-                    resultCalculation = secondTwo + " " + context.getString(R.string.display_math_is) + " " + Integer.toString(j) + " " + context.getString(R.string.display_math_large) + " " + firstTwo;
+                    resultCalculation =
+                            secondTwo + " " + context.getString(R.string.display_math_is)
+                                    + " " + Integer.toString(j) + " "
+                                    + context.getString(R.string.display_math_large) + " " + firstTwo;
                     System.out.println(resultCalculation);
                 }
             }
@@ -162,10 +172,16 @@ public class CheckPin {
         for (int k = 3; k > 0; k--) {
             if (differenceAB == k) {
 
-                resultCalculation = firstTwo + " "+ context.getString(R.string.display_math_large) + " " + secondTwo + " " + context.getString(R.string.display_math_by) + " " + Integer.toString(k);
+                resultCalculation =
+                        firstTwo + " " + context.getString(R.string.display_math_large)
+                                + " " + secondTwo + " " + context.getString(R.string.display_math_by)
+                                + " " + Integer.toString(k);
                 System.out.println(resultCalculation);
             } else if (differenceBA == k) {
-                resultCalculation = firstTwo + " " + context.getString(R.string.display_math_small) + " " + secondTwo + " " + context.getString(R.string.display_math_by) + " " + Integer.toString(k);
+                resultCalculation =
+                        firstTwo + " " + context.getString(R.string.display_math_small)
+                                + " " + secondTwo + " " + context.getString(R.string.display_math_by)
+                                + " " + Integer.toString(k);
                 System.out.println(resultCalculation);
             }
         }

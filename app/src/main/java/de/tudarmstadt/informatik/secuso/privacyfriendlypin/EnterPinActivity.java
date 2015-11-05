@@ -56,7 +56,6 @@ public class EnterPinActivity extends ActionBarActivity {
                 @Override
                 public void onClick(View v) {
 
-                    //PIN length could be extended here
                     if (pinEditText.getText().length() < 4) {
                         pin = pin += tempInt;
                         Log.d("PIN:", pin);
@@ -71,6 +70,15 @@ public class EnterPinActivity extends ActionBarActivity {
 
             public void onClick(View v) {
                 clickDoneButton();
+            }
+        });
+
+        Button cancelButton = (Button) findViewById(R.id.button_cancel);
+        cancelButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                pinEditText.getText().clear();
+                pin = "";
             }
         });
 

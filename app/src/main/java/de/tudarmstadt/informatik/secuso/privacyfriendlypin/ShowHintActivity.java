@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.TextView;
 
+import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.CheckPin;
+
 public class ShowHintActivity extends ActionBarActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

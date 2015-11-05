@@ -3,61 +3,104 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView android:text="Please enter your PIN:"
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/pin_message"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp" />
+        android:id="@+id/enter_pin">
 
-    <EditText
-        android:id="@+id/displayPin"
-        android:inputType="numberPassword"
-        android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/pin_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_pin"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/displayPin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pin_message"
+            android:layout_toEndOf="@+id/pin_message"
+            android:layout_toRightOf="@+id/pin_message"
+            android:background="#00000000"
+            android:inputType="numberPassword"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/pin_message"
-        android:layout_alignBottom="@+id/pin_message" />
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        android:columnCount="3"
+        android:orientation="horizontal">
 
-<GridLayout
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:columnCount="3"
-    android:orientation="horizontal"
-    android:id="@+id/numbers"
-    android:layout_marginLeft="50dp"
-    android:layout_marginTop="90dp"
-    android:layout_marginBottom="90dp">
+        <Button
+            android:id="@+id/button_one"
+            android:text="1" />
 
-    <Button android:text="1"
-        android:id="@+id/button_one"/>
-    <Button android:text="2"
-        android:id="@+id/button_two"/>
-    <Button android:text="3"
-        android:id="@+id/button_three"/>
-    <Button android:text="4"
-        android:id="@+id/button_four"/>
-    <Button android:text="5"
-        android:id="@+id/button_five"/>
-    <Button android:text="6"
-        android:id="@+id/button_six"/>
-    <Button android:text="7"
-        android:id="@+id/button_seven"/>
-    <Button android:text="8"
-        android:id="@+id/button_eight"/>
-    <Button android:text="9"
-        android:id="@+id/button_nine"/>
-    <Button android:text="0"
-        android:id="@+id/button_zero"/>
+        <Button
+            android:id="@+id/button_two"
+            android:text="2" />
 
-</GridLayout>
+        <Button
+            android:id="@+id/button_three"
+            android:text="3" />
 
-    <Button android:text="done"
+        <Button
+            android:id="@+id/button_four"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button_five"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button_six"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/button_seven"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button_eight"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button_nine"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/button_zero"
+            android:text="0" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button_done"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/numbers"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button_done" />
+        android:layout_marginLeft="220dp"
+        android:text="done" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numbers"
+        android:layout_marginLeft="70dp"
+        android:text="cancel" />
 
 </RelativeLayout>
