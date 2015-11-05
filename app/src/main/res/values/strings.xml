@@ -5,7 +5,9 @@
     <string name="action_help">Help</string>
     <string name="about">About</string>
     <string name="display_word">Your word is </string>
-    <string name="display_no_word">No word found </string>
+    <string name="display_no_word">PIN does not form a word</string>
+    <string name="display_no_date">PIN is not in date format</string>
+    <string name="display_no_math">PIN does not follow a mathematical rule</string>
     <string name="display_date_ddmm">Date in DD-MM format </string>
     <string name="display_date_mmdd">Date in MM-DD format </string>
     <string name="display_date_mmyy">Date in MM-YY format </string>

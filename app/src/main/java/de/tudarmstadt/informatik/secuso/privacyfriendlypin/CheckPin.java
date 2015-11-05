@@ -38,7 +38,7 @@ public class CheckPin {
 
     public String determineDate() {
 
-        String resultDate = "";
+        String resultDate = context.getString(R.string.display_no_date);
 
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
         String[] daysArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
@@ -118,7 +118,7 @@ public class CheckPin {
 
     public String determineCalculation() {
 
-        String resultCalculation = "";
+        String resultCalculation = context.getString(R.string.display_no_math);
 
         int tmp1 = Integer.parseInt(firstTwo);
         int tmp2 = Integer.parseInt(secondTwo);
