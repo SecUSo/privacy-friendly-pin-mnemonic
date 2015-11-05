@@ -82,7 +82,6 @@ public class EnterPinActivity extends ActionBarActivity {
         return true;
     }
 
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent = new Intent();
         switch (item.getItemId()) {

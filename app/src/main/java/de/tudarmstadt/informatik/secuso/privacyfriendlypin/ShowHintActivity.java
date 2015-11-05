@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 public class ShowHintActivity extends ActionBarActivity {
@@ -20,6 +21,10 @@ public class ShowHintActivity extends ActionBarActivity {
 
         TextView pinTextView = (TextView) findViewById(R.id.current_pin);
         pinTextView.setText(pin);
+
+        //secure against Screenshot
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE);
 
         //Actionbar
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
