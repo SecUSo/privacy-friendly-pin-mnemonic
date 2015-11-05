@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="5dp">
 
         <TextView
             android:id="@+id/pin_message"
@@ -47,14 +47,15 @@
         android:layout_below="@+id/enter_pin"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="30dp"
         android:columnCount="3"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_one"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="1"
             android:textColor="@color/white"
@@ -62,8 +63,9 @@
 
         <Button
             android:id="@+id/button_two"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="2"
             android:textColor="@color/white"
@@ -71,8 +73,9 @@
 
         <Button
             android:id="@+id/button_three"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="3"
             android:textColor="@color/white"
@@ -80,8 +83,9 @@
 
         <Button
             android:id="@+id/button_four"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="4"
             android:textColor="@color/white"
@@ -89,8 +93,9 @@
 
         <Button
             android:id="@+id/button_five"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="5"
             android:textColor="@color/white"
@@ -98,8 +103,9 @@
 
         <Button
             android:id="@+id/button_six"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="6"
             android:textColor="@color/white"
@@ -107,8 +113,9 @@
 
         <Button
             android:id="@+id/button_seven"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="7"
             android:textColor="@color/white"
@@ -116,8 +123,9 @@
 
         <Button
             android:id="@+id/button_eight"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="8"
             android:textColor="@color/white"
@@ -125,8 +133,9 @@
 
         <Button
             android:id="@+id/button_nine"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="9"
             android:textColor="@color/white"
@@ -134,17 +143,19 @@
 
         <Button
             android:id="@+id/button_zero_space_left"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/invisible_button"
             android:text="0"
-            android:textColor="@color/transparent"
+            android:textColor="@color/white"
             android:textSize="30sp" />
 
         <Button
             android:id="@+id/button_zero"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/hints_numpad"
             android:text="0"
             android:textColor="@color/white"
@@ -152,11 +163,12 @@
 
         <Button
             android:id="@+id/button_zero_space_right"
-            android:layout_width="60dp"
-            android:layout_margin="2dp"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
             android:background="@drawable/invisible_button"
             android:text="0"
-            android:textColor="@color/transparent"
+            android:textColor="@color/white"
             android:textSize="30sp" />
 
     </GridLayout>
@@ -168,7 +180,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/numbers"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal">
 
         <Button

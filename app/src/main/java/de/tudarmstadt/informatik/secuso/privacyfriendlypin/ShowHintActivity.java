@@ -57,31 +57,28 @@ public class ShowHintActivity extends ActionBarActivity {
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
 
-        TextView wordTextView = (TextView) findViewById(R.id.showWordButton);
-        TextView dateTextView = (TextView) findViewById(R.id.showDateButton);
-        TextView mathTextView = (TextView) findViewById(R.id.showMathButton);
+        Button wordFrame = (Button) findViewById(R.id.showWordButton);
+        Button dateFrame = (Button) findViewById(R.id.showDateButton);
+        Button mathFrame = (Button) findViewById(R.id.showMathButton);
 
-        wordTextView.setText(checkPin.determineWord());
-        dateTextView.setText(checkPin.determineDate());
-        mathTextView.setText(checkPin.determineCalculation());
+        wordFrame.setText(checkPin.determineWord());
+        dateFrame.setText(checkPin.determineDate());
+        mathFrame.setText(checkPin.determineCalculation());
 
         //Frames
         if (!checkPin.isWord) {
-            Button wordFrame = (Button) findViewById(R.id.showWordButton);
             wordFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
             wordFrame.setTextColor(Color.parseColor("#A8A8A8"));
         }
 
         if (!checkPin.isDate) {
-            Button wordFrame = (Button) findViewById(R.id.showDateButton);
-            wordFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
-            wordFrame.setTextColor(Color.parseColor("#A8A8A8"));
+            dateFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
+            dateFrame.setTextColor(Color.parseColor("#A8A8A8"));
         }
 
         if (!checkPin.isCalculatable) {
-            Button wordFrame = (Button) findViewById(R.id.showMathButton);
-            wordFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
-            wordFrame.setTextColor(Color.parseColor("#A8A8A8"));
+            mathFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
+            mathFrame.setTextColor(Color.parseColor("#A8A8A8"));
         }
 
     }

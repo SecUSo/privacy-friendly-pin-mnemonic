@@ -129,7 +129,7 @@ public class CheckPin {
             return context.getString(R.string.display_no_word);
         }
         isWord = true;
-        return context.getString(R.string.display_word) + " " + word;
+        return context.getString(R.string.display_word) + " " + word.toUpperCase();
     }
 
     public String determineCalculation() {
