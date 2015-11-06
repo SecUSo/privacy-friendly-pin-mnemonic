@@ -5,6 +5,15 @@ package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
  */
 public class WordDictionary {
 
+    public String[] getWordDictionary(String language) {
+            if (language.equals("Deutsch")) {
+                    return wordDictionaryDE;
+            } else {
+                    return wordDictionaryEN;
+            }
+    }
+
+
     String[] wordDictionaryEN = new String[]{
             "aahs", "aals", "abas", "abba", "abbe", "abcd", "abed", "abet", "able", "ably", "abos",
             "abri",
@@ -376,8 +385,18 @@ public class WordDictionary {
             "zoos", "zori", "zouk", "zyme"};
 
     String[] wordDictionaryDE = new String[]{
-
-
-    };
+            "abba", "abcd", "aber", "acht", "acta", "adac", "adam", "adel", "affe", "ahoi", "aida",
+            "aids", "akku", "akne", "akut", "alba", "aldi", "alex", "alfa", "alge", "alma", "aloe",
+            "also", "alte", "amen", "amid", "amme", "amok", "amor", "anal", "andi", "anja", "anke",
+            "anna", "anne", "anno", "anti", "aqua", "area", "arme", "army", "arte", "arzt", "assi",
+            "asta", "asyl", "atem", "atom", "auch", "audi", "atze", "aufs", "auge", "aula", "aura",
+            "auto", "aral", "avis", "axel", "azur", "azid",
+            "baba", "babe", "baby", "bach", "back", "baff", "bahn", "bade", "bald", "balg", "ball",
+            "band", "bang", "bank", "bann", "bamm", "bart", "basf", "base", "bash", "bass", "baum",
+            "baut", "bawü", "beat", "bebe", "beim", "bein", "benz", "berg", "bern", "best", "beta",
+            "bett", "bias", "bibi", "bier", "bike", "bios", "biss", "blau", "blei", "blöd", "blüh",
+            "bmwi", "bmws", "boah", "bobo", "bobs", "bock", "bodo", "body", "bohl", "bohr", "boje",
+            "bomb", "bong", "bonn", "boom", "boot", "boss", "bote", "brau", "brav", "brei", "brie",
+            "brot", "bube", "buch", "bude", "bund", "bunt", "byte", "bits", "böse", "büro"    };
 
 }

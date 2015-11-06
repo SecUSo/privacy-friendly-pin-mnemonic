@@ -148,7 +148,7 @@
             android:layout_margin="3dp"
             android:background="@drawable/invisible_button"
             android:text="0"
-            android:textColor="@color/white"
+            android:textColor="@color/transparent"
             android:textSize="30sp" />
 
         <Button
@@ -168,7 +168,7 @@
             android:layout_margin="3dp"
             android:background="@drawable/invisible_button"
             android:text="0"
-            android:textColor="@color/white"
+            android:textColor="@color/transparent"
             android:textSize="30sp" />
 
     </GridLayout>
