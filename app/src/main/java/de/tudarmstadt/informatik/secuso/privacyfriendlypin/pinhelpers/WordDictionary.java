@@ -15,7 +15,7 @@ public class WordDictionary {
 
     public String[] getKeyboard(String language) {
             if (language.equals("de")) {
-                    return new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
+                    return new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuüv", "wxyz"};
             } else {
                     return new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             }

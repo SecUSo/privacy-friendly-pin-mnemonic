@@ -126,7 +126,7 @@ public class CheckPin {
             }
 
         }
-        System.out.println("Your word is " + word);
+        //System.out.println("Your word is " + word);
         if (word.equals("")) {
             return context.getString(R.string.display_no_word);
         }
@@ -138,6 +138,10 @@ public class CheckPin {
 
         String resultCalculation = context.getString(R.string.display_no_math);
 
+        if (firstTwo.equals("00") && secondTwo.equals("00")) {
+            return resultCalculation;
+        }
+        
         int tmp1 = Integer.parseInt(firstTwo);
         int tmp2 = Integer.parseInt(secondTwo);
 
@@ -155,7 +159,7 @@ public class CheckPin {
         int differenceBA = secondHalf - firstHalf;
 
         for (int i = 2; i < 11; i++) {
-            if (firstHalf % secondHalf == 0) {
+            if (secondHalf !=0 && firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
                     resultCalculation =
                             firstTwo + " " + context.getString(R.string.display_math_is)
@@ -168,7 +172,7 @@ public class CheckPin {
         }
 
         for (int j = 2; j < 11; j++) {
-            if (secondHalf % firstHalf == 0) {
+            if (firstHalf !=0 && secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
                     resultCalculation =
                             secondTwo + " " + context.getString(R.string.display_math_is)
@@ -234,12 +238,6 @@ public class CheckPin {
 
         String[] result = new String[4];
         String[] keyboard = wordDictionaryClass.getKeyboard(Locale.getDefault().getLanguage());
-
-        /*if (Locale.getDefault().getLanguage().equals("de")) {
-            keyboard = new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
-        } else {
-            keyboard = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-        }*/
 
         for (int i = 0; i < intArray.length; i++) {
             result[i] = keyboard[intArray[i]];
