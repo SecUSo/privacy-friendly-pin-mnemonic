@@ -102,10 +102,10 @@ public class CheckPin {
         int[] userInput = new int[]{a, b, c, d};
 
         WordDictionary wordDictionaryClass = new WordDictionary();
-        String[] wordDictionary = wordDictionaryClass.getWordDictionary(Locale.getDefault().getDisplayLanguage());
+        String[] wordDictionary = wordDictionaryClass.getWordDictionary(Locale.getDefault().getLanguage());
 
-        String[] getKeysArray = intArrayToStringArray(userInput);
-        System.out.println("PIN AHHHHHHHHH " + Integer.toString(a));
+        String[] getKeysArray = intArrayToStringArray(userInput, wordDictionaryClass);
+        //System.out.println("PIN AHHHHHHHHH " + Integer.toString(a));
 
         List<String> wordList = mapKeysToWords(getKeysArray);
 
@@ -114,7 +114,7 @@ public class CheckPin {
         List<String> possibleWords = findWords(wordArray, wordDictionary);
 
         int random = (int) (Math.random() * possibleWords.size());
-        System.out.println("Random is " + random);
+        //System.out.println("Random is " + random);
 
         // assign the number to a mapped word
         for (int i = 0; i < userInput.length; i++) {
@@ -226,19 +226,25 @@ public class CheckPin {
         return years;
     }
 
-    public String[] intArrayToStringArray(int[] intArray) {
+    public String[] intArrayToStringArray(int[] intArray, WordDictionary wordDictionaryClass) {
 
         if (intArray.length == 0) {
             return new String[0];
         }
 
         String[] result = new String[4];
-        String[] keyboard = new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
+        String[] keyboard = wordDictionaryClass.getKeyboard(Locale.getDefault().getLanguage());
+
+        /*if (Locale.getDefault().getLanguage().equals("de")) {
+            keyboard = new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
+        } else {
+            keyboard = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        }*/
 
         for (int i = 0; i < intArray.length; i++) {
             result[i] = keyboard[intArray[i]];
-            System.out.println(i + " Pin Digit " + intArray[i] + " Keypad " + result[i]);
-            System.out.println("Keyboardstelle " + keyboard[intArray[i]]);
+            //System.out.println(i + " Pin Digit " + intArray[i] + " Keypad " + result[i]);
+            //System.out.println("Keyboardstelle " + keyboard[intArray[i]]);
         }
 
 		/*for (int i=0; i<result.length; i++) {
@@ -262,16 +268,16 @@ public class CheckPin {
                                 + Character.toString(keys[2].charAt(k))
                                 + Character.toString(keys[3].charAt(l)));
 
-                        System.out.println("MIX: "
-                                + Character.toString(keys[0].charAt(i))
-                                + Character.toString(keys[1].charAt(j))
-                                + Character.toString(keys[2].charAt(k))
-                                + Character.toString(keys[3].charAt(l)));
+                        //System.out.println("MIX: "
+                                //+ Character.toString(keys[0].charAt(i))
+                               // + Character.toString(keys[1].charAt(j))
+                                //+ Character.toString(keys[2].charAt(k))
+                               // + Character.toString(keys[3].charAt(l)));
                     }
                 }
             }
         }
-        System.out.println("ANSWER " + Arrays.toString(result.toArray()));
+        //System.out.println("ANSWER " + Arrays.toString(result.toArray()));
         return result;
     }
 

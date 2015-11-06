@@ -6,10 +6,18 @@ package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
 public class WordDictionary {
 
     public String[] getWordDictionary(String language) {
-            if (language.equals("Deutsch")) {
+            if (language.equals("de")) {
                     return wordDictionaryDE;
             } else {
                     return wordDictionaryEN;
+            }
+    }
+
+    public String[] getKeyboard(String language) {
+            if (language.equals("de")) {
+                    return new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
+            } else {
+                    return new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
             }
     }
 
