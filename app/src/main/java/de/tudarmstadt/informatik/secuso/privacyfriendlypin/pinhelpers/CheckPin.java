@@ -233,7 +233,7 @@ public class CheckPin {
         }
 
         String[] result = new String[4];
-        String[] keyboard = new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        String[] keyboard = new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuvü", "wxyz"};
 
         for (int i = 0; i < intArray.length; i++) {
             result[i] = keyboard[intArray[i]];

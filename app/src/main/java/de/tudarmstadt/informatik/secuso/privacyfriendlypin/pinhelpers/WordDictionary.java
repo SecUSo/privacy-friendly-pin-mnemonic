@@ -397,6 +397,8 @@ public class WordDictionary {
             "bett", "bias", "bibi", "bier", "bike", "bios", "biss", "blau", "blei", "blöd", "blüh",
             "bmwi", "bmws", "boah", "bobo", "bobs", "bock", "bodo", "body", "bohl", "bohr", "boje",
             "bomb", "bong", "bonn", "boom", "boot", "boss", "bote", "brau", "brav", "brei", "brie",
-            "brot", "bube", "buch", "bude", "bund", "bunt", "byte", "bits", "böse", "büro"    };
+            "brot", "bube", "buch", "bude", "bund", "bunt", "byte", "bits", "böse", "büro",
+            "käse"
+    };
 
 }
