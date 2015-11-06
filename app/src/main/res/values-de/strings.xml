@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Privacy Friendly PIN</string>
+    <string name="app_name_long">Privacy Friendly PIN Helper</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_help">Help</string>
+    <string name="about">About</string>
+    <string name="display_word">It forms the word </string>
+    <string name="display_no_word">It does not form a word</string>
+    <string name="display_no_date">It is not in date format</string>
+    <string name="display_no_math">It does not follow a mathematical rule</string>
+    <string name="display_date_ddmm">It is date in DD-MM format </string>
+    <string name="display_date_mmdd">It is a date in MM-DD format </string>
+    <string name="display_date_mmyy">It is a date in MM-YY format </string>
+    <string name="display_date_year_1900s">It is a valid year in the 1900s </string>
+    <string name="display_date_year_2000s">It is a valid year in this century </string>
+    <string name="display_math_large">times as large as </string>
+    <string name="display_math_small">is smaller than</string>
+    <string name="display_math_is">is </string>
+    <string name="display_math_by">by </string>
+    <string name="display_math_stepping">It is a stepping PIN: </string>
+    <string name="display_entered_pin">Your PIN is: </string>
+    <string name="enter_pin">Enter your PIN: </string>
+    <string name="your_pin_heading">Your PIN: </string>
+    <string name="version_number">Version 0.5</string>
+    <string name="about_author">Author: Karola Marky</string>
+    <string name="about_affiliation">In affiliation with</string>
+    <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>
+    <string name="more_info">More information can be found on:</string>
+    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/en/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+</resources>
+

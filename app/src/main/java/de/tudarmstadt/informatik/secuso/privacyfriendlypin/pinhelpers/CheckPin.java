@@ -104,8 +104,6 @@ public class CheckPin {
         WordDictionary wordDictionaryClass = new WordDictionary();
         String[] wordDictionary = wordDictionaryClass.getWordDictionary(Locale.getDefault().getDisplayLanguage());
 
-        System.out.println("SPRACHE" + Locale.getDefault().getDisplayLanguage());
-
         String[] getKeysArray = intArrayToStringArray(userInput);
         System.out.println("PIN AHHHHHHHHH " + Integer.toString(a));
 
