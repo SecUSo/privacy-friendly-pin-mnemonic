@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
@@ -29,6 +30,7 @@ public class EnterPinActivity extends ActionBarActivity {
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setLogo(R.mipmap.ic_launcher);
+        actionBar.setTitle(R.string.app_name);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         pinEditText = (EditText) findViewById(R.id.displayPin);
