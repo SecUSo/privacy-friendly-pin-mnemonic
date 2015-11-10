@@ -30,6 +30,16 @@
             android:screenOrientation="portrait"
             android:parentActivityName=".EnterPinActivity">
         </activity>
+        <activity
+            android:name=".tutorial.ShowHintTutorialActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ShowHintActivity">
+        </activity>
+        <activity
+            android:name=".tutorial.EnterPinTutorialActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".EnterPinActivity">
+        </activity>
     </application>
 
 </manifest>
