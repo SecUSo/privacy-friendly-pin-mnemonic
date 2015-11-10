@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.content.res.TypedArrayUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -11,11 +12,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import java.util.Arrays;
 
 import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.CheckPin;
 
 public class ShowHintActivity extends ActionBarActivity {
+
+    int[] input = new int[4];
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,11 +56,13 @@ public class ShowHintActivity extends ActionBarActivity {
         numpad[8] = (Button) findViewById(R.id.button_eight_hint);
         numpad[9] = (Button) findViewById(R.id.button_nine_hint);
 
-
+        drawArrow(numpad[1], numpad[9]);
 
         for (int i = 0; i < 4; i++) {
-            int position = Integer.parseInt(Character.toString(pin.charAt(i)));
-            numpad[position].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+            input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
+            //if (!containsMultiples(input)) {
+                numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+            //}
         }
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
@@ -93,7 +101,7 @@ public class ShowHintActivity extends ActionBarActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent = new Intent();
-        switch(item.getItemId()){
+        switch (item.getItemId()) {
             case R.id.about:
                 intent.setClass(this, AboutActivity.class);
                 startActivityForResult(intent, 0);
@@ -107,9 +115,20 @@ public class ShowHintActivity extends ActionBarActivity {
         }
     }
 
-    //TODO implement different highlighting
-    public void containsMultiples (String pin) {
+    public void drawArrow(Button first, Button second) {
 
+    }
+
+    public boolean containsMultiples(int[] input) {
+        boolean hasMultiple = false;
+        Arrays.sort(input);
+        for (int i = 0; i < input.length; i++) {
+            if (Arrays.binarySearch(input, input[i]) != -1) {
+                hasMultiple = true;
+            }
+        }
+        System.out.println("Hat die PIN doppelte Zahlen?" + hasMultiple);
+        return hasMultiple;
     }
 
 }

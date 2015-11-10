@@ -38,7 +38,6 @@ public class EnterPinActivity extends ActionBarActivity {
 
         //Buttons
         Button[] numpad = new Button[10];
-
         numpad[0] = (Button) findViewById(R.id.button_zero);
         numpad[1] = (Button) findViewById(R.id.button_one);
         numpad[2] = (Button) findViewById(R.id.button_two);
