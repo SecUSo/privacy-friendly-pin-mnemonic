@@ -50,6 +50,8 @@ public class ShowHintActivity extends ActionBarActivity {
         numpad[8] = (Button) findViewById(R.id.button_eight_hint);
         numpad[9] = (Button) findViewById(R.id.button_nine_hint);
 
+
+
         for (int i = 0; i < 4; i++) {
             int position = Integer.parseInt(Character.toString(pin.charAt(i)));
             numpad[position].setBackgroundResource(R.drawable.hint_numpad_highlighted);
@@ -105,5 +107,9 @@ public class ShowHintActivity extends ActionBarActivity {
         }
     }
 
+    //TODO implement different highlighting
+    public void containsMultiples (String pin) {
+
+    }
 
 }
