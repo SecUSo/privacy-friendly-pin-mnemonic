@@ -51,14 +51,12 @@ public class DrawView extends View {
 
     public int whichArrow(View view1, View view2, int one, int two){
         //Arrow should point from left to right
-        //if ((one < two) && (two-one == 1 || two-one == 2) && (view1.getY() == view2.getY())) {
-            //return 315;
-        //}
+        if (((one < two) && (view1.getY() == view2.getY())) || ((one == 1) && (two == 2))) {
+            return 315;
+        }
         //Arrow should point from right to left
         if ((one > two) && (view1.getY() == view2.getY())) {
             return 135;
-        } else if (view1.getY() == view2.getY()) {
-            return 315;
         }
         // Arrow should point downwards
         if ((one < two) && (view1.getX() == view2.getX())) {
@@ -72,7 +70,7 @@ public class DrawView extends View {
         if ((one < two) && (two-one == 4)) {
             return 0;
         }
-        if ((one > two) && (two-one == 4)) {
+        if ((one > two) && (one-two == 4)) {
             return 180;
         }
 
