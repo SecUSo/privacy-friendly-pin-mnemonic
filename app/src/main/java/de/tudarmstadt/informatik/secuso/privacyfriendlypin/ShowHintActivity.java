@@ -18,6 +18,7 @@ import android.widget.TextView;
 import java.util.Arrays;
 
 import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.CheckPin;
+import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.DrawView;
 
 public class ShowHintActivity extends ActionBarActivity {
 
@@ -56,13 +57,19 @@ public class ShowHintActivity extends ActionBarActivity {
         numpad[8] = (Button) findViewById(R.id.button_eight_hint);
         numpad[9] = (Button) findViewById(R.id.button_nine_hint);
 
-        drawArrow(numpad[1], numpad[9]);
-
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
             //if (!containsMultiples(input)) {
-                numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+            numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+
             //}
+        }
+
+        for (int i = 0; i < 4; i++) {
+            if (i<3){
+                drawArrow(numpad[input[i]], numpad[input[i+1]]);
+                System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i+1]));
+            }
         }
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
@@ -116,7 +123,10 @@ public class ShowHintActivity extends ActionBarActivity {
     }
 
     public void drawArrow(Button first, Button second) {
-
+        DrawView drawView = new DrawView(this, first, second);
+        drawView.setStrokeWidth(10);
+        RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpad_draw);
+        numpadLayout.addView(drawView);
     }
 
     public boolean containsMultiples(int[] input) {

@@ -141,6 +141,17 @@
     </GridLayout>
 
     <RelativeLayout
+        android:id="@+id/numpad_draw"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@+id/numbers"
+        android:layout_alignEnd="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers"
+        android:layout_alignStart="@+id/numbers"
+        android:layout_alignTop="@+id/numbers"
+        android:layout_alignBottom="@+id/numbers"></RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/numbers"
