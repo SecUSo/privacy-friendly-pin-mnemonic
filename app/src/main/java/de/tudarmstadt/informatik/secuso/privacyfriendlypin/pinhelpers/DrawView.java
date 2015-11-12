@@ -6,7 +6,6 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.view.View;
-import android.widget.Button;
 
 /**
  * Created by yonjuni on 10.11.15.
@@ -31,49 +30,63 @@ public class DrawView extends View {
 
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(startView.getX() + 80, startView.getY() + 80, endView.getX() + 80, endView.getY() + 80, paint);
+        canvas.drawLine(startView.getX() + 90, startView.getY() + 80, endView.getX() + 90, endView.getY() + 80, paint);
         drawArrowHead(canvas);
     }
 
     public void drawArrowHead(Canvas canvas) {
         Path path = new Path();
-        path.moveTo(endView.getX() + 70, endView.getY() + 35);
-        path.lineTo(endView.getX() + 85, endView.getY() + 85);
-        path.lineTo(endView.getX() + 35, endView.getY() + 70);
+
+        //draws triangle pointing to the right
+        path.moveTo(endView.getX() + 50, endView.getY() + 105);
+        path.lineTo(endView.getX() + 98, endView.getY() + 78);
+        path.lineTo(endView.getX() + 50, endView.getY() + 60);
         path.close();
+
+        //turns triangle
         Matrix matrix = new Matrix();
         matrix.reset();
         float rotate = whichArrow(startView, endView, digitOne, digitTwo);
-        matrix.postRotate(rotate, endView.getX() + 80, endView.getY() + 80);
+        matrix.postRotate(rotate, endView.getX() + 90, endView.getY() + 80);
         path.transform(matrix);
+
         canvas.drawPath(path, paint);
     }
 
     public int whichArrow(View view1, View view2, int one, int two){
         //Arrow should point from left to right
-        if (((one < two) && (view1.getY() == view2.getY())) || ((one == 1) && (two == 2))) {
-            return 315;
+        if ((one < two) && (view1.getY() == view2.getY())) {
+            return 0;
         }
         //Arrow should point from right to left
         if ((one > two) && (view1.getY() == view2.getY())) {
-            return 135;
+            return 180;
         }
         // Arrow should point downwards
         if ((one < two) && (view1.getX() == view2.getX())) {
-            return 45;
+            return 90;
         }
         // Arrow should point upwards
-        if ((one > two) && (view1.getX() == view2.getX())) {
-            return 225;
+        if ((((one > two)||( one == 0)) && (view1.getX() == view2.getX())))  {
+            return 270;
         }
         // Arrow should point down from left to right
-        if ((one < two) && (two-one == 4)) {
+        if ((one < two) && (two-one == 4 || two-one == 8)) {
+            return 45;
+        }
+        // Arrow should point down from right to left
+        if ((one > two) && (one-two == 4 || one-two == 8)) {
+            return 135;
+        }
+        //TODO Add other turns
+        // Arrow should point up from right to left
+        if ((one < two) && (one-two == 4)) {
             return 0;
         }
-        if ((one > two) && (one-two == 4)) {
-            return 180;
+        // Arrow should point up from left to right
+        if ((one > two) && (two-one == 4 || one-two == 2)) {
+            return 270;
         }
-
         return 0;
     }
 
