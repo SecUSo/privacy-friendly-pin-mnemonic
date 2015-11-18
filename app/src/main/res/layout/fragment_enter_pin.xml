@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enter_pin_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <RelativeLayout
         android:id="@+id/enter_pin"
@@ -14,7 +16,7 @@
         android:layout_marginTop="5dp">
 
         <TextView
-            android:id="@+id/pin_message"
+            android:id="@+id/pin_message_enter_pin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
@@ -29,11 +31,10 @@
             android:id="@+id/displayPin"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/pin_message"
-            android:layout_toEndOf="@+id/pin_message"
-            android:layout_toRightOf="@+id/pin_message"
+            android:layout_alignBottom="@+id/pin_message_enter_pin"
+            android:layout_toEndOf="@+id/pin_message_enter_pin"
+            android:layout_toRightOf="@+id/pin_message_enter_pin"
             android:background="#00000000"
-            android:inputType="numberPassword"
             android:maxWidth="60dp"
             android:textSize="20sp"
             android:textStyle="bold" />

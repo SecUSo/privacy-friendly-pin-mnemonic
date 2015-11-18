@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="30dp">
+        android:layout_marginBottom="20dp">
 
         <TextView
             android:id="@+id/pin_message"
@@ -45,7 +45,7 @@
         android:layout_alignStart="@+id/practiseButton" />
 
     <GridLayout
-        android:id="@+id/numbers"
+        android:id="@+id/numbers_show_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/shapeHeading"
@@ -167,11 +167,11 @@
         android:id="@+id/numpadFrame"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/show_current_pin"
-        android:layout_alignRight="@+id/numbers"
-        android:layout_alignEnd="@+id/numbers"
+        android:layout_alignRight="@+id/numbers_show_hint"
+        android:layout_alignEnd="@+id/numbers_show_hint"
         android:layout_above="@+id/wordHeading"></RelativeLayout>
 
     <TextView
@@ -180,7 +180,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/shapeHeading"
         android:layout_alignStart="@+id/shapeHeading"
-        android:layout_below="@+id/numbers"
+        android:layout_below="@+id/numbers_show_hint"
         android:layout_marginTop="20dp"
         android:text="Word:"
         android:textColor="@color/black"
@@ -226,8 +226,8 @@
         android:id="@+id/word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_alignTop="@+id/wordHeading"
         android:textSize="15sp"/>
 
@@ -235,8 +235,8 @@
         android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/wordHeading"
         android:layout_marginTop="10dp"
         android:textSize="15sp"/>
@@ -245,8 +245,8 @@
         android:id="@+id/math"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/dateHeading"
         android:layout_marginTop="10dp"
         android:textSize="15sp"/>
@@ -255,8 +255,8 @@
         android:id="@+id/story"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/mathHeading"
         android:layout_marginTop="10dp"
         android:textSize="15sp"/>

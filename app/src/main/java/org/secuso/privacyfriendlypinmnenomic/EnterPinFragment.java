@@ -105,8 +105,16 @@ public class EnterPinFragment extends Fragment {
     public void clickDoneButton() {
 
          if (pinEditText.getText().length() == 4) {
+
+             Bundle bundle = new Bundle();
+             bundle.putString("pin", visiblePin);
+             bundle.putString("pinHyphen", pin);
+
+             ShowHintFragment showHintFragment = new ShowHintFragment();
+             showHintFragment.setArguments(bundle);
+
              final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-             fragmentTransaction.replace(R.id.enter_pin, new ShowHintFragment(), "ShowHintFragmen");
+             fragmentTransaction.replace(R.id.content_frame, showHintFragment, "ShowHintFragment");
              fragmentTransaction.addToBackStack(null);
              fragmentTransaction.commit();
         }
@@ -129,6 +137,14 @@ public class EnterPinFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         this.activity = activity;
+    }
+
+    public void onResume() {
+        super.onResume();
+    }
+
+    public void onPause() {
+        super.onPause();
     }
 
 }

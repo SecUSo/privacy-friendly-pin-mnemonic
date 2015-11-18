@@ -34,12 +34,15 @@ public class ShowHintFragment extends Fragment {
 
         ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_tips);
 
-        Intent intent = activity.getIntent();
-        //String pin = intent.getStringExtra("currentVisiblePin");
-        //String pinHyphen = intent.getStringExtra("currentPin");
+        Bundle bundle = this.getArguments();
 
-        String pin = "1234";
-        String pinHyphen = "1234";
+        String pin = "";
+        String pinHyphen = "";
+
+        if (bundle != null) {
+            pin = bundle.getString("pin");
+            pinHyphen = bundle.getString("pinHyphen");
+        }
 
         TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
         pinTextView.setText(pinHyphen);
@@ -63,16 +66,13 @@ public class ShowHintFragment extends Fragment {
 
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
-            //if (!containsMultiples(input)) {
             numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
-
-            //}
         }
 
         for (int i = 0; i < 4; i++) {
             if (i < 3) {
                 drawArrow(numpad[input[i]], numpad[input[i + 1]], input[i], input[i + 1]);
-                System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i + 1]));
+                //System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i + 1]));
             }
         }
 
@@ -113,6 +113,14 @@ public class ShowHintFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         this.activity = activity;
+    }
+
+    public void onResume() {
+        super.onResume();
+    }
+
+    public void onPause() {
+        super.onPause();
     }
 
 }
