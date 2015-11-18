@@ -22,9 +22,7 @@ public class EnterPinFragment extends Fragment {
     private String pin;
     private String visiblePin;
     EditText pinEditText;
-
     Activity activity;
-    View rootView;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 

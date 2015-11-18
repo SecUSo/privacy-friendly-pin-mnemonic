@@ -2,6 +2,7 @@ package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import org.secuso.privacyfriendlypin.R;
@@ -22,6 +24,10 @@ import org.secuso.privacyfriendlypin.R;
  * Created by yonjuni on 18.11.15.
  */
 public class RootActivity extends ActionBarActivity {
+
+    private String pin;
+    private String visiblePin;
+    EditText pinEditText;
 
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
@@ -38,6 +44,7 @@ public class RootActivity extends ActionBarActivity {
         actionBar.setTitle(R.string.app_name);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
+        actionBar.setSubtitle(R.string.action_enter_pin);
 
         mDrawerList = (ListView)findViewById(R.id.navList);mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
@@ -48,10 +55,15 @@ public class RootActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
+        final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, new EnterPinFragment(), "EnterPinFragment");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
     }
 
     private void addDrawerItems() {
-        String[] mNavigationDrawerItemTitles = { "PIN Mnenomic", "Practise", "Help", "About"};
+        String[] mNavigationDrawerItemTitles = {getString(R.string.app_name), getString(R.string.action_practise),getString(R.string.action_help),getString(R.string.about)};
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mNavigationDrawerItemTitles);
         mDrawerList.setAdapter(mAdapter);
 
@@ -64,7 +76,7 @@ public class RootActivity extends ActionBarActivity {
             /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Navigation!");
+                getSupportActionBar().setTitle(R.string.action_navigation);
                 invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
             }
 
@@ -92,8 +104,6 @@ public class RootActivity extends ActionBarActivity {
         super.onConfigurationChanged(newConfig);
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

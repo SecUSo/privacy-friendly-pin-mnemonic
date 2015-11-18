@@ -7,6 +7,7 @@
     <string name="action_practise">Practise</string>
     <string name="action_enter_pin">Enter PIN</string>
     <string name="action_pin_tips">PIN Tips</string>
+    <string name="action_navigation">Navigation</string>
 
     <string name="display_word">It forms the word </string>
     <string name="display_no_word">No word possible</string>
