@@ -109,6 +109,7 @@ public class ShowHintFragment extends Fragment {
 
     public boolean containsMultiples(int[] input, int i) {
         boolean hasMultiple = false;
+
         Arrays.sort(input);
         for (int j = 0; j < input.length; j++) {
             if (Arrays.binarySearch(input, input[j]) != -1) {

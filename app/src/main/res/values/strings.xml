@@ -40,6 +40,8 @@
     <string name="your_pin_heading">Your PIN: </string>
     <string name="practise_button">Practise entering your PIN</string>
 
+    <string name="practised_pin_heading">Practised PIN</string>
+
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>

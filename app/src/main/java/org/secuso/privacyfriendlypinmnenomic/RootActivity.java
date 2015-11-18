@@ -25,10 +25,6 @@ import org.secuso.privacyfriendlypin.R;
  */
 public class RootActivity extends ActionBarActivity {
 
-    private String pin;
-    private String visiblePin;
-    EditText pinEditText;
-
     private ListView mDrawerList;
     private DrawerLayout mDrawerLayout;
     private ArrayAdapter<String> mAdapter;
@@ -63,7 +59,7 @@ public class RootActivity extends ActionBarActivity {
     }
 
     private void addDrawerItems() {
-        String[] mNavigationDrawerItemTitles = {getString(R.string.app_name), getString(R.string.action_practise),getString(R.string.action_help),getString(R.string.about)};
+        String[] mNavigationDrawerItemTitles = {getString(R.string.action_enter_pin), getString(R.string.action_practise),getString(R.string.action_help),getString(R.string.about)};
         mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mNavigationDrawerItemTitles);
         mDrawerList.setAdapter(mAdapter);
 
