@@ -62,7 +62,7 @@ public class CheckPin {
         for (int i = 0; i < monthsArray.length; i++) {
             for (int j = 0; j < yearsArray.length; j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
-                    resultDate = context.getString(R.string.display_date_mmyy) + " " + monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "(19)" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "(19)" + secondTwo;
                     this.isDate = true;
                 }
             }
@@ -71,11 +71,11 @@ public class CheckPin {
         for (int i = 0; i < daysArray.length; i++) {
             for (int j = 0; j < monthsArray.length; j++) {
                 if ((firstTwo.equals(daysArray[i])) && (secondTwo.equals(monthsArray[j]))) {
-                    resultDate = context.getString(R.string.display_date_ddmm) + " " + monthsWordsArray[Integer.parseInt(secondTwo)] + " " + firstTwo + "-" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(secondTwo)] + " " + firstTwo + "-" + secondTwo;
                     this.isDate = true;
                     break;
                 } else if ((firstTwo.equals(monthsArray[j])) && (secondTwo.equals(daysArray[i]))) {
-                    resultDate = context.getString(R.string.display_date_mmdd) + " " + monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "-" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "-" + secondTwo;
                     this.isDate = true;
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
@@ -135,7 +135,7 @@ public class CheckPin {
             return context.getString(R.string.display_no_word);
         }
         isWord = true;
-        return context.getString(R.string.display_word) + " " + word.toUpperCase();
+        return word.toUpperCase();
     }
 
     public String determineCalculation() {

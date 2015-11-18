@@ -33,19 +33,31 @@
 
     </RelativeLayout>
 
-    <GridLayout
-        android:id="@+id/numbers"
-        android:layout_below="@+id/show_current_pin"
+    <TextView
+        android:id="@+id/shapeHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_current_pin"
+        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_below="@+id/show_current_pin"
+        android:text="Shape:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <GridLayout
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shapeHeading"
+        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:columnCount="3"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_one_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="1&#10;"
@@ -53,7 +65,8 @@
 
         <Button
             android:id="@+id/button_two_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="2&#10;ABC"
@@ -61,7 +74,8 @@
 
         <Button
             android:id="@+id/button_three_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="3&#10;DEF"
@@ -69,7 +83,8 @@
 
         <Button
             android:id="@+id/button_four_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="4&#10;GHI"
@@ -77,7 +92,8 @@
 
         <Button
             android:id="@+id/button_five_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="5&#10;JKL"
@@ -85,7 +101,8 @@
 
         <Button
             android:id="@+id/button_six_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="6&#10;MNO"
@@ -93,7 +110,8 @@
 
         <Button
             android:id="@+id/button_seven_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="7&#10;PQRS"
@@ -101,7 +119,8 @@
 
         <Button
             android:id="@+id/button_eight_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="8&#10;TUV"
@@ -109,7 +128,8 @@
 
         <Button
             android:id="@+id/button_nine_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="9&#10;WXYZ"
@@ -117,7 +137,8 @@
 
         <Button
             android:id="@+id/button_zero_space_left"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
             android:text="0&#10;"
@@ -125,7 +146,8 @@
 
         <Button
             android:id="@+id/button_zero_hint"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/hints_numpad"
             android:text="0&#10;"
@@ -133,67 +155,94 @@
 
         <Button
             android:id="@+id/button_zero_space_right"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
             android:text="0&#10;"
             android:textColor="@color/transparent" />
     </GridLayout>
 
-    <RelativeLayout
-        android:id="@+id/numpad_draw"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_alignRight="@+id/numbers"
-        android:layout_alignEnd="@+id/numbers"
+    <TextView
+        android:id="@+id/wordHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/storyHeading"
+        android:layout_alignStart="@+id/storyHeading"
+        android:layout_below="@+id/numbers"
+        android:layout_marginTop="20dp"
+        android:text="Word:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dateHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_current_pin"
+        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_below="@+id/wordHeading"
+        android:layout_marginTop="10dp"
+        android:text="Date:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mathHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_current_pin"
+        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_below="@+id/dateHeading"
+        android:layout_marginTop="10dp"
+        android:text="Math:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/storyHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_current_pin"
+        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_below="@+id/mathHeading"
+        android:layout_marginTop="10dp"
+        android:text="Story:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/numbers"
         android:layout_alignStart="@+id/numbers"
-        android:layout_alignTop="@+id/numbers"
-        android:layout_alignBottom="@+id/numbers"></RelativeLayout>
+        android:layout_alignTop="@+id/wordHeading" />
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/numbers"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginTop="25dp"
-        android:orientation="vertical">
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers"
+        android:layout_alignStart="@+id/numbers"
+        android:layout_below="@+id/wordHeading"
+        android:layout_marginTop="10dp" />
 
-        <Button
-            android:id="@+id/showWordButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/hints_display"
-            android:gravity="center"
-            android:textAllCaps="false"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers"
+        android:layout_alignStart="@+id/numbers"
+        android:layout_below="@+id/dateHeading"
+        android:layout_marginTop="10dp" />
 
-        <Button
-            android:id="@+id/showDateButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/showWordButton"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/hints_display"
-            android:gravity="center"
-            android:textAllCaps="false"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/showMathButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/showDateButton"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/hints_display"
-            android:gravity="center"
-            android:textAllCaps="false"
-            android:textSize="15sp" />
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers"
+        android:layout_alignStart="@+id/numbers"
+        android:layout_below="@+id/mathHeading"
+        android:layout_marginTop="10dp" />
 </RelativeLayout>

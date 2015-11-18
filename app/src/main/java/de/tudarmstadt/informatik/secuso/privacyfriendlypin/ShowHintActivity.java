@@ -65,40 +65,25 @@ public class ShowHintActivity extends ActionBarActivity {
             //}
         }
 
-        for (int i = 0; i < 4; i++) {
+        /*for (int i = 0; i < 4; i++) {
             if (i<3){
                 drawArrow(numpad[input[i]], numpad[input[i+1]], input[i], input[i+1]);
                 System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i+1]));
-            }
-        }
+            }*/
+
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
 
-        Button wordFrame = (Button) findViewById(R.id.showWordButton);
-        Button dateFrame = (Button) findViewById(R.id.showDateButton);
-        Button mathFrame = (Button) findViewById(R.id.showMathButton);
+        TextView wordTextView = (TextView) findViewById(R.id.word);
+        TextView dateFrameTextView = (TextView) findViewById(R.id.date);
+        TextView mathFrameTextView = (TextView) findViewById(R.id.math);
 
-        wordFrame.setText(checkPin.determineWord());
-        dateFrame.setText(checkPin.determineDate());
-        mathFrame.setText(checkPin.determineCalculation());
-
-        //Frames
-        if (!checkPin.isWord) {
-            wordFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
-            wordFrame.setTextColor(Color.parseColor("#A8A8A8"));
-        }
-
-        if (!checkPin.isDate) {
-            dateFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
-            dateFrame.setTextColor(Color.parseColor("#A8A8A8"));
-        }
-
-        if (!checkPin.isCalculatable) {
-            mathFrame.setBackgroundResource(R.drawable.hints_display_no_hint);
-            mathFrame.setTextColor(Color.parseColor("#A8A8A8"));
-        }
+        wordTextView.setText(checkPin.determineWord());
+        dateFrameTextView.setText(checkPin.determineDate());
+        mathFrameTextView.setText(checkPin.determineCalculation());
 
     }
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -125,8 +110,8 @@ public class ShowHintActivity extends ActionBarActivity {
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {
         DrawView drawView = new DrawView(this, first, second, digitOne, digitTwo);
         drawView.setStrokeWidth(10);
-        RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpad_draw);
-        numpadLayout.addView(drawView);
+        //RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpad_draw);
+        //numpadLayout.addView(drawView);
     }
 
     public boolean containsMultiples(int[] input) {
