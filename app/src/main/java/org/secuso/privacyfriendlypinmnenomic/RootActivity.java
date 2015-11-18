@@ -96,15 +96,6 @@ public class RootActivity extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        //if (id == R.id.action_settings) {
-        //return true;
-        //}
 
         // Activate the navigation drawer toggle
         if (mDrawerToggle.onOptionsItemSelected(item)) {
@@ -150,7 +141,6 @@ public class RootActivity extends ActionBarActivity {
 
             mDrawerList.setItemChecked(position, true);
             mDrawerList.setSelection(position);
-            //setTitle(mNavigationDrawerItemTitles[position]);
             mDrawerLayout.closeDrawer(mDrawerList);
 
         } else {

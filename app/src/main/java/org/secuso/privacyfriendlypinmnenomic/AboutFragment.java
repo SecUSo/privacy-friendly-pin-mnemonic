@@ -1,5 +1,6 @@
 package org.secuso.privacyfriendlypinmnenomic;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -16,12 +17,19 @@ import org.secuso.privacyfriendlypin.R;
 
 public class AboutFragment extends Fragment {
 
+    Activity activity;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_about, container, false);
 
         return rootView;
 
+    }
+
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.activity = activity;
     }
 
 }
