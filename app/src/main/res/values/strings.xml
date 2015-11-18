@@ -24,6 +24,7 @@
     <string name="numpad_zero"><font size="20">0</font>\n\<font size="10"></font></string>
     <string name="numpad_one"><font size="20">1</font>\n\<font size="10"></font></string>
     <string name="numpad_two"><big>2</big>\n\<small>ABC</small></string>
+    <string name="numpad_delete"><font size="20">DEL</font>\n\<font size="10"></font></string>
     <string name="numpad_three"><font size="20">3</font>\n\<font size="10">DEF</font></string>
     <string name="numpad_four"><font size="20">4</font>\n\<font size="10">GHI</font></string>
     <string name="numpad_five"><font size="20">5</font>\n\<font size="10">JKL</font></string>
@@ -32,6 +33,7 @@
     <string name="numpad_eight"><font size="20">8</font>\n\<font size="10">TUV</font></string>
     <string name="numpad_nine"><font size="20">9</font>\n\<font size="10">WXYZ</font></string>
     <string name="your_pin_heading">Your PIN: </string>
+    <string name="practise_button">Practise entering your PIN</string>
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>

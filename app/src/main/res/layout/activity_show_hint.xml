@@ -217,7 +217,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/numbers"
         android:layout_alignStart="@+id/numbers"
-        android:layout_alignTop="@+id/wordHeading" />
+        android:layout_alignTop="@+id/wordHeading"
+        android:textSize="15sp"/>
 
     <TextView
         android:id="@+id/date"
@@ -226,7 +227,8 @@
         android:layout_alignLeft="@+id/numbers"
         android:layout_alignStart="@+id/numbers"
         android:layout_below="@+id/wordHeading"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
 
     <TextView
         android:id="@+id/math"
@@ -235,7 +237,8 @@
         android:layout_alignLeft="@+id/numbers"
         android:layout_alignStart="@+id/numbers"
         android:layout_below="@+id/dateHeading"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
 
     <TextView
         android:id="@+id/story"
@@ -244,5 +247,16 @@
         android:layout_alignLeft="@+id/numbers"
         android:layout_alignStart="@+id/numbers"
         android:layout_below="@+id/mathHeading"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/practiseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/story"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/practise_button"
+        android:background="@drawable/practise_button"/>
 </RelativeLayout>

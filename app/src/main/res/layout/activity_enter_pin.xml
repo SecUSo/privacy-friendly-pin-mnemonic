@@ -162,13 +162,13 @@
             />
 
         <Button
-            android:id="@+id/button_zero_space_right"
+            android:id="@+id/button_delete"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_margin="3dp"
-            android:background="@drawable/invisible_button"
-            android:text="@string/numpad_zero"
-            android:textColor="@color/transparent"
+            android:background="@drawable/hints_numpad"
+            android:text="@string/numpad_delete"
+            android:textColor="@color/white"
              />
 
     </GridLayout>

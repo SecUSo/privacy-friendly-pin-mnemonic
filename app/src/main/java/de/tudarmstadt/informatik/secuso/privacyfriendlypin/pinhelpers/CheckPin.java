@@ -62,7 +62,7 @@ public class CheckPin {
         for (int i = 0; i < monthsArray.length; i++) {
             for (int j = 0; j < yearsArray.length; j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
-                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "(19)" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] +" " + firstTwo +" " +"(19)" + secondTwo;
                     this.isDate = true;
                 }
             }

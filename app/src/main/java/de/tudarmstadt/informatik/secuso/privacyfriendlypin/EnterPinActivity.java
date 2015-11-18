@@ -72,6 +72,16 @@ public class EnterPinActivity extends ActionBarActivity {
             });
         }
 
+        Button deleteButton = (Button) findViewById(R.id.button_delete);
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                pinEditText.setText(deletePinDigits(visiblePin));
+                visiblePin = deletePinDigits(visiblePin);
+                pin = deletePinDigits(visiblePin);
+            }
+        });
+
         Button doneButton = (Button) findViewById(R.id.button_done);
         doneButton.setOnClickListener(new View.OnClickListener() {
 
@@ -122,6 +132,15 @@ public class EnterPinActivity extends ActionBarActivity {
             intent.putExtra("currentVisiblePin", visiblePin);
             EnterPinActivity.this.startActivity(intent);
         }
+    }
+
+    public String deletePinDigits(String visiblePin) {
+
+        if (visiblePin.length() > 0) {
+            visiblePin = visiblePin.substring(0, visiblePin.length()-1);
+        }
+
+        return visiblePin;
     }
 
 }
