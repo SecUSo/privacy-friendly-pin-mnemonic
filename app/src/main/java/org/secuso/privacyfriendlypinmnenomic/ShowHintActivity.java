@@ -1,24 +1,22 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package org.secuso.privacyfriendlypinmnenomic;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.content.res.TypedArrayUtils;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Arrays;
 
-import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.CheckPin;
-import de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers.DrawView;
+
+import org.secuso.privacyfriendlypin.R;
+import org.secuso.privacyfriendlypinmnenomic.pinhelpers.CheckPin;
+import org.secuso.privacyfriendlypinmnenomic.pinhelpers.DrawView;
 
 public class ShowHintActivity extends ActionBarActivity {
 

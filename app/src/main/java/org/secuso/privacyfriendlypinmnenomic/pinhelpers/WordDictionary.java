@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
+package org.secuso.privacyfriendlypinmnenomic.pinhelpers;
 
 /**
  * Created by yonjuni on 05.11.15.

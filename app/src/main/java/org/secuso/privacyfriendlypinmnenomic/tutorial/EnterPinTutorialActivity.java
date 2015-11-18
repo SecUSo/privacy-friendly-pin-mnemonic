@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin.tutorial;
+package org.secuso.privacyfriendlypinmnenomic.tutorial;
 
 import android.app.Activity;
 

@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package org.secuso.privacyfriendlypinmnenomic;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import org.secuso.privacyfriendlypin.R;
+
 
 public class AboutActivity extends ActionBarActivity {
 

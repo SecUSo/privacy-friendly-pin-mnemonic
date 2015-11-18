@@ -1,15 +1,16 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
+package org.secuso.privacyfriendlypinmnenomic.pinhelpers;
 
 import android.content.Context;
 import android.util.Log;
 
+import org.secuso.privacyfriendlypin.R;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 
-import de.tudarmstadt.informatik.secuso.privacyfriendlypin.R;
+
 
 /**
  * Created by yonjuni on 27.10.15.

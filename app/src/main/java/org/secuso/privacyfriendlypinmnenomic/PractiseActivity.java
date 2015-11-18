@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package org.secuso.privacyfriendlypinmnenomic;
 
 import android.support.v7.app.ActionBarActivity;
 

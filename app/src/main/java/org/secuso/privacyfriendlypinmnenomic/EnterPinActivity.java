@@ -1,11 +1,10 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package org.secuso.privacyfriendlypinmnenomic;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.text.Html;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
@@ -14,6 +13,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import org.secuso.privacyfriendlypin.R;
 
 public class EnterPinActivity extends ActionBarActivity {
 
@@ -49,8 +50,7 @@ public class EnterPinActivity extends ActionBarActivity {
         numpad[8] = (Button) findViewById(R.id.button_eight);
         numpad[9] = (Button) findViewById(R.id.button_nine);
 
-        visiblePin = "";
-        pin = "";
+        resetPins();
 
         for (int i = 0; i < numpad.length; i++) {
             final Button temp = numpad[i];
@@ -95,8 +95,7 @@ public class EnterPinActivity extends ActionBarActivity {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();
-                visiblePin = "";
-                pin = "";
+                resetPins();
             }
         });
 
@@ -141,6 +140,11 @@ public class EnterPinActivity extends ActionBarActivity {
         }
 
         return visiblePin;
+    }
+
+    public void resetPins() {
+        visiblePin = "";
+        pin = "";
     }
 
 }

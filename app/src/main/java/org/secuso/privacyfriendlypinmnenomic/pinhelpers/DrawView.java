@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin.pinhelpers;
+package org.secuso.privacyfriendlypinmnenomic.pinhelpers;
 
 import android.content.Context;
 import android.graphics.Canvas;
