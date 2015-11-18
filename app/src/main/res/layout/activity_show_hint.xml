@@ -37,12 +37,12 @@
         android:id="@+id/shapeHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/show_current_pin"
-        android:layout_alignStart="@+id/show_current_pin"
-        android:layout_below="@+id/show_current_pin"
         android:text="Shape:"
         android:textColor="@color/black"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:layout_below="@+id/show_current_pin"
+        android:layout_alignLeft="@+id/practiseButton"
+        android:layout_alignStart="@+id/practiseButton" />
 
     <GridLayout
         android:id="@+id/numbers"
@@ -178,8 +178,8 @@
         android:id="@+id/wordHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/storyHeading"
-        android:layout_alignStart="@+id/storyHeading"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/numbers"
         android:layout_marginTop="20dp"
         android:text="Word:"
@@ -190,8 +190,8 @@
         android:id="@+id/dateHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/show_current_pin"
-        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/wordHeading"
         android:layout_marginTop="10dp"
         android:text="Date:"
@@ -202,8 +202,8 @@
         android:id="@+id/mathHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/show_current_pin"
-        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/dateHeading"
         android:layout_marginTop="10dp"
         android:text="Math:"
@@ -214,8 +214,8 @@
         android:id="@+id/storyHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/show_current_pin"
-        android:layout_alignStart="@+id/show_current_pin"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/mathHeading"
         android:layout_marginTop="10dp"
         android:text="Story:"
@@ -263,11 +263,14 @@
 
     <Button
         android:id="@+id/practiseButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/story"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
+        android:textColor="@color/white"
         android:text="@string/practise_button"
-        android:background="@drawable/practise_button"/>
+        android:background="@drawable/practise_button"
+        android:layout_marginLeft="80dp" />
+
 </RelativeLayout>

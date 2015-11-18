@@ -114,11 +114,11 @@ public class ShowHintActivity extends ActionBarActivity {
         numpadLayout.addView(drawView);
     }
 
-    public boolean containsMultiples(int[] input) {
+    public boolean containsMultiples(int[] input, int i) {
         boolean hasMultiple = false;
         Arrays.sort(input);
-        for (int i = 0; i < input.length; i++) {
-            if (Arrays.binarySearch(input, input[i]) != -1) {
+        for (int j = 0; j < input.length; j++) {
+            if (Arrays.binarySearch(input, input[j]) != -1) {
                 hasMultiple = true;
             }
         }
