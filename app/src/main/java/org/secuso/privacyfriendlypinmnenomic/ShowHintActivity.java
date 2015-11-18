@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Arrays;
@@ -63,11 +64,12 @@ public class ShowHintActivity extends ActionBarActivity {
             //}
         }
 
-        /*for (int i = 0; i < 4; i++) {
-            if (i<3){
-                drawArrow(numpad[input[i]], numpad[input[i+1]], input[i], input[i+1]);
-                System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i+1]));
-            }*/
+        for (int i = 0; i < 4; i++) {
+            if (i < 3) {
+                drawArrow(numpad[input[i]], numpad[input[i + 1]], input[i], input[i + 1]);
+                System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i + 1]));
+            }
+        }
 
 
         CheckPin checkPin = new CheckPin(pin, getBaseContext());
@@ -108,8 +110,8 @@ public class ShowHintActivity extends ActionBarActivity {
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {
         DrawView drawView = new DrawView(this, first, second, digitOne, digitTwo);
         drawView.setStrokeWidth(10);
-        //RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpad_draw);
-        //numpadLayout.addView(drawView);
+        RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpadFrame);
+        numpadLayout.addView(drawView);
     }
 
     public boolean containsMultiples(int[] input) {

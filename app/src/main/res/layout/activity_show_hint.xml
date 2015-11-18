@@ -163,6 +163,17 @@
             android:textColor="@color/transparent" />
     </GridLayout>
 
+    <RelativeLayout
+        android:id="@+id/numpadFrame"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/numbers"
+        android:layout_alignStart="@+id/numbers"
+        android:layout_below="@+id/show_current_pin"
+        android:layout_alignRight="@+id/numbers"
+        android:layout_alignEnd="@+id/numbers"
+        android:layout_above="@+id/wordHeading"></RelativeLayout>
+
     <TextView
         android:id="@+id/wordHeading"
         android:layout_width="wrap_content"

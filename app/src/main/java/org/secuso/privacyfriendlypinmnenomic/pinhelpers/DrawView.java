@@ -30,7 +30,7 @@ public class DrawView extends View {
 
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(startView.getX() + 90, startView.getY() + 80, endView.getX() + 90, endView.getY() + 80, paint);
+        canvas.drawLine(startView.getX() + 60, startView.getY() + 60, endView.getX() + 60, endView.getY() + 60, paint);
         drawArrowHead(canvas);
     }
 
@@ -38,16 +38,16 @@ public class DrawView extends View {
         Path path = new Path();
 
         //draws triangle pointing to the right
-        path.moveTo(endView.getX() + 50, endView.getY() + 105);
-        path.lineTo(endView.getX() + 98, endView.getY() + 78);
-        path.lineTo(endView.getX() + 50, endView.getY() + 60);
+        path.moveTo(endView.getX() + 50, endView.getY() + 85);
+        path.lineTo(endView.getX() + 90, endView.getY() + 58);
+        path.lineTo(endView.getX() + 50, endView.getY() + 40);
         path.close();
 
         //turns triangle
         Matrix matrix = new Matrix();
         matrix.reset();
         float rotate = whichArrow(startView, endView, digitOne, digitTwo);
-        matrix.postRotate(rotate, endView.getX() + 90, endView.getY() + 80);
+        matrix.postRotate(rotate, endView.getX() + 60, endView.getY() + 60);
         path.transform(matrix);
 
         canvas.drawPath(path, paint);
