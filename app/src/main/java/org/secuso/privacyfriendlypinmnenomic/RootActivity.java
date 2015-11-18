@@ -35,7 +35,7 @@ public class RootActivity extends ActionBarActivity {
         setContentView(R.layout.activity_root);
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(R.string.about);
+        actionBar.setTitle(R.string.app_name);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 

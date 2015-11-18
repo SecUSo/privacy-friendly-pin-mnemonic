@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,9 +32,14 @@ public class ShowHintFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
         this.rootView = rootView;
 
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_tips);
+
         Intent intent = activity.getIntent();
-        String pin = intent.getStringExtra("currentVisiblePin");
-        String pinHyphen = intent.getStringExtra("currentPin");
+        //String pin = intent.getStringExtra("currentVisiblePin");
+        //String pinHyphen = intent.getStringExtra("currentPin");
+
+        String pin = "1234";
+        String pinHyphen = "1234";
 
         TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
         pinTextView.setText(pinHyphen);
@@ -83,23 +89,6 @@ public class ShowHintFragment extends Fragment {
 
         return rootView;
 
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent();
-        switch (item.getItemId()) {
-            case R.id.about:
-                intent.setClass(activity, AboutFragment.class);
-                startActivityForResult(intent, 0);
-                return true;
-            case R.id.action_help:
-                intent.setClass(activity, HelpFragment.class);
-                startActivityForResult(intent, 0);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
     }
 
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {

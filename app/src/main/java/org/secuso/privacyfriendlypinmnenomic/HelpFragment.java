@@ -20,6 +20,7 @@ public class HelpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_help, container, false);
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_help);
 
         return rootView;
 

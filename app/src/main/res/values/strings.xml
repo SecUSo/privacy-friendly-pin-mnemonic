@@ -1,9 +1,13 @@
 <resources>
     <string name="app_name">PIN Mnenomic</string>
     <string name="app_name_long">Privacy Friendly PIN Mnenomic</string>
+
     <string name="action_help">Help</string>
     <string name="about">About</string>
     <string name="action_practise">Practise</string>
+    <string name="action_enter_pin">Enter PIN</string>
+    <string name="action_pin_tips">PIN Tips</string>
+
     <string name="display_word">It forms the word </string>
     <string name="display_no_word">No word possible</string>
     <string name="display_no_date">Not forming a date</string>
@@ -17,7 +21,9 @@
     <string name="display_math_by">by </string>
     <string name="display_math_stepping">It is a stepping PIN: </string>
     <string name="display_entered_pin">Your PIN is: </string>
+
     <string name="enter_pin">Enter your PIN: </string>
+
     <string name="numpad_zero"><font size="20">0</font>\n\<font size="10"></font></string>
     <string name="numpad_one"><font size="20">1</font>\n\<font size="10"></font></string>
     <string name="numpad_two"><big>2</big>\n\<small>ABC</small></string>
@@ -29,8 +35,10 @@
     <string name="numpad_seven"><font size="20">7</font>\n\<font size="10">PQRS</font></string>
     <string name="numpad_eight"><font size="20">8</font>\n\<font size="10">TUV</font></string>
     <string name="numpad_nine"><font size="20">9</font>\n\<font size="10">WXYZ</font></string>
+
     <string name="your_pin_heading">Your PIN: </string>
     <string name="practise_button">Practise entering your PIN</string>
+
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>

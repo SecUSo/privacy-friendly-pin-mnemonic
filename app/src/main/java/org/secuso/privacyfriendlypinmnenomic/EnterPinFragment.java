@@ -2,8 +2,10 @@ package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,6 +29,8 @@ public class EnterPinFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
+
+        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_enter_pin);
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
@@ -100,12 +104,12 @@ public class EnterPinFragment extends Fragment {
 
     public void clickDoneButton() {
 
-         /*if (pinEditText.getText().length() == 4) {
-            Intent intent = new Intent(EnterPinActivity.this, ShowHintFragment.class);
-            intent.putExtra("currentPin", pin);
-            intent.putExtra("currentVisiblePin", visiblePin);
-            EnterPinActivity.this.startActivity(intent);
-        }*/
+         if (pinEditText.getText().length() == 4) {
+             final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+             fragmentTransaction.replace(R.id.enter_pin, new ShowHintFragment(), "ShowHintFragmen");
+             fragmentTransaction.addToBackStack(null);
+             fragmentTransaction.commit();
+        }
     }
 
     public String deletePinDigits(String visiblePin) {
