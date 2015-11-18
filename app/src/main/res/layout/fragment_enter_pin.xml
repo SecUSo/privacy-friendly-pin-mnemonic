@@ -166,7 +166,7 @@
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_margin="3dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/delete_button"
             android:text="@string/numpad_delete"
             android:textColor="@color/white"
              />

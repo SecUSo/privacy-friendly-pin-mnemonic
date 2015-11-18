@@ -1,12 +1,13 @@
 package org.secuso.privacyfriendlypinmnenomic;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -19,42 +20,40 @@ import org.secuso.privacyfriendlypin.R;
 import org.secuso.privacyfriendlypinmnenomic.pinhelpers.CheckPin;
 import org.secuso.privacyfriendlypinmnenomic.pinhelpers.DrawView;
 
-public class ShowHintActivity extends ActionBarActivity {
+public class ShowHintFragment extends Fragment {
 
     int[] input = new int[4];
+    Activity activity;
+    View rootView;
 
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_show_hint);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        Intent intent = getIntent();
+        View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
+        this.rootView = rootView;
+
+        Intent intent = activity.getIntent();
         String pin = intent.getStringExtra("currentVisiblePin");
         String pinHyphen = intent.getStringExtra("currentPin");
 
-        TextView pinTextView = (TextView) findViewById(R.id.current_pin);
+        TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
         pinTextView.setText(pinHyphen);
 
         //secure against Screenshot
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+        activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                 WindowManager.LayoutParams.FLAG_SECURE);
-
-        //Actionbar
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#024265")));
 
         //Buttons
         final Button[] numpad = new Button[10];
-        numpad[0] = (Button) findViewById(R.id.button_zero_hint);
-        numpad[1] = (Button) findViewById(R.id.button_one_hint);
-        numpad[2] = (Button) findViewById(R.id.button_two_hint);
-        numpad[3] = (Button) findViewById(R.id.button_three_hint);
-        numpad[4] = (Button) findViewById(R.id.button_four_hint);
-        numpad[5] = (Button) findViewById(R.id.button_five_hint);
-        numpad[6] = (Button) findViewById(R.id.button_six_hint);
-        numpad[7] = (Button) findViewById(R.id.button_seven_hint);
-        numpad[8] = (Button) findViewById(R.id.button_eight_hint);
-        numpad[9] = (Button) findViewById(R.id.button_nine_hint);
+        numpad[0] = (Button) rootView.findViewById(R.id.button_zero_hint);
+        numpad[1] = (Button) rootView.findViewById(R.id.button_one_hint);
+        numpad[2] = (Button) rootView.findViewById(R.id.button_two_hint);
+        numpad[3] = (Button) rootView.findViewById(R.id.button_three_hint);
+        numpad[4] = (Button) rootView.findViewById(R.id.button_four_hint);
+        numpad[5] = (Button) rootView.findViewById(R.id.button_five_hint);
+        numpad[6] = (Button) rootView.findViewById(R.id.button_six_hint);
+        numpad[7] = (Button) rootView.findViewById(R.id.button_seven_hint);
+        numpad[8] = (Button) rootView.findViewById(R.id.button_eight_hint);
+        numpad[9] = (Button) rootView.findViewById(R.id.button_nine_hint);
 
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
@@ -72,22 +71,18 @@ public class ShowHintActivity extends ActionBarActivity {
         }
 
 
-        CheckPin checkPin = new CheckPin(pin, getBaseContext());
+        CheckPin checkPin = new CheckPin(pin, activity.getBaseContext());
 
-        TextView wordTextView = (TextView) findViewById(R.id.word);
-        TextView dateFrameTextView = (TextView) findViewById(R.id.date);
-        TextView mathFrameTextView = (TextView) findViewById(R.id.math);
+        TextView wordTextView = (TextView) rootView.findViewById(R.id.word);
+        TextView dateFrameTextView = (TextView) rootView.findViewById(R.id.date);
+        TextView mathFrameTextView = (TextView) rootView.findViewById(R.id.math);
 
         wordTextView.setText(checkPin.determineWord());
         dateFrameTextView.setText(checkPin.determineDate());
         mathFrameTextView.setText(checkPin.determineCalculation());
 
-    }
+        return rootView;
 
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
     }
 
     @Override
@@ -95,11 +90,11 @@ public class ShowHintActivity extends ActionBarActivity {
         Intent intent = new Intent();
         switch (item.getItemId()) {
             case R.id.about:
-                intent.setClass(this, AboutActivity.class);
+                intent.setClass(activity, AboutFragment.class);
                 startActivityForResult(intent, 0);
                 return true;
             case R.id.action_help:
-                intent.setClass(this, HelpActivity.class);
+                intent.setClass(activity, HelpFragment.class);
                 startActivityForResult(intent, 0);
                 return true;
             default:
@@ -108,9 +103,9 @@ public class ShowHintActivity extends ActionBarActivity {
     }
 
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {
-        DrawView drawView = new DrawView(this, first, second, digitOne, digitTwo);
+        DrawView drawView = new DrawView(activity, first, second, digitOne, digitTwo);
         drawView.setStrokeWidth(10);
-        RelativeLayout numpadLayout = (RelativeLayout) findViewById(R.id.numpadFrame);
+        RelativeLayout numpadLayout = (RelativeLayout) rootView.findViewById(R.id.numpadFrame);
         numpadLayout.addView(drawView);
     }
 
@@ -124,6 +119,11 @@ public class ShowHintActivity extends ActionBarActivity {
         }
         System.out.println("Hat die PIN doppelte Zahlen?" + hasMultiple);
         return hasMultiple;
+    }
+
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.activity = activity;
     }
 
 }

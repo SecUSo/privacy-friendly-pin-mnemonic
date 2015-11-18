@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "de.tudarmstadt.informatik.secuso.privacyfriendlypin"
+        applicationId "org.secuso.privacyfriendlypin"
         minSdkVersion 16
         targetSdkVersion 23
         versionCode 1

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">PIN Mnenomic</string>
     <string name="app_name_long">Privacy Friendly PIN Mnenomic</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_help">Help</string>
     <string name="about">About</string>
+    <string name="action_practise">Practise</string>
     <string name="display_word">It forms the word </string>
     <string name="display_no_word">No word possible</string>
     <string name="display_no_date">Not forming a date</string>
@@ -37,5 +37,9 @@
     <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>
     <string name="more_info">More information can be found on:</string>
     <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/en/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
 </resources>
 

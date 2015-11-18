@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.EnterPinActivity"
+            android:name="org.secuso.privacyfriendlypinmnenomic.RootActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -16,29 +16,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.AboutActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.HelpActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.ShowHintActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="org.secuso.privacyfriendlypinmnenomic.EnterPinActivity">
-        </activity>
-        <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.tutorial.ShowHintTutorialActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="org.secuso.privacyfriendlypinmnenomic.ShowHintActivity">
-        </activity>
-        <activity
-            android:name="org.secuso.privacyfriendlypinmnenomic.tutorial.EnterPinTutorialActivity"
-            android:screenOrientation="portrait"
-            android:parentActivityName="org.secuso.privacyfriendlypinmnenomic.EnterPinActivity">
         </activity>
     </application>
 

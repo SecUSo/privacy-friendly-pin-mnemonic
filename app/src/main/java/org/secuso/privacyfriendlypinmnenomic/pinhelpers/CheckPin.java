@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Locale;
 
 
-
 /**
  * Created by yonjuni on 27.10.15.
  */
@@ -63,7 +62,7 @@ public class CheckPin {
         for (int i = 0; i < monthsArray.length; i++) {
             for (int j = 0; j < yearsArray.length; j++) {
                 if ((firstTwo.equals(monthsArray[i])) && (secondTwo.equals(yearsArray[j]))) {
-                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] +" " + firstTwo +" " +"(19)" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + " " + firstTwo + " (19)" + secondTwo;
                     this.isDate = true;
                 }
             }
@@ -164,7 +163,7 @@ public class CheckPin {
         int differenceBA = secondHalf - firstHalf;
 
         for (int i = 2; i < 11; i++) {
-            if (secondHalf !=0 && firstHalf % secondHalf == 0) {
+            if (secondHalf != 0 && firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
                     resultCalculation =
                             firstTwo + " " + context.getString(R.string.display_math_is)
@@ -177,7 +176,7 @@ public class CheckPin {
         }
 
         for (int j = 2; j < 11; j++) {
-            if (firstHalf !=0 && secondHalf % firstHalf == 0) {
+            if (firstHalf != 0 && secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
                     resultCalculation =
                             secondTwo + " " + context.getString(R.string.display_math_is)
@@ -216,7 +215,7 @@ public class CheckPin {
         return resultCalculation;
     }
 
-    public void assignSymbol () {
+    public void assignSymbol() {
 
     }
 
@@ -272,10 +271,10 @@ public class CheckPin {
                                 + Character.toString(keys[3].charAt(l)));
 
                         //System.out.println("MIX: "
-                                //+ Character.toString(keys[0].charAt(i))
-                               // + Character.toString(keys[1].charAt(j))
-                                //+ Character.toString(keys[2].charAt(k))
-                               // + Character.toString(keys[3].charAt(l)));
+                        //+ Character.toString(keys[0].charAt(i))
+                        // + Character.toString(keys[1].charAt(j))
+                        //+ Character.toString(keys[2].charAt(k))
+                        // + Character.toString(keys[3].charAt(l)));
                     }
                 }
             }
