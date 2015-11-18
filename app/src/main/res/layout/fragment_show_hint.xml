@@ -271,6 +271,7 @@
         android:textColor="@color/white"
         android:text="@string/practise_button"
         android:background="@drawable/practise_button"
-        android:layout_marginLeft="80dp" />
+        android:layout_marginLeft="80dp"
+        />
 
 </RelativeLayout>

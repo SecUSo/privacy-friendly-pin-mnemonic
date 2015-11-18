@@ -2,6 +2,7 @@ package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -64,6 +65,14 @@ public class ShowHintFragment extends Fragment {
         numpad[8] = (Button) rootView.findViewById(R.id.button_eight_hint);
         numpad[9] = (Button) rootView.findViewById(R.id.button_nine_hint);
 
+        Button toPractiseButton = (Button) rootView.findViewById(R.id.practiseButton);
+        toPractiseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                clickPractiseButton();
+            }
+        });
+
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
             numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
@@ -108,6 +117,15 @@ public class ShowHintFragment extends Fragment {
         }
         System.out.println("Hat die PIN doppelte Zahlen?" + hasMultiple);
         return hasMultiple;
+    }
+
+    public void clickPractiseButton() {
+
+            final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.content_frame, new PractiseFragment(), "PractiseFragment");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+
     }
 
     public void onAttach(Activity activity) {
