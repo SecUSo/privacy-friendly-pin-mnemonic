@@ -58,7 +58,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="1&#10;"
             android:textColor="@color/white" />
 
@@ -67,7 +67,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="2&#10;ABC"
             android:textColor="@color/white" />
 
@@ -76,7 +76,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="3&#10;DEF"
             android:textColor="@color/white" />
 
@@ -85,7 +85,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="4&#10;GHI"
             android:textColor="@color/white" />
 
@@ -94,7 +94,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="5&#10;JKL"
             android:textColor="@color/white" />
 
@@ -103,7 +103,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="6&#10;MNO"
             android:textColor="@color/white" />
 
@@ -112,7 +112,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="7&#10;PQRS"
             android:textColor="@color/white" />
 
@@ -121,7 +121,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="8&#10;TUV"
             android:textColor="@color/white" />
 
@@ -130,7 +130,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="9&#10;WXYZ"
             android:textColor="@color/white" />
 
@@ -148,7 +148,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/hints_numpad"
+            android:background="@drawable/mnenomic_numpad_button"
             android:text="0&#10;"
             android:textColor="@color/white" />
 
@@ -282,7 +282,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="39dp"
-        android:background="@drawable/practise_button"
+        android:background="@drawable/practice_button"
         android:text="@string/practise_button"
         android:textColor="@color/white" />
 

@@ -156,23 +156,23 @@ public class ShowHintFragment extends Fragment {
 
         switch (multiple) {
             case 1:
-                button.setBackgroundResource(R.drawable.hint_numpad_highlighted);
+                button.setBackgroundResource(R.drawable.numpad_highlighted);
                 //System.out.println(Integer.toString(multiple) + " BLUE");
                 break;
             case 2:
-                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_two);
+                button.setBackgroundResource(R.drawable.numpad_highlighted_two);
                 //System.out.println(Integer.toString(multiple) + " YELLOW");
                 break;
             case 3:
-                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_three);
+                button.setBackgroundResource(R.drawable.numpad_highlighted_three);
                 //System.out.println(Integer.toString(multiple) + " BLACK");
                 break;
             case 4:
-                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_four);
+                button.setBackgroundResource(R.drawable.numpad_highlighted_four);
                 //System.out.println(Integer.toString(multiple) + " WHITE");
                 break;
             default:
-                button.setBackgroundResource(R.drawable.hints_numpad);
+                button.setBackgroundResource(R.drawable.mnenomic_numpad_button);
                 break;
         }
     }
