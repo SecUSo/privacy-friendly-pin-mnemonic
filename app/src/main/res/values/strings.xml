@@ -36,6 +36,7 @@
     <string name="numpad_seven"><font size="20">7</font>\n\<font size="10">PQRS</font></string>
     <string name="numpad_eight"><font size="20">8</font>\n\<font size="10">TUV</font></string>
     <string name="numpad_nine"><font size="20">9</font>\n\<font size="10">WXYZ</font></string>
+    <string name="numpad_reset"><font size="20">RESET</font>\n\<font size="10"></font></string>
 
     <string name="your_pin_heading">Your PIN: </string>
     <string name="practise_button">Practise entering your PIN</string>

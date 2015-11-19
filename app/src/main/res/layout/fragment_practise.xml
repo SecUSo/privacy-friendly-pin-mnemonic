@@ -140,13 +140,13 @@
             />
 
         <Button
-            android:id="@+id/button_zero_space_left"
+            android:id="@+id/button_reset"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/delete_button"
-            android:text="@string/numpad_zero"
-            android:textColor="@color/transparent"
+            android:text="@string/numpad_reset"
+            android:textColor="@color/white"
             />
 
         <Button

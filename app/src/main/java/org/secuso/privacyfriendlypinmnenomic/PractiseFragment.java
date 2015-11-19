@@ -79,6 +79,15 @@ public class PractiseFragment extends Fragment{
             }
         });
 
+        Button resetButton = (Button) rootView.findViewById(R.id.button_reset);
+        resetButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                pinEditText.getText().clear();
+                resetPins();
+            }
+        });
+
         return rootView;
     }
 
@@ -89,5 +98,10 @@ public class PractiseFragment extends Fragment{
         }
 
         return visiblePin;
+    }
+
+    public void resetPins() {
+        visiblePin = "";
+        pin = "";
     }
 }

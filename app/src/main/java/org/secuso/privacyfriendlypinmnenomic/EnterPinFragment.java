@@ -86,8 +86,8 @@ public class EnterPinFragment extends Fragment {
             }
         });
 
-        Button cancelButton = (Button) rootView.findViewById(R.id.button_cancel);
-        cancelButton.setOnClickListener(new View.OnClickListener() {
+        Button resetButton = (Button) rootView.findViewById(R.id.button_reset);
+        resetButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();

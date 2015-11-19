@@ -22,7 +22,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:text="@string/enter_pin"
             android:textSize="20sp" />
 
@@ -142,13 +142,13 @@
              />
 
         <Button
-            android:id="@+id/button_zero_space_left"
+            android:id="@+id/button_reset"
             android:layout_width="65dp"
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/delete_button"
-            android:text="@string/numpad_zero"
-            android:textColor="@color/transparent"
+            android:text="@string/numpad_reset"
+            android:textColor="@color/white"
              />
 
         <Button
@@ -185,19 +185,17 @@
 
         <Button
             android:id="@+id/button_done"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_toEndOf="@+id/button_cancel"
-            android:layout_toRightOf="@+id/button_cancel"
-            android:text="done" />
+            android:text="done"
+            android:background="@drawable/practise_button"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp" />
 
-        <Button
-            android:id="@+id/button_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="cancel" />
+       />
 
     </RelativeLayout>
 

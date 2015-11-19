@@ -33,7 +33,7 @@ public class ShowHintFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
         this.rootView = rootView;
 
-        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_tips);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_tips);
 
         Bundle bundle = this.getArguments();
 
@@ -109,9 +109,23 @@ public class ShowHintFragment extends Fragment {
 
     public boolean containsMultiples(int[] input, int i) {
         boolean hasMultiple = false;
+        int[] temp;
+
+        if (input.length > 1) {
+            temp = new int[input.length - 1];
+            for (int j=0; j<temp.length; j++){
+
+            }
+
+        } else {
+            return hasMultiple;
+        }
+
+        Arrays.asList(input);
 
         Arrays.sort(input);
         for (int j = 0; j < input.length; j++) {
+
             if (Arrays.binarySearch(input, input[j]) != -1) {
                 hasMultiple = true;
             }
@@ -122,10 +136,10 @@ public class ShowHintFragment extends Fragment {
 
     public void clickPractiseButton() {
 
-            final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.content_frame, new PractiseFragment(), "PractiseFragment");
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
+        final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, new PractiseFragment(), "PractiseFragment");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
 
     }
 
