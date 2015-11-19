@@ -187,7 +187,7 @@
             android:id="@+id/button_done"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="done"
+            android:text="@string/show_mnenomics_button"
             android:background="@drawable/practise_button"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"

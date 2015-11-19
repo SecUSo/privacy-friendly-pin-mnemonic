@@ -28,7 +28,7 @@ public class PractiseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
-        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practise);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practice);
 
         this.rootView = rootView;
 

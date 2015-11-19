@@ -74,7 +74,7 @@ public class RootActivity extends ActionBarActivity {
     }
 
     private void addDrawerItems() {
-        String[] mNavigationDrawerItemTitles = {getString(R.string.action_enter_pin), getString(R.string.action_practise), getString(R.string.action_help), getString(R.string.about)};
+        String[] mNavigationDrawerItemTitles = {getString(R.string.action_enter_pin), getString(R.string.action_practice), getString(R.string.action_help), getString(R.string.action_about)};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mNavigationDrawerItemTitles);
         drawerList.setAdapter(adapter);
 

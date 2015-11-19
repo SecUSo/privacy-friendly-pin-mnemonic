@@ -2,29 +2,42 @@
     <string name="app_name">PIN Mnenomic</string>
     <string name="app_name_long">Privacy Friendly PIN Mnenomic</string>
 
+    <!-- Menu Items-->
     <string name="action_help">Help</string>
-    <string name="about">About</string>
-    <string name="action_practise">Practise</string>
+    <string name="action_about">About</string>
+    <string name="action_practice">Practice</string>
     <string name="action_enter_pin">Enter PIN</string>
     <string name="action_pin_tips">PIN Tips</string>
     <string name="action_navigation">Navigation</string>
 
-    <string name="display_word">It forms the word </string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Mnenomic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">No word possible</string>
     <string name="display_no_date">Not forming a date</string>
     <string name="display_no_math">No mathematical rule</string>
+    <string name="display_word">It forms the word </string>
     <string name="display_date_year_1900s">It is a valid year in the 1900s</string>
     <string name="display_date_year_2000s">It is a valid year in this century</string>
     <string name="display_date_year_any">It is a valid year from the past</string>
     <string name="display_math_large">times as large as</string>
     <string name="display_math_small">is smaller than</string>
-    <string name="display_math_is">is </string>
-    <string name="display_math_by">by </string>
+    <string name="display_math_is">is</string>
+    <string name="display_math_by">by</string>
     <string name="display_math_stepping">It is a stepping PIN: </string>
     <string name="display_entered_pin">Your PIN is: </string>
+    <string name="shape_heading">Shape:</string>
+    <string name="word_heading">Word:</string>
+    <string name="date_heading">Date:</string>
+    <string name="math_heading">Math:</string>
+    <string name="story_heading">Story:</string>
 
+    <!-- EnterPINFragment-->
     <string name="enter_pin">Enter your PIN: </string>
+    <string name="show_mnenomics_button">Show Mnenomics</string>
 
+    <!-- NumPad-->
     <string name="numpad_zero"><font size="20">0</font>\n\<font size="10"></font></string>
     <string name="numpad_one"><font size="20">1</font>\n\<font size="10"></font></string>
     <string name="numpad_two"><big>2</big>\n\<small>ABC</small></string>
@@ -38,21 +51,19 @@
     <string name="numpad_nine"><font size="20">9</font>\n\<font size="10">WXYZ</font></string>
     <string name="numpad_reset"><font size="20">RESET</font>\n\<font size="10"></font></string>
 
-    <string name="your_pin_heading">Your PIN: </string>
-    <string name="practise_button">Practise entering your PIN</string>
+    <!-- PractiseFragment-->
+    <string name="your_pin_heading">Your PIN:</string>
+    <string name="practise_button">Practice entering your PIN</string>
+    <string name="practised_pin_heading">Practiced PIN:</string>
+    <string name="practise_pin_description">Practice entering your PIN repeatedly, keeping the mnenomic(s) in your mind.</string>
 
-    <string name="practised_pin_heading">Practised PIN</string>
-    <string name="practise_pin_description">Practise entering your PIN repeatedly, keeping the mnenomic(s) in your mind.</string>
-
+    <!-- AboutFragment-->
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>
     <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>
     <string name="more_info">More information can be found on:</string>
     <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/en/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
-
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
 
 </resources>
 

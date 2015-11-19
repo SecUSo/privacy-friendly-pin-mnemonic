@@ -3,7 +3,7 @@
     <string name="app_name_long">Privacy Friendly PIN Helper</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_help">Help</string>
-    <string name="about">About</string>
+    <string name="action_about">About</string>
     <string name="display_word">It forms the word </string>
     <string name="display_no_word">It does not form a word</string>
     <string name="display_no_date">It is not in date format</string>
