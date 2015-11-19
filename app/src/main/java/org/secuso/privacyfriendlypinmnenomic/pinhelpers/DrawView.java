@@ -35,6 +35,11 @@ public class DrawView extends View {
     }
 
     public void drawArrowHead(Canvas canvas) {
+
+        if (startView.equals(endView)) {
+            return;
+        }
+
         Path path = new Path();
 
         //draws triangle pointing to the right
