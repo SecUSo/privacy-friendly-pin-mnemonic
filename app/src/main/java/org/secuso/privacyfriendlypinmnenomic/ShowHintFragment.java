@@ -77,7 +77,13 @@ public class ShowHintFragment extends Fragment {
 
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
-            numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+            //numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
+        }
+
+        int[] multiples = containsMultiples(input);
+
+        for (int j=0;j<input.length;j++) {
+            colorNumpad(multiples[j], numpad[input[j]]);
         }
 
         for (int i = 0; i < 4; i++) {
@@ -109,15 +115,28 @@ public class ShowHintFragment extends Fragment {
         numpadLayout.addView(drawView);
     }
 
-    public boolean containsMultiples(int[] input) {
+    public int[] containsMultiples(int[] input) {
 
-        Set<Integer> temp = new HashSet<Integer>();
-        for (int i : input)
-        {
-            if (temp.contains(i)) return true;
-            temp.add(i);
+        int[] multiples = new int[4];
+
+        for (int i = 0; i < multiples.length; i++) {
+            multiples[i] = 1;
         }
-        return false;
+
+        for (int j = 0; j < input.length; j++) {
+            for (int k = 0; k < input.length; k++) {
+                if (k == j) {
+                    continue;
+                } else if (input[j] == input[k]) {
+                    multiples[j]++;
+                }
+            }
+        }
+        for (int l=0; l<input.length;l++) {
+            System.out.println("Input Array: " + Integer.toString(input[l]));
+            System.out.println("Multiples Array: " + Integer.toString(multiples[l]));
+        }
+        return multiples;
     }
 
     public void clickPractiseButton() {
@@ -127,6 +146,28 @@ public class ShowHintFragment extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
+    }
+
+    public void colorNumpad(int multiple, Button button){
+
+        final int temp = multiple;
+
+        switch(temp) {
+            case 1: button.setBackgroundResource(R.drawable.hint_numpad_highlighted);
+                System.out.println(Integer.toString(multiple) + " BLUE");
+                break;
+            case 2: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_two);
+                System.out.println(Integer.toString(multiple) + " YELLOW");
+                break;
+            case 3: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_three);
+                System.out.println(Integer.toString(multiple) + " BLACK");
+                break;
+            case 4: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_four);
+                System.out.println(Integer.toString(multiple) + " WHITE");
+                break;
+            default: button.setBackgroundResource(R.drawable.hints_numpad);
+                break;
+        }
     }
 
     public void onAttach(Activity activity) {
