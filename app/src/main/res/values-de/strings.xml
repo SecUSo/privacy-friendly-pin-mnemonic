@@ -1,31 +1,69 @@
 <resources>
-    <string name="app_name">Privacy Friendly PIN</string>
-    <string name="app_name_long">Privacy Friendly PIN Helper</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_help">Help</string>
-    <string name="action_about">About</string>
-    <string name="display_word">It forms the word </string>
-    <string name="display_no_word">It does not form a word</string>
-    <string name="display_no_date">It is not in date format</string>
-    <string name="display_no_math">It does not follow a mathematical rule</string>
-    <string name="display_date_ddmm">It is date in DD-MM format </string>
-    <string name="display_date_mmdd">It is a date in MM-DD format </string>
-    <string name="display_date_mmyy">It is a date in MM-YY format </string>
-    <string name="display_date_year_1900s">It is a valid year in the 1900s </string>
-    <string name="display_date_year_2000s">It is a valid year in this century </string>
-    <string name="display_math_large">times as large as </string>
-    <string name="display_math_small">is smaller than</string>
-    <string name="display_math_is">is </string>
-    <string name="display_math_by">by </string>
-    <string name="display_math_stepping">It is a stepping PIN: </string>
-    <string name="display_entered_pin">Your PIN is: </string>
-    <string name="enter_pin">Enter your PIN: </string>
-    <string name="your_pin_heading">Your PIN: </string>
+    <string name="app_name">PIN Mnenomic</string>
+    <string name="app_name_long">Privacy Friendly PIN Mnenomic</string>
+
+    <!-- Menu Items-->
+    <string name="action_help">Hilfe</string>
+    <string name="action_about">Über</string>
+    <string name="action_practice">Üben</string>
+    <string name="action_enter_pin">PIN eingeben</string>
+    <string name="action_navigation">Navigation</string>
+
+    <string name="drawer_open">Navigation drawer öffnen</string>
+    <string name="drawer_close">Navigation drawer schließen</string>
+
+    <!-- Mnenomic Items and Headings from ShowHintFragment-->
+    <string name="display_no_word">Kein Wort möglich</string>
+    <string name="display_no_date">Kein Datum gefunden</string>
+    <string name="display_no_math">Keine mathematische Formel</string>
+    <string name="display_date_year_1900s">Ein gültiges Jahr der 90er</string>
+    <string name="display_date_year_2000s">Ein gültiges Jahre dieses Jahrhunderts</string>
+    <string name="display_date_year_any">Gültiges vergangenes Jahr</string>
+    <string name="display_math_large">fache von</string>
+    <string name="display_math_small">kleiner als</string>
+    <string name="display_math_is">ist</string>
+    <string name="display_math_by">durch</string>
+    <string name="display_math_stepping">Eine ansteigende PIN: </string>
+    <string name="display_entered_pin">Ihre PIN ist: </string>
+    <string name="shape_heading">Form:</string>
+    <string name="word_heading">Wort:</string>
+    <string name="date_heading">Datum:</string>
+    <string name="math_heading">Mathe:</string>
+    <string name="story_heading">Story:</string>
+
+    <!-- EnterPINFragment-->
+    <string name="enter_pin">PIN eingeben: </string>
+    <string name="show_mnenomics_button">Mnenomics anzeigen</string>
+
+    <!-- NumPad-->
+    <string name="numpad_zero"><font size="20">0</font>\n\<font size="10"></font></string>
+    <string name="numpad_one"><font size="20">1</font>\n\<font size="10"></font></string>
+    <string name="numpad_two"><big>2</big>\n\<small>ABC</small></string>
+    <string name="numpad_delete"><font size="20">DEL</font>\n\<font size="10"></font></string>
+    <string name="numpad_three"><font size="20">3</font>\n\<font size="10">DEF</font></string>
+    <string name="numpad_four"><font size="20">4</font>\n\<font size="10">GHI</font></string>
+    <string name="numpad_five"><font size="20">5</font>\n\<font size="10">JKL</font></string>
+    <string name="numpad_six"><font size="20">6</font>\n\<font size="10">MNO</font></string>
+    <string name="numpad_seven"><font size="20">7</font>\n\<font size="10">PQRS</font></string>
+    <string name="numpad_eight"><font size="20">8</font>\n\<font size="10">TUV</font></string>
+    <string name="numpad_nine"><font size="20">9</font>\n\<font size="10">WXYZ</font></string>
+    <string name="numpad_reset"><font size="20">RESET</font>\n\<font size="10"></font></string>
+
+    <!-- PractiseFragment-->
+    <string name="your_pin_heading">Ihre PIN:</string>
+    <string name="practise_button">PIN-Eingabe üben</string>
+    <string name="practised_pin_heading">Geübte PIN:</string>
+    <string name="practise_pin_description">Üben Sie die PIN-Eingabe mehrfach während Sie an die Mnenomics denken.</string>
+
+    <!-- AboutFragment-->
     <string name="version_number">Version 0.5</string>
-    <string name="about_author">Author: Karola Marky</string>
-    <string name="about_affiliation">In affiliation with</string>
-    <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>
-    <string name="more_info">More information can be found on:</string>
-    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/en/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+    <string name="about_author">Autor: Karola Marky</string>
+    <string name="about_affiliation">In Zusammenarbeit mit</string>
+    <string name="privacy_friendly">Diese App gehört zur Gruppe der Privacy Friendly Apps.</string>
+    <string name="more_info">Mehr Informationen unter:</string>
+    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/de/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+
 </resources>
+
+
 
