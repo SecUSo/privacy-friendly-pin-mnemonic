@@ -142,7 +142,7 @@ public class EnterPinFragment extends Fragment {
         sharedPreferences.edit().putString("versionname", "").commit();
         SharedPreferences settings = activity.getSharedPreferences("versionname", activity.getBaseContext().MODE_PRIVATE);
         if (settings.getBoolean("isFirstRun", true)) {
-            Toast toast = Toast.makeText(activity.getApplicationContext(), "Further Explanation can be found in the help menu", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.show_help_hint), Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
             SharedPreferences.Editor editor = settings.edit();

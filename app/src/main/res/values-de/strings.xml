@@ -35,6 +35,7 @@
     <!-- EnterPINFragment-->
     <string name="enter_pin">PIN eingeben: </string>
     <string name="show_mnenomics_button">Mnenomics anzeigen</string>
+    <string name="show_help_hint">Weitere Erklärungen können dem Hilfemenü entnommen werden.</string>
 
     <!-- NumPad-->
     <string name="numpad_zero"><font size="20">0</font>\n\<font size="10"></font></string>
