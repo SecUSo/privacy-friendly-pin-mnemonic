@@ -37,8 +37,7 @@ public class EnterPinFragment extends Fragment {
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
 
-
-        resetPins();
+        visiblePin = pin = "";
 
         //Buttons
         Button[] numpad = new Button[10];
@@ -96,7 +95,7 @@ public class EnterPinFragment extends Fragment {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();
-                resetPins();
+                visiblePin = pin = "";
             }
         });
 
@@ -133,10 +132,6 @@ public class EnterPinFragment extends Fragment {
         return visiblePin;
     }
 
-    public void resetPins() {
-        visiblePin = pin = "";
-    }
-
     private void doFirstRun() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
         sharedPreferences.edit().putString("versionname", "").commit();
@@ -150,7 +145,6 @@ public class EnterPinFragment extends Fragment {
             editor.commit();
         }
     }
-
 
     public void onAttach(Activity activity) {
         super.onAttach(activity);
