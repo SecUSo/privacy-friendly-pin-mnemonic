@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="PIN Mnenomics">
+        <Preference
+            android:icon="@drawable/one"
+            android:summary="Digit is contained once" />
+        <Preference
+            android:icon="@drawable/two"
+            android:summary="Digit is contained twice" />
+        <Preference
+            android:icon="@drawable/three"
+            android:summary="Digit is contained three times" />
+        <Preference
+            android:icon="@drawable/four"
+            android:summary="Digit is contained four times" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Stories">
+        <Preference
+            android:icon="@drawable/six"
+            android:summary="Use the displayed symbols to imagine a little story or sentence to remember the PIN." />
+        <Preference
+            android:icon="@drawable/six"
+            android:summary="This would be the following story for the PIN 2314:....." />
+
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="Privacy Info">
+        <Preference
+            android:summary="Your PIN is neither stored nor transmitted"
+            android:title="PIN Storage" />
+        <Preference
+            android:summary="Privacy Friendly PIN Mnenomics does not use any permissions"
+            android:title="Permissions" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -3,16 +3,20 @@ package org.secuso.privacyfriendlypinmnenomic;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 
@@ -23,6 +27,7 @@ public class EnterPinFragment extends Fragment {
     EditText pinEditText;
     Activity activity;
 
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
@@ -31,6 +36,7 @@ public class EnterPinFragment extends Fragment {
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
+
 
         resetPins();
 
@@ -114,6 +120,8 @@ public class EnterPinFragment extends Fragment {
             fragmentTransaction.replace(R.id.content_frame, showHintFragment, "ShowHintFragment");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
+
+            doFirstRun();
         }
     }
 
@@ -128,6 +136,21 @@ public class EnterPinFragment extends Fragment {
     public void resetPins() {
         visiblePin = pin = "";
     }
+
+    private void doFirstRun() {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
+        sharedPreferences.edit().putString("versionname", "").commit();
+        SharedPreferences settings = activity.getSharedPreferences("versionname", activity.getBaseContext().MODE_PRIVATE);
+        if (settings.getBoolean("isFirstRun", true)) {
+            Toast toast = Toast.makeText(activity.getApplicationContext(), "Further Explanation can be found in the help menu", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.CENTER, 0, 0);
+            toast.show();
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("isFirstRun", false);
+            editor.commit();
+        }
+    }
+
 
     public void onAttach(Activity activity) {
         super.onAttach(activity);

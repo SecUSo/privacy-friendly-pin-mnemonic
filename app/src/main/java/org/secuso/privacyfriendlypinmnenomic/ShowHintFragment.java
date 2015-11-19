@@ -30,7 +30,7 @@ public class ShowHintFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
         this.rootView = rootView;
 
-        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_tips);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_mnenomics);
 
         Bundle bundle = this.getArguments();
 

@@ -8,6 +8,7 @@
     <string name="action_practice">Practice</string>
     <string name="action_enter_pin">Enter PIN</string>
     <string name="action_navigation">Navigation</string>
+    <string name="action_pin_mnenomics">PIN Mnenomics</string>
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
