@@ -215,10 +215,6 @@ public class CheckPin {
         return resultCalculation;
     }
 
-    public void assignSymbol() {
-
-    }
-
     //Helper Functions
     public String[] createYearsArray() {
         String[] years = new String[100];

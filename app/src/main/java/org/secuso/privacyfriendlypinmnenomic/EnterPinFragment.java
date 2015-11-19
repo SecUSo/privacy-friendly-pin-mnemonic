@@ -27,10 +27,12 @@ public class EnterPinFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
 
-        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_enter_pin);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_enter_pin);
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
+
+        resetPins();
 
         //Buttons
         Button[] numpad = new Button[10];
@@ -44,8 +46,6 @@ public class EnterPinFragment extends Fragment {
         numpad[7] = (Button) rootView.findViewById(R.id.button_seven);
         numpad[8] = (Button) rootView.findViewById(R.id.button_eight);
         numpad[9] = (Button) rootView.findViewById(R.id.button_nine);
-
-        resetPins();
 
         for (int i = 0; i < numpad.length; i++) {
             final Button temp = numpad[i];
@@ -101,34 +101,32 @@ public class EnterPinFragment extends Fragment {
 
     public void clickDoneButton() {
 
-         if (pinEditText.getText().length() == 4) {
+        if (pinEditText.getText().length() == 4) {
 
-             Bundle bundle = new Bundle();
-             bundle.putString("pin", visiblePin);
-             bundle.putString("pinHyphen", pin);
+            Bundle bundle = new Bundle();
+            bundle.putString("pin", visiblePin);
+            bundle.putString("pinHyphen", pin);
 
-             ShowHintFragment showHintFragment = new ShowHintFragment();
-             showHintFragment.setArguments(bundle);
+            ShowHintFragment showHintFragment = new ShowHintFragment();
+            showHintFragment.setArguments(bundle);
 
-             final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-             fragmentTransaction.replace(R.id.content_frame, showHintFragment, "ShowHintFragment");
-             fragmentTransaction.addToBackStack(null);
-             fragmentTransaction.commit();
+            final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.content_frame, showHintFragment, "ShowHintFragment");
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
         }
     }
 
     public String deletePinDigits(String visiblePin) {
 
         if (visiblePin.length() > 0) {
-            visiblePin = visiblePin.substring(0, visiblePin.length() - 1);
+            return visiblePin = visiblePin.substring(0, visiblePin.length() - 1);
         }
-
         return visiblePin;
     }
 
     public void resetPins() {
-        visiblePin = "";
-        pin = "";
+        visiblePin = pin = "";
     }
 
     public void onAttach(Activity activity) {

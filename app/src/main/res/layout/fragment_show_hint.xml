@@ -37,12 +37,12 @@
         android:id="@+id/shapeHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/practiseButton"
+        android:layout_alignStart="@+id/practiseButton"
+        android:layout_below="@+id/show_current_pin"
         android:text="Shape:"
         android:textColor="@color/black"
-        android:textSize="15sp"
-        android:layout_below="@+id/show_current_pin"
-        android:layout_alignLeft="@+id/practiseButton"
-        android:layout_alignStart="@+id/practiseButton" />
+        android:textSize="15sp" />
 
     <GridLayout
         android:id="@+id/numbers_show_hint"
@@ -167,12 +167,12 @@
         android:id="@+id/numpadFrame"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_alignLeft="@+id/numbers_show_hint"
-        android:layout_alignStart="@+id/numbers_show_hint"
-        android:layout_below="@+id/show_current_pin"
-        android:layout_alignRight="@+id/numbers_show_hint"
+        android:layout_above="@+id/wordHeading"
         android:layout_alignEnd="@+id/numbers_show_hint"
-        android:layout_above="@+id/wordHeading"></RelativeLayout>
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignRight="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_below="@+id/show_current_pin"></RelativeLayout>
 
     <TextView
         android:id="@+id/wordHeading"
@@ -183,7 +183,6 @@
         android:layout_below="@+id/numbers_show_hint"
         android:layout_marginTop="20dp"
         android:text="Word:"
-        android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
@@ -195,7 +194,6 @@
         android:layout_below="@+id/wordHeading"
         android:layout_marginTop="10dp"
         android:text="Date:"
-        android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
@@ -207,7 +205,6 @@
         android:layout_below="@+id/dateHeading"
         android:layout_marginTop="10dp"
         android:text="Math:"
-        android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
@@ -217,9 +214,8 @@
         android:layout_alignLeft="@+id/shapeHeading"
         android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/mathHeading"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Story:"
-        android:textColor="@color/black"
         android:textSize="15sp" />
 
     <TextView
@@ -229,7 +225,8 @@
         android:layout_alignLeft="@+id/numbers_show_hint"
         android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_alignTop="@+id/wordHeading"
-        android:textSize="15sp"/>
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/date"
@@ -239,7 +236,8 @@
         android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/wordHeading"
         android:layout_marginTop="10dp"
-        android:textSize="15sp"/>
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/math"
@@ -249,29 +247,45 @@
         android:layout_alignStart="@+id/numbers_show_hint"
         android:layout_below="@+id/dateHeading"
         android:layout_marginTop="10dp"
-        android:textSize="15sp"/>
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/story"
+    <GridLayout
+        android:id="@+id/symbolRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/numbers_show_hint"
-        android:layout_alignStart="@+id/numbers_show_hint"
-        android:layout_below="@+id/mathHeading"
-        android:layout_marginTop="10dp"
-        android:textSize="15sp"/>
+        android:layout_above="@+id/practiseButton"
+        android:layout_alignLeft="@+id/math"
+        android:layout_alignStart="@+id/math"
+        android:columnCount="4">
+
+        <ImageView android:id="@+id/symbolImageView1" />
+
+        <ImageView
+            android:id="@+id/symbolImageView2"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/symbolImageView3"
+            android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/symbolImageView4"
+            android:layout_marginLeft="10dp" />
+
+    </GridLayout>
 
     <Button
         android:id="@+id/practiseButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/story"
+        android:layout_below="@+id/storyHeading"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
-        android:textColor="@color/white"
-        android:text="@string/practise_button"
-        android:background="@drawable/practise_button"
         android:layout_marginLeft="80dp"
-        />
+        android:layout_marginTop="39dp"
+        android:background="@drawable/practise_button"
+        android:text="@string/practise_button"
+        android:textColor="@color/white" />
+
 
 </RelativeLayout>

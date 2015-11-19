@@ -3,6 +3,7 @@ package org.secuso.privacyfriendlypinmnenomic;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -74,7 +76,7 @@ public class ShowHintFragment extends Fragment {
 
         int[] multiples = containsMultiples(input);
 
-        for (int j=0;j<input.length;j++) {
+        for (int j = 0; j < input.length; j++) {
             colorNumpad(multiples[j], numpad[input[j]]);
         }
 
@@ -85,7 +87,6 @@ public class ShowHintFragment extends Fragment {
             }
         }
 
-
         CheckPin checkPin = new CheckPin(pin, activity.getBaseContext());
 
         TextView wordTextView = (TextView) rootView.findViewById(R.id.word);
@@ -95,6 +96,17 @@ public class ShowHintFragment extends Fragment {
         wordTextView.setText(checkPin.determineWord());
         dateFrameTextView.setText(checkPin.determineDate());
         mathFrameTextView.setText(checkPin.determineCalculation());
+
+        ImageView[] symbolRow = new ImageView[4];
+        symbolRow[0] = (ImageView) rootView.findViewById(R.id.symbolImageView1);
+        symbolRow[1] = (ImageView) rootView.findViewById(R.id.symbolImageView2);
+        symbolRow[2] = (ImageView) rootView.findViewById(R.id.symbolImageView3);
+        symbolRow[3] = (ImageView) rootView.findViewById(R.id.symbolImageView4);
+
+        for (int i=0; i<symbolRow.length; i++) {
+            assignSymbol(input[i], symbolRow[i]);
+        }
+
 
         return rootView;
 
@@ -124,7 +136,7 @@ public class ShowHintFragment extends Fragment {
                 }
             }
         }
-        for (int l=0; l<input.length;l++) {
+        for (int l = 0; l < input.length; l++) {
             System.out.println("Input Array: " + Integer.toString(input[l]));
             System.out.println("Multiples Array: " + Integer.toString(multiples[l]));
         }
@@ -140,22 +152,65 @@ public class ShowHintFragment extends Fragment {
 
     }
 
-    public void colorNumpad(int multiple, Button button){
+    public void colorNumpad(int multiple, Button button) {
 
-        switch(multiple) {
-            case 1: button.setBackgroundResource(R.drawable.hint_numpad_highlighted);
+        switch (multiple) {
+            case 1:
+                button.setBackgroundResource(R.drawable.hint_numpad_highlighted);
                 //System.out.println(Integer.toString(multiple) + " BLUE");
                 break;
-            case 2: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_two);
+            case 2:
+                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_two);
                 //System.out.println(Integer.toString(multiple) + " YELLOW");
                 break;
-            case 3: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_three);
+            case 3:
+                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_three);
                 //System.out.println(Integer.toString(multiple) + " BLACK");
                 break;
-            case 4: button.setBackgroundResource(R.drawable.hint_numpad_highlighted_four);
+            case 4:
+                button.setBackgroundResource(R.drawable.hint_numpad_highlighted_four);
                 //System.out.println(Integer.toString(multiple) + " WHITE");
                 break;
-            default: button.setBackgroundResource(R.drawable.hints_numpad);
+            default:
+                button.setBackgroundResource(R.drawable.hints_numpad);
+                break;
+        }
+    }
+
+    public void assignSymbol(int digit, ImageView imageView) {
+        switch (digit) {
+            case 0:
+                imageView.setImageResource(R.drawable.zero);
+                break;
+            case 1:
+                imageView.setImageResource(R.drawable.one);
+                break;
+            case 2:
+                imageView.setImageResource(R.drawable.two);
+                break;
+            case 3:
+                imageView.setImageResource(R.drawable.three);
+                break;
+            case 4:
+                imageView.setImageResource(R.drawable.four);
+                break;
+            case 5:
+                imageView.setImageResource(R.drawable.five);
+                break;
+            case 6:
+                imageView.setImageResource(R.drawable.six);
+                break;
+            case 7:
+                imageView.setImageResource(R.drawable.seven);
+                break;
+            case 8:
+                imageView.setImageResource(R.drawable.eight);
+                break;
+            case 9:
+                imageView.setImageResource(R.drawable.nine);
+                break;
+            default:
+                imageView.setImageResource(0);
                 break;
         }
     }

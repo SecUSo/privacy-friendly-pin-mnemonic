@@ -17,7 +17,7 @@ import org.secuso.privacyfriendlypin.R;
 /**
  * Created by yonjuni on 10.11.15.
  */
-public class PractiseFragment extends Fragment{
+public class PractiseFragment extends Fragment {
 
     View rootView;
     EditText pinEditText;
@@ -28,7 +28,7 @@ public class PractiseFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
-        ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_practise);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practise);
 
         this.rootView = rootView;
 
@@ -103,7 +103,6 @@ public class PractiseFragment extends Fragment{
     }
 
     public void resetPins() {
-        visiblePin = "";
-        pin = "";
+        visiblePin = pin = "";
     }
 }
