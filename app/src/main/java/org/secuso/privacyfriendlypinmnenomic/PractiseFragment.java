@@ -3,6 +3,7 @@ package org.secuso.privacyfriendlypinmnenomic;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,6 +36,7 @@ public class PractiseFragment extends Fragment{
         pin = "";
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
+        pinEditText.setInputType(InputType.TYPE_NULL);
 
         //Buttons
         Button[] numpad = new Button[10];

@@ -16,6 +16,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 
 import org.secuso.privacyfriendlypin.R;
@@ -107,31 +109,15 @@ public class ShowHintFragment extends Fragment {
         numpadLayout.addView(drawView);
     }
 
-    public boolean containsMultiples(int[] input, int i) {
-        boolean hasMultiple = false;
-        int[] temp;
+    public boolean containsMultiples(int[] input) {
 
-        if (input.length > 1) {
-            temp = new int[input.length - 1];
-            for (int j=0; j<temp.length; j++){
-
-            }
-
-        } else {
-            return hasMultiple;
+        Set<Integer> temp = new HashSet<Integer>();
+        for (int i : input)
+        {
+            if (temp.contains(i)) return true;
+            temp.add(i);
         }
-
-        Arrays.asList(input);
-
-        Arrays.sort(input);
-        for (int j = 0; j < input.length; j++) {
-
-            if (Arrays.binarySearch(input, input[j]) != -1) {
-                hasMultiple = true;
-            }
-        }
-        System.out.println("Hat die PIN doppelte Zahlen?" + hasMultiple);
-        return hasMultiple;
+        return false;
     }
 
     public void clickPractiseButton() {

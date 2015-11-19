@@ -38,8 +38,10 @@ public class DrawView extends View {
         Path path = new Path();
 
         //draws triangle pointing to the right
-        path.moveTo(endView.getX() + 50, endView.getY() + 85);
+        path.moveTo(endView.getX() + 50, endView.getY() + 80);
+        //arrow head
         path.lineTo(endView.getX() + 90, endView.getY() + 58);
+
         path.lineTo(endView.getX() + 50, endView.getY() + 40);
         path.close();
 
@@ -60,41 +62,38 @@ public class DrawView extends View {
         if ((((first > second) || (second == 1)) && (view1.getY() == view2.getY())) || (first == 2 || first == 3) && second == 1) {
             return 180;
         }
-        //Arrow should point from left to right
-        if ((first < second) && (view1.getY() == view2.getY())) {
-            return 0;
-        }
         // Arrow should point downwards
-        if (((first < second) && first != 0) || (second == 0) && (view1.getX() == view2.getX())) {
+        if ((((first < second) && first != 0) || (second == 0)) && (view1.getX() == view2.getX())) {
             return 90;
         }
         // Arrow should point upwards
         if ((view1.getX() == view2.getX())) {
             return 270;
         }
-        // TODO WTF point to zero Arrow should point down from left to right
+        //Arrow should point down from left to right
         if (((first < second) || second == 0) && (second - first == 4 || second - first == 8) || first - second == 7) {
             return 45;
         }
-        // TODO WTF point to zero Arrow should point down from right to left
+
+
+        /*TESTAREA*/
+
+        //Arrow should point down from right to left
         if (((first < second) || second == 0) && (second - first == 4 || second - first == 2) || first - second == 9) {
             return 135;
         }
 
 
-
-        /*TESTAREA*/
-
-
         //TODO Add other turns
         // Arrow should point up from right to left
-        if ((first < second) && (first - second == 4)) {
+        /*if ((first < second) && (first - second == 4)) {
             return 0;
         }
         // Arrow should point up from left to right
         if ((first > second) && (second - first == 4 || first - second == 2)) {
             return 270;
-        }
+        }*/
+        //Arrow should point from left to right
         return 0;
     }
 
