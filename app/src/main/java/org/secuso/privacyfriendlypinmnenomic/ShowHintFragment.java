@@ -3,22 +3,15 @@ package org.secuso.privacyfriendlypinmnenomic;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 
 import org.secuso.privacyfriendlypin.R;
 import org.secuso.privacyfriendlypinmnenomic.pinhelpers.CheckPin;
@@ -77,7 +70,6 @@ public class ShowHintFragment extends Fragment {
 
         for (int i = 0; i < 4; i++) {
             input[i] = Integer.parseInt(Character.toString(pin.charAt(i)));
-            //numpad[input[i]].setBackgroundResource(R.drawable.hint_numpad_highlighted);
         }
 
         int[] multiples = containsMultiples(input);
@@ -150,9 +142,7 @@ public class ShowHintFragment extends Fragment {
 
     public void colorNumpad(int multiple, Button button){
 
-        final int temp = multiple;
-
-        switch(temp) {
+        switch(multiple) {
             case 1: button.setBackgroundResource(R.drawable.hint_numpad_highlighted);
                 //System.out.println(Integer.toString(multiple) + " BLUE");
                 break;

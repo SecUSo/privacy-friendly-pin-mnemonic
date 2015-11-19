@@ -42,6 +42,7 @@
     <string name="practise_button">Practise entering your PIN</string>
 
     <string name="practised_pin_heading">Practised PIN</string>
+    <string name="practise_pin_description">Practise entering your PIN repeatedly, keeping the mnenomic(s) in your mind.</string>
 
     <string name="version_number">Version 0.5</string>
     <string name="about_author">Author: Karola Marky</string>
