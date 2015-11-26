@@ -79,26 +79,36 @@ public class DrawView extends View {
         if (((first < second) || second == 0) && (second - first == 4 || second - first == 8) || first - second == 7) {
             return 45;
         }
-
-
-        /*TESTAREA*/
-
         //Arrow should point down from right to left
         if (((first < second) || second == 0) && (second - first == 4 || second - first == 2) || first - second == 9) {
             return 135;
         }
-
-
-        //TODO Add other turns
-        // Arrow should point up from right to left
-        /*if ((first < second) && (first - second == 4)) {
-            return 0;
+        //Arrow should point up from left to right
+        if (((first > second) || first == 0) && ((first - second == 4 && first ==7) || first - second == 2) || second - first == 9) {
+            return -45;
         }
-        // Arrow should point up from left to right
-        if ((first > second) && (second - first == 4 || first - second == 2)) {
-            return 270;
-        }*/
-        //Arrow should point from left to right
+        //Arrow should point up from right to left
+        if ((((first > second) || first == 0)) && ((first - second == 4 || first - second == 8) || second - first == 7)) {
+            return -135;
+        }
+        //Arrow should point down angularly from left to right TODO Arrow from 4 to 0
+        if (((first < second) && (second - first == 7)) || (first == 4 && second == 0)) {
+            return 67;
+        }
+        //Arrow should point down angularly from right to left
+        if (((first < second) && (second - first == 5)) || (first == 6 && second == 0)) {
+            return 112;
+        }
+        //Arrow should point up angularly from left to right
+        if (((first > second) && (first - second == 7)) || (second == 4 && first == 0)) {
+            return -112;
+        }
+        //Arrow should point up angularly from right to left TODO Arrow from 4 to 0
+        if (((first > second) && (first - second == 5)) || (second == 6 && first == 0)) {
+            return -67;
+        }
+
+
         return 0;
     }
 
