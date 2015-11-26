@@ -127,15 +127,6 @@ public class RootActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private class DrawerItemClickListener implements ListView.OnItemClickListener {
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            selectItem(position);
-        }
-
-    }
-
     private void selectItem(int position) {
 
         Fragment fragment = null;
@@ -168,6 +159,24 @@ public class RootActivity extends ActionBarActivity {
         } else {
             Log.e("MainActivity", "Error in creating fragment");
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() > 0) {
+            getFragmentManager().popBackStack();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    private class DrawerItemClickListener implements ListView.OnItemClickListener {
+
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            selectItem(position);
+        }
+
     }
 
     public class DrawerItemCustomAdapter extends ArrayAdapter<ObjectDrawerItem> {
