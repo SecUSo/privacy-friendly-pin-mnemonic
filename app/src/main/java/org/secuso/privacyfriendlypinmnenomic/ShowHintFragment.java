@@ -2,15 +2,12 @@ package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
-import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

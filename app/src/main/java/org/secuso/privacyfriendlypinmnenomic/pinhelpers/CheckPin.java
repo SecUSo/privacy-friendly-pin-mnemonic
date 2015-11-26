@@ -10,7 +10,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 
-
 /**
  * Created by yonjuni on 27.10.15.
  */
@@ -20,6 +19,7 @@ public class CheckPin {
     String secondTwo;
     String[] input;
     Context context;
+    int[] userInput;
 
     public CheckPin(String pin, Context context) {
 
@@ -91,7 +91,7 @@ public class CheckPin {
         int c = Integer.parseInt(input[2]);
         int d = Integer.parseInt(input[3]);
 
-        int[] userInput = new int[]{a, b, c, d};
+        userInput = new int[]{a, b, c, d};
 
         WordDictionary wordDictionaryClass = new WordDictionary();
         String[] wordDictionary = wordDictionaryClass.getWordDictionary(Locale.getDefault().getLanguage());
@@ -138,7 +138,6 @@ public class CheckPin {
 
         if (firstTwo.equals("00")) {
             tmp1 = 1;
-
         } else if (secondTwo.equals("00")) {
             tmp2 = 1;
         }
@@ -180,7 +179,6 @@ public class CheckPin {
 
         for (int k = 3; k > 0; k--) {
             if (differenceAB == k) {
-
                 resultCalculation =
                         firstTwo + " " + context.getString(R.string.display_math_large)
                                 + " " + secondTwo + " " + context.getString(R.string.display_math_by)
@@ -193,6 +191,14 @@ public class CheckPin {
                                 + " " + Integer.toString(k);
                 System.out.println(resultCalculation);
             }
+        }
+
+        if (userInput[0] + userInput[1] == secondHalf) {
+            resultCalculation = input[0] + " + " +  input[1] + " = " + secondTwo;
+        }
+
+        if (userInput[0] + userInput[1] + userInput[2] == userInput[3]) {
+            resultCalculation = input[0] + " + " +  input[1] + " + " +  input[2] + " = " + userInput[3];
         }
         return resultCalculation;
     }
@@ -223,13 +229,7 @@ public class CheckPin {
 
         for (int i = 0; i < intArray.length; i++) {
             result[i] = keyboard[intArray[i]];
-            //System.out.println(i + " Pin Digit " + intArray[i] + " Keypad " + result[i]);
-            //System.out.println("Keyboardstelle " + keyboard[intArray[i]]);
         }
-
-		/*for (int i=0; i<result.length; i++) {
-            System.out.println("ENDE Methode " + result [i]);
-		}*/
 
         return result;
     }
@@ -247,17 +247,10 @@ public class CheckPin {
                                 + Character.toString(keys[1].charAt(j))
                                 + Character.toString(keys[2].charAt(k))
                                 + Character.toString(keys[3].charAt(l)));
-
-                        //System.out.println("MIX: "
-                        //+ Character.toString(keys[0].charAt(i))
-                        // + Character.toString(keys[1].charAt(j))
-                        //+ Character.toString(keys[2].charAt(k))
-                        // + Character.toString(keys[3].charAt(l)));
                     }
                 }
             }
         }
-        //System.out.println("ANSWER " + Arrays.toString(result.toArray()));
         return result;
     }
 
