@@ -34,21 +34,14 @@ public class DrawView extends View {
         super.onDraw(canvas);
         drawArrowHead(canvas);
 
-        int yStartView = startView.getTop() + startView.getHeight()/2;
         int xStartView = startView.getLeft() + startView.getWidth()/2;
+        int yStartView = startView.getTop() + startView.getHeight()/2;
 
-        int yEndView = endView.getTop() + endView.getHeight()/2;
         int xEndView = endView.getLeft() + endView.getWidth()/2;
+        int yEndView = endView.getTop() + endView.getHeight() / 2;
+
 
         canvas.drawLine(xStartView, yStartView, xEndView, yEndView, paint);
-
-        System.out.println("getX: " + startView.getX());
-        System.out.println("getY: " + startView.getY());
-        System.out.println("Top: " + startView.getTop());
-        System.out.println("Left: " + startView.getLeft());
-        System.out.println("Width: " + startView.getWidth());
-
-
     }
 
     public void drawArrowHead(Canvas canvas) {
