@@ -26,6 +26,7 @@ public class DrawView extends View {
         this.digitTwo = digitTwo;
         paint = new Paint();
         paint.setAntiAlias(true);
+        paint.setAlpha(150);
     }
 
     public void onDraw(Canvas canvas) {
@@ -61,7 +62,6 @@ public class DrawView extends View {
     }
 
     public int whichArrow(View view1, View view2, int first, int second) {
-
 
         if (first == 0) {
             first = 11;
