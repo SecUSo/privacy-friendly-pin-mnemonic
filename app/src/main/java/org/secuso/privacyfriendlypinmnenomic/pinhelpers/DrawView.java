@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Point;
 import android.view.View;
 
 /**
@@ -31,8 +32,23 @@ public class DrawView extends View {
 
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawLine(startView.getX() + 60, startView.getY() + 60, endView.getX() + 60, endView.getY() + 60, paint);
         drawArrowHead(canvas);
+
+        int yStartView = startView.getTop() + startView.getHeight()/2;
+        int xStartView = startView.getLeft() + startView.getWidth()/2;
+
+        int yEndView = endView.getTop() + endView.getHeight()/2;
+        int xEndView = endView.getLeft() + endView.getWidth()/2;
+
+        canvas.drawLine(xStartView, yStartView, xEndView, yEndView, paint);
+
+        System.out.println("getX: " + startView.getX());
+        System.out.println("getY: " + startView.getY());
+        System.out.println("Top: " + startView.getTop());
+        System.out.println("Left: " + startView.getLeft());
+        System.out.println("Width: " + startView.getWidth());
+
+
     }
 
     public void drawArrowHead(Canvas canvas) {
@@ -44,18 +60,18 @@ public class DrawView extends View {
         Path path = new Path();
 
         //draws triangle pointing to the right
-        path.moveTo(endView.getX() + 50, endView.getY() + 80);
+        path.moveTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 - 17);
         //arrow head
-        path.lineTo(endView.getX() + 90, endView.getY() + 58);
+        path.lineTo( endView.getLeft() + endView.getWidth()/2 + 30, endView.getTop() + endView.getHeight()/2);
 
-        path.lineTo(endView.getX() + 50, endView.getY() + 40);
+        path.lineTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 + 17);
         path.close();
 
         //turns triangle
         Matrix matrix = new Matrix();
         matrix.reset();
         float rotate = whichArrow(startView, endView, digitOne, digitTwo);
-        matrix.postRotate(rotate, endView.getX() + 60, endView.getY() + 60);
+        matrix.postRotate(rotate, endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2);
         path.transform(matrix);
 
         canvas.drawPath(path, paint);
