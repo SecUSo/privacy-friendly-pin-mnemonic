@@ -51,7 +51,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:columnCount="3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+         >
 
         <Button
             android:id="@+id/button_one_hint"
@@ -59,8 +60,10 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="1&#10;"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"
+            />
 
         <Button
             android:id="@+id/button_two_hint"
@@ -68,8 +71,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="2&#10;ABC"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_three_hint"
@@ -77,8 +81,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="3&#10;DEF"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_four_hint"
@@ -86,8 +91,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="4&#10;GHI"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_five_hint"
@@ -95,8 +101,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="5&#10;JKL"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_six_hint"
@@ -104,8 +111,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="6&#10;MNO"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_seven_hint"
@@ -113,8 +121,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="7&#10;PQRS"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_eight_hint"
@@ -122,8 +131,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="8&#10;TUV"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_nine_hint"
@@ -131,8 +141,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="9&#10;WXYZ"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_zero_space_left"
@@ -140,8 +151,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
-            android:text="0&#10;"
-            android:textColor="@color/transparent" />
+            android:textColor="@color/transparent"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_zero_hint"
@@ -149,8 +161,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="0&#10;"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/button_zero_space_right"
@@ -158,8 +171,9 @@
             android:layout_height="40dp"
             android:layout_margin="2dp"
             android:background="@drawable/invisible_button"
-            android:text="0&#10;"
-            android:textColor="@color/transparent" />
+            android:textColor="@color/transparent"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
     </GridLayout>
 
     <RelativeLayout

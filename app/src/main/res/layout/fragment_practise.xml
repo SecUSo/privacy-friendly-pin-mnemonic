@@ -52,8 +52,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_one"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -62,8 +63,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_two"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -72,8 +74,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_three"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -82,8 +85,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_four"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -92,8 +96,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_five"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -102,8 +107,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_six"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -112,8 +118,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_seven"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -122,8 +129,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_eight"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -132,8 +140,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_nine"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -144,6 +153,8 @@
             android:background="@drawable/delete_reset_button"
             android:text="@string/numpad_reset"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -152,8 +163,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:text="@string/numpad_zero"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
         <Button
@@ -164,6 +176,8 @@
             android:background="@drawable/delete_reset_button"
             android:text="@string/numpad_delete"
             android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textAllCaps="false"
             />
 
     </GridLayout>

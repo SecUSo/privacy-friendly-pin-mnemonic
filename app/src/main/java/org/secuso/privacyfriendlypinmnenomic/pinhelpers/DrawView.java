@@ -74,6 +74,10 @@ public class DrawView extends View {
         if ((((first > second) || (second == 1)) && (view1.getY() == view2.getY())) || (first == 2 || first == 3) && second == 1) {
             return 180;
         }
+        // Arrow to the right
+        if ((view1.getY() == view2.getY())) {
+            return 0;
+        }
         // Arrow should point downwards
         if (((first < second)) && (view1.getX() == view2.getX())) {
             return 90;

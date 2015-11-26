@@ -6,6 +6,10 @@ import android.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.RelativeSizeSpan;
+import android.text.style.StyleSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,6 +66,22 @@ public class ShowHintFragment extends Fragment {
         numpad[8] = (Button) rootView.findViewById(R.id.button_eight_hint);
         numpad[9] = (Button) rootView.findViewById(R.id.button_nine_hint);
 
+        Button dummyButtonLeft = (Button) rootView.findViewById(R.id.button_zero_space_left);
+        Button dummyButtonRight = (Button) rootView.findViewById(R.id.button_zero_space_right);
+
+        SpannableString dummyString = new SpannableString(" 0 \n +");
+        dummyString.setSpan(new RelativeSizeSpan(1.8f), 0, 2, 0);
+
+        dummyButtonLeft.setText(dummyString);
+        dummyButtonRight.setText(dummyString);
+
+        SpannableString[] spannables = createSetSpannables();
+
+        for (int i=0; i<spannables.length; i++) {
+            spannables[i].setSpan(new RelativeSizeSpan(1.8f), 0, 2, 0);
+            numpad[i].setText(spannables[i]);
+        }
+
         Button toPractiseButton = (Button) rootView.findViewById(R.id.practiseButton);
         toPractiseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,7 +127,6 @@ public class ShowHintFragment extends Fragment {
             assignSymbol(input[i], symbolRow[i]);
         }
 
-
         return rootView;
 
     }
@@ -150,6 +169,24 @@ public class ShowHintFragment extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
+    }
+
+    public SpannableString[] createSetSpannables() {
+
+        SpannableString[] spannables = new SpannableString[10];
+
+        spannables[0] = new SpannableString(" 0 \n +");
+        spannables[1] = new SpannableString(" 1 \n ");
+        spannables[2] = new SpannableString(" 2 \n abc");
+        spannables[3] = new SpannableString(" 3 \n def");
+        spannables[4] = new SpannableString(" 4 \n ghi");
+        spannables[5] = new SpannableString(" 5 \n jkl");
+        spannables[6] = new SpannableString(" 6 \n mno");
+        spannables[7] = new SpannableString(" 7 \n pqrs");
+        spannables[8] = new SpannableString(" 8 \n tuv");
+        spannables[9] = new SpannableString(" 9 \n wxyz");
+
+        return spannables;
     }
 
     public void colorNumpad(int multiple, Button button) {
