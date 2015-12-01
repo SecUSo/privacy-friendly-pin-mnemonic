@@ -1,13 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/enter_pin_fragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/enter_pin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true">
 
         <TextView
@@ -18,7 +21,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:text="@string/practised_pin_heading"
             android:textSize="20sp" />
 
@@ -30,7 +33,7 @@
             android:layout_toEndOf="@+id/pin_message_enter_pin"
             android:layout_toRightOf="@+id/pin_message_enter_pin"
             android:background="#00000000"
-            android:maxWidth="40dp"
+            android:maxWidth="60dp"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -53,10 +56,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/button_two"
@@ -64,10 +66,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/button_three"
@@ -75,10 +76,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/button_four"
@@ -86,10 +86,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_five"
@@ -97,10 +96,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_six"
@@ -108,9 +106,10 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="12sp"
-            android:textAllCaps="false"
+
             />
 
         <Button
@@ -119,10 +118,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_eight"
@@ -130,10 +128,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_nine"
@@ -141,10 +138,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_reset"
@@ -152,11 +148,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/delete_reset_button"
-            android:text="@string/numpad_reset"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_zero"
@@ -164,10 +158,9 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/mnenomic_numpad_button"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_delete"
@@ -175,27 +168,36 @@
             android:layout_height="65dp"
             android:layout_margin="3dp"
             android:background="@drawable/delete_reset_button"
-            android:text="@string/numpad_delete"
-            android:textColor="@color/white"
-            android:textSize="12sp"
             android:textAllCaps="false"
-            />
+            android:textColor="@color/white"
+            android:textSize="12sp" />
 
     </GridLayout>
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+    <RelativeLayout
+        android:id="@+id/button_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/numbers"
-        android:background="@drawable/hints_display"
-        android:text="@string/practise_pin_description"
-        android:layout_marginTop="10dp"
-        android:textSize="10sp"
-        android:layout_marginBottom="10dp"
-        android:layout_alignLeft="@+id/numbers"
-        android:layout_alignStart="@+id/numbers"
-        android:layout_alignRight="@+id/numbers"
-        android:layout_alignEnd="@+id/numbers" />
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
 
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/hints_display"
+            android:text="@string/practise_pin_description"
+             />
+
+        />
+
+    </RelativeLayout>
 
 </RelativeLayout>
