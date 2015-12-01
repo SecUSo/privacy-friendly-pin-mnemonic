@@ -81,8 +81,8 @@ public class PractiseFragment extends Fragment {
         }
 
         Button deleteButton = (Button) rootView.findViewById(R.id.button_delete);
-        SpannableString delete = new SpannableString("DEL \n ");
-        delete.setSpan(new RelativeSizeSpan(1.8f), 0, 3, 0);
+        SpannableString delete = new SpannableString("  \n DEL");
+        delete.setSpan(new RelativeSizeSpan(1.8f), 0, 1, 0);
         deleteButton.setText(delete);
         deleteButton.setOnClickListener(new View.OnClickListener() {
 
@@ -94,8 +94,8 @@ public class PractiseFragment extends Fragment {
         });
 
         Button resetButton = (Button) rootView.findViewById(R.id.button_reset);
-        SpannableString reset = new SpannableString("RESET \n ");
-        reset.setSpan(new RelativeSizeSpan(1.8f), 0, 5, 0);
+        SpannableString reset = new SpannableString("  \n RESET");
+        reset.setSpan(new RelativeSizeSpan(1.8f), 0, 2, 0);
         resetButton.setText(reset);
         resetButton.setOnClickListener(new View.OnClickListener() {
 
