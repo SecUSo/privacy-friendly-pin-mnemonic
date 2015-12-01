@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">PIN Mnenomic</string>
-    <string name="app_name_long">Privacy Friendly PIN Mnenomic</string>
+    <string name="app_name">PIN Merkstrategien</string>
+    <string name="app_name_long">Privacy Friendly PIN Merkstrategien</string>
 
     <!-- Menu Items-->
     <string name="action_help">Hilfe</string>
     <string name="action_about">Über</string>
     <string name="action_practice">PIN-Eingabe üben</string>
     <string name="action_enter_pin">PIN eingeben</string>
-    <string name="action_pin_mnenomics">PIN Mnenomics</string>
+    <string name="action_pin_mnenomics">Merkstrategien</string>
     <string name="action_navigation">Navigation</string>
 
     <string name="drawer_open">Navigation drawer öffnen</string>
@@ -34,7 +34,7 @@
 
     <!-- EnterPINFragment-->
     <string name="enter_pin">PIN eingeben: </string>
-    <string name="show_mnenomics_button">Mnenomics anzeigen</string>
+    <string name="show_mnenomics_button">Merkstrategien anzeigen</string>
     <string name="show_help_hint">Weitere Erklärungen können dem Hilfemenü entnommen werden.</string>
 
     <!-- NumPad-->
@@ -55,7 +55,7 @@
     <string name="your_pin_heading">Ihre PIN:</string>
     <string name="practise_button">PIN-Eingabe üben</string>
     <string name="practised_pin_heading">Geübte PIN:</string>
-    <string name="practise_pin_description">Üben Sie die PIN-Eingabe mehrfach während Sie an die Mnenomics denken.</string>
+    <string name="practise_pin_description">Üben Sie die PIN-Eingabe mehrfach während Sie an die Merkstrategien denken.</string>
 
     <!-- AboutFragment-->
     <string name="version_number">Version 0.5</string>
