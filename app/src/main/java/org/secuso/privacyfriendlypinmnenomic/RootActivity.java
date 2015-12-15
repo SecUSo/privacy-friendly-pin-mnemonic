@@ -150,7 +150,7 @@ public class RootActivity extends ActionBarActivity {
 
         if (fragment != null) {
             FragmentManager fragmentManager = getFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_frame, fragment).addToBackStack(null).commit();
 
             drawerList.setItemChecked(position, true);
             drawerList.setSelection(position);
@@ -163,8 +163,13 @@ public class RootActivity extends ActionBarActivity {
 
     @Override
     public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() == 1) {
+            finish();
+        }
+
         if (getFragmentManager().getBackStackEntryCount() > 0) {
             getFragmentManager().popBackStack();
+            System.out.println("STACK: " + getFragmentManager().getBackStackEntryCount());
         } else {
             super.onBackPressed();
         }

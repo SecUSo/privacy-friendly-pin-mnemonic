@@ -1,5 +1,6 @@
 package org.secuso.privacyfriendlypinmnenomic;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,12 +9,14 @@ import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 
@@ -24,6 +27,8 @@ public class PractiseFragment extends Fragment {
 
     View rootView;
     EditText pinEditText;
+
+    Activity activity;
 
     String visiblePin;
     String practicePIN;
@@ -78,6 +83,9 @@ public class PractiseFragment extends Fragment {
                         visiblePin = visiblePin += tempInt;
                         Log.d("PIN:", visiblePin);
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
+                    }
+
+                    if (pinEditText.getText().length() == 4 && !practicePIN.equals("")) {
                         matchedPin(visiblePin);
                     }
                 }
@@ -112,11 +120,17 @@ public class PractiseFragment extends Fragment {
     }
 
     public void matchedPin(String entered) {
-        if (practicePIN.length() == 4) {
             if (entered.equals(practicePIN)) {
                 pinEditText.setTextColor(Color.GREEN);
-            } else pinEditText.setTextColor(Color.RED);
-        }
+                Toast toast = Toast.makeText(activity.getApplicationContext(), "SUCCESS", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();
+            } else { pinEditText.setTextColor(Color.RED);
+                Toast toast = Toast.makeText(activity.getApplicationContext(), "WRONG", Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER, 0, 0);
+                toast.show();}
+
+
     }
 
     public String deletePinDigits(String visiblePin) {
@@ -144,6 +158,11 @@ public class PractiseFragment extends Fragment {
         spannables[9] = new SpannableString(" 9 \n wxyz");
 
         return spannables;
+    }
+
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        this.activity = activity;
     }
 
 }
