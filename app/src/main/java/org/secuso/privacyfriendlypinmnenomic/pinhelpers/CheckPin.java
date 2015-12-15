@@ -43,7 +43,7 @@ public class CheckPin {
 
     public String determineDate() {
 
-        String resultDate = context.getString(R.string.display_no_date);
+        String resultDate = input[0] + " - " + input[1]  + " - " + " (19)" + secondTwo;
 
         String[] monthsWordsArray = {"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(May)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Oct)", "(Nov)", "(Dec)"};
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
@@ -73,9 +73,6 @@ public class CheckPin {
                     resultDate = context.getString(R.string.display_date_year_1900s);
                 } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
                     resultDate = context.getString(R.string.display_date_year_2000s);
-                }
-            else {
-                    resultDate = input[0] + " - " + input[1]  + " - " + " (19)" + secondTwo;
                 }
             }
         }

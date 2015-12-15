@@ -223,34 +223,34 @@ public class ShowHintFragment extends Fragment {
     public void assignSymbol(int digit, ImageView imageView) {
         switch (digit) {
             case 0:
-                imageView.setImageResource(R.drawable.zero);
+                imageView.setImageResource(R.mipmap.story_zero);
                 break;
             case 1:
-                imageView.setImageResource(R.drawable.one);
+                imageView.setImageResource(R.mipmap.story_one);
                 break;
             case 2:
-                imageView.setImageResource(R.drawable.two);
+                imageView.setImageResource(R.mipmap.story_two);
                 break;
             case 3:
-                imageView.setImageResource(R.drawable.three);
+                imageView.setImageResource(R.mipmap.story_three);
                 break;
             case 4:
-                imageView.setImageResource(R.drawable.four);
+                imageView.setImageResource(R.mipmap.story_four);
                 break;
             case 5:
-                imageView.setImageResource(R.drawable.five);
+                imageView.setImageResource(R.mipmap.story_five);
                 break;
             case 6:
-                imageView.setImageResource(R.drawable.six);
+                imageView.setImageResource(R.mipmap.story_six);
                 break;
             case 7:
-                imageView.setImageResource(R.drawable.seven);
+                imageView.setImageResource(R.mipmap.story_seven);
                 break;
             case 8:
-                imageView.setImageResource(R.drawable.eight);
+                imageView.setImageResource(R.mipmap.story_eight);
                 break;
             case 9:
-                imageView.setImageResource(R.drawable.nine);
+                imageView.setImageResource(R.mipmap.story_nine);
                 break;
             default:
                 imageView.setImageResource(0);

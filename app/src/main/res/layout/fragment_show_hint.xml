@@ -227,7 +227,7 @@
         android:layout_alignLeft="@+id/shapeHeading"
         android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/mathHeading"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="@string/story_heading"
         android:textSize="15sp" />
 
@@ -272,19 +272,30 @@
         android:layout_alignStart="@+id/math"
         android:columnCount="4">
 
-        <ImageView android:id="@+id/symbolImageView1" />
+        <ImageView android:id="@+id/symbolImageView1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
 
         <ImageView
             android:id="@+id/symbolImageView2"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
 
         <ImageView
             android:id="@+id/symbolImageView3"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
 
         <ImageView
             android:id="@+id/symbolImageView4"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
 
     </GridLayout>
 
