@@ -19,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -227,40 +228,36 @@ public class RootActivity extends ActionBarActivity {
     public void tutorialDialogMnemonics() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
 
-        // Setting Dialog Title
-        alertDialog.setTitle("Tutorial");
+        //String htmlText = "<html><body style=\"text-align:justify\"> %s </body></Html>";
+        //String myData = "This pages shows different techniques which can support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic. \n Further explanation can be found on the help page.";
 
-        // Setting Dialog Message
-        alertDialog.setMessage("This pages shows different techniques which can support memorizing the PIN. " +
-                "Further explanation can be found on the help page.");
+        //WebView webView = new WebView(this);
+        //webView.loadData(String.format(htmlText, myData), "text/html", "utf-8");
 
-        // Setting Icon to Dialog
-        //alertDialog.setIcon(R.drawable.delete);
+        alertDialog.setTitle("View Mnemonics");
 
-        // Setting Positive "Yes" Button
+        //alertDialog.setView(webView);
+        alertDialog.setMessage("This pages shows techniques to support memorizing the PIN. " +
+              "Please practice entering your PIN after choosing a mnemonic.");
+
+        alertDialog.setIcon(R.mipmap.ic_tutorial);
+
         alertDialog.setPositiveButton("Got it", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int which) {
-
-                // Write your code here to invoke YES event
-                Toast.makeText(getApplicationContext(), "You clicked on YES", Toast.LENGTH_SHORT).show();
             }
         });
 
-        // Setting Negative "NO" Button
         alertDialog.setNegativeButton("View Help", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                // Write your code here to invoke NO event
 
                 final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.content_frame, new HelpFragment(), "HelpFragment");
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
-                Toast.makeText(getApplicationContext(), "You clicked on NO", Toast.LENGTH_SHORT).show();
                 dialog.cancel();
             }
         });
 
-        // Showing Alert Message
         alertDialog.show();
     }
 
