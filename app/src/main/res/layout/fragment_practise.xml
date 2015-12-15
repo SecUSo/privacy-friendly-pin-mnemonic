@@ -58,7 +58,7 @@
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_two"
@@ -68,7 +68,7 @@
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_three"
@@ -78,7 +78,7 @@
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="10sp" />
+            android:textSize="12sp" />
 
         <Button
             android:id="@+id/button_four"

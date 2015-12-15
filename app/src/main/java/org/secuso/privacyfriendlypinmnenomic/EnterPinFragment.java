@@ -11,14 +11,12 @@ import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 
@@ -148,14 +146,15 @@ public class EnterPinFragment extends Fragment {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
         sharedPreferences.edit().putString("versionname", "").commit();
         SharedPreferences settings = activity.getSharedPreferences("versionname", activity.getBaseContext().MODE_PRIVATE);
-        if (settings.getBoolean("isFirstRun", true)) {
-            Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.show_help_hint), Toast.LENGTH_LONG);
-            toast.setGravity(Gravity.CENTER, 0, 0);
-            toast.show();
+        //if (settings.getBoolean("isFirstRun", true)) {
+
+            //Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.show_help_hint), Toast.LENGTH_LONG);
+            //toast.setGravity(Gravity.CENTER, 0, 0);
+            //toast.show();
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean("isFirstRun", false);
             editor.commit();
-        }
+       // }
     }
 
     public SpannableString[] createSetSpannables() {

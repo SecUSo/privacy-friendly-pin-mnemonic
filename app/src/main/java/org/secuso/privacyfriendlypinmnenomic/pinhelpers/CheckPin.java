@@ -170,7 +170,7 @@ public class CheckPin {
             }
         }
 
-        if (differenceBA == 22 || differenceAB == 22) {
+        if ((differenceBA == 22 || differenceAB == 22) || (differenceBA == 44 || differenceAB == 44)) {
             resultCalculation = context.getString(R.string.display_math_stepping) + " " + firstTwo + secondTwo;
             System.out.println(resultCalculation);
         }

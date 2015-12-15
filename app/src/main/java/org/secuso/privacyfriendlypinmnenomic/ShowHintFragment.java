@@ -39,6 +39,8 @@ public class ShowHintFragment extends Fragment {
 
         Bundle bundle = this.getArguments();
 
+        ((RootActivity)getActivity()).tutorialDialogMnemonics();
+
         String pin = "";
 
         if (bundle != null) {

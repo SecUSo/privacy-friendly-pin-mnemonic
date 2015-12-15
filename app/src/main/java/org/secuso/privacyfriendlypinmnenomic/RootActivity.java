@@ -1,10 +1,12 @@
 package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -22,6 +24,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 
@@ -219,6 +222,46 @@ public class RootActivity extends ActionBarActivity {
             return listItem;
         }
 
+    }
+
+    public void tutorialDialogMnemonics() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
+
+        // Setting Dialog Title
+        alertDialog.setTitle("Tutorial");
+
+        // Setting Dialog Message
+        alertDialog.setMessage("This pages shows different techniques which can support memorizing the PIN. " +
+                "Further explanation can be found on the help page.");
+
+        // Setting Icon to Dialog
+        //alertDialog.setIcon(R.drawable.delete);
+
+        // Setting Positive "Yes" Button
+        alertDialog.setPositiveButton("Got it", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog,int which) {
+
+                // Write your code here to invoke YES event
+                Toast.makeText(getApplicationContext(), "You clicked on YES", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        // Setting Negative "NO" Button
+        alertDialog.setNegativeButton("View Help", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                // Write your code here to invoke NO event
+
+                final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.content_frame, new HelpFragment(), "HelpFragment");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                Toast.makeText(getApplicationContext(), "You clicked on NO", Toast.LENGTH_SHORT).show();
+                dialog.cancel();
+            }
+        });
+
+        // Showing Alert Message
+        alertDialog.show();
     }
 
 }

@@ -121,10 +121,10 @@ public class PractiseFragment extends Fragment {
     public void matchedPin(String entered) {
             if (entered.equals(practicePIN)) {
                 pinEditText.setTextColor(Color.GREEN);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_success), Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_success), Toast.LENGTH_LONG);
                 toast.show();
             } else { pinEditText.setTextColor(Color.RED);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_fail), Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_fail), Toast.LENGTH_LONG);
                 toast.show();}
 
 
