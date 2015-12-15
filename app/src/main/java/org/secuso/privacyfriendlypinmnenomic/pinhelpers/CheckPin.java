@@ -73,8 +73,9 @@ public class CheckPin {
                     resultDate = context.getString(R.string.display_date_year_1900s);
                 } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
                     resultDate = context.getString(R.string.display_date_year_2000s);
-                } else if ((Integer.parseInt(firstTwo) < 20) && (Integer.parseInt(firstTwo) > 9)) {
-                    resultDate = context.getString(R.string.display_date_year_any);
+                }
+            else {
+                    resultDate = input[0] + " - " + input[1]  + " - " + " (19)" + secondTwo;
                 }
             }
         }
