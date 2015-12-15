@@ -7,7 +7,7 @@
     <string name="action_about">Über</string>
     <string name="action_practice">PIN-Eingabe üben</string>
     <string name="action_enter_pin">PIN eingeben</string>
-    <string name="action_pin_mnenomics">Merkstrategien</string>
+    <string name="action_pin_mnemonics">Merkstrategien</string>
     <string name="action_navigation">Navigation</string>
 
     <string name="drawer_open">Navigation drawer öffnen</string>
@@ -34,7 +34,7 @@
 
     <!-- EnterPINFragment-->
     <string name="enter_pin">PIN eingeben: </string>
-    <string name="show_mnenomics_button">Merkstrategien anzeigen</string>
+    <string name="show_mnemonics_button">Merkstrategien anzeigen</string>
     <string name="show_help_hint">Weitere Erklärungen können dem Hilfemenü entnommen werden.</string>
 
     <!-- NumPad-->
