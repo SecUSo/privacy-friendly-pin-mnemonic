@@ -9,7 +9,6 @@ import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -122,12 +121,10 @@ public class PractiseFragment extends Fragment {
     public void matchedPin(String entered) {
             if (entered.equals(practicePIN)) {
                 pinEditText.setTextColor(Color.GREEN);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), "SUCCESS", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_success), Toast.LENGTH_SHORT);
                 toast.show();
             } else { pinEditText.setTextColor(Color.RED);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), "WRONG", Toast.LENGTH_SHORT);
-                toast.setGravity(Gravity.CENTER, 0, 0);
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_fail), Toast.LENGTH_SHORT);
                 toast.show();}
 
 

@@ -46,6 +46,8 @@
     <string name="practise_button">Practice entering your PIN</string>
     <string name="practised_pin_heading">Practiced PIN:</string>
     <string name="practise_pin_description">Practice entering your PIN repeatedly, keeping the mnemonic(s) in your mind.</string>
+    <string name="toast_success">You\'ve entered the right PIN. Please repeat a few times.</string>
+    <string name="toast_fail">You\'ve entered the wrong PIN. Re-read the mnemonics and try again.</string>
 
     <!-- HelpFragment-->
     <string name="help_shape_heading">Shape</string>
@@ -55,7 +57,7 @@
     <string name="help_four_highlighted">Digit is contained four times</string>
     <string name="help_story_heading">Stories</string>
     <string name="help_story_description">Use the displayed symbols to imagine a little story or sentence to remember the PIN.</string>
-    <string name="help_story_example">Example story for the PIN 4593: I hold a clover in my hand when a saw a cat at 3p.m.</string>
+    <string name="help_story_example">Example story for the PIN 4593: I held a clover in my hand when a saw a cat at 3p.m.</string>
     <string name="help_story_additional">The symbols are just hints, you can make up any story that helps you remembering the PIN.</string>
     <string name="help_privacy_heading">Privacy Info</string>
     <string name="help_pin_storage_heading">PIN Storage</string>
@@ -64,7 +66,7 @@
     <string name="help_permissions_description">Privacy Friendly PIN Mnenomics does not use any permissions</string>
 
     <!-- AboutFragment-->
-    <string name="version_number">Version 0.5</string>
+    <string name="version_number">Version 1.0</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>
     <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>
