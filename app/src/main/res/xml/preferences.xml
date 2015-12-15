@@ -2,41 +2,41 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="PIN Mnemonics">
+    <PreferenceCategory android:title="@string/app_name">
         <Preference
             android:icon="@mipmap/help_one"
-            android:summary="Digit is contained once" />
+            android:summary="@string/help_one_highlighted" />
         <Preference
             android:icon="@mipmap/help_two"
-            android:summary="Digit is contained twice" />
+            android:summary="@string/help_two_highlighted" />
         <Preference
             android:icon="@mipmap/help_three"
-            android:summary="Digit is contained three times" />
+            android:summary="@string/help_three_highlighted" />
         <Preference
             android:icon="@mipmap/help_four"
-            android:summary="Digit is contained four times" />
+            android:summary="@string/help_four_highlighted" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="Stories">
+    <PreferenceCategory android:title="@string/help_story_heading">
         <Preference
             android:icon="@mipmap/story_two"
-            android:summary="Use the displayed symbols to imagine a little story or sentence to remember the PIN." />
+            android:summary="@string/help_story_description" />
         <Preference
             android:icon="@mipmap/help_story"
-            android:summary="Example story for the PIN 4593: 'I hold a clover in my hand when a saw a cat at 3p.m.'" />
+            android:summary="@string/help_story_example" />
         <Preference
-            android:summary="The symbols are just hints, you can make up any story that helps you remembering the PIN."
+            android:summary="@string/help_story_additional"
             />
 
     </PreferenceCategory>
 
 
-    <PreferenceCategory android:title="Privacy Info">
+    <PreferenceCategory android:title="@string/help_privacy_heading">
         <Preference
-            android:summary="Your PIN is neither stored nor transmitted"
-            android:title="PIN Storage" />
+            android:summary="@string/help_pin_storage_description"
+            android:title="@string/help_pin_storage_heading" />
         <Preference
-            android:summary="Privacy Friendly PIN Mnenomics does not use any permissions"
-            android:title="Permissions" />
+            android:summary="@string/help_permissions_description"
+            android:title="@string/help_permissions_heading" />
     </PreferenceCategory>
 </PreferenceScreen>
