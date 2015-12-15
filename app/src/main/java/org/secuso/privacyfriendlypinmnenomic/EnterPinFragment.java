@@ -122,6 +122,8 @@ public class EnterPinFragment extends Fragment {
             Bundle bundle = new Bundle();
             bundle.putString("pin", visiblePin);
 
+            pinEditText.setText("");
+
             ShowHintFragment showHintFragment = new ShowHintFragment();
             showHintFragment.setArguments(bundle);
 
