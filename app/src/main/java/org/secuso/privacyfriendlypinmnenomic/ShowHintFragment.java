@@ -25,6 +25,7 @@ import org.secuso.privacyfriendlypinmnenomic.pinhelpers.DrawView;
 public class ShowHintFragment extends Fragment {
 
     int[] input = new int[4];
+    String practicePIN;
     Activity activity;
     View rootView;
 
@@ -42,6 +43,7 @@ public class ShowHintFragment extends Fragment {
 
         if (bundle != null) {
             pin = bundle.getString("pin");
+            practicePIN = pin;
         }
 
         TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
@@ -162,8 +164,14 @@ public class ShowHintFragment extends Fragment {
 
     public void clickPractiseButton() {
 
+        Bundle bundle = new Bundle();
+        bundle.putString("pin", practicePIN);
+
+        PractiseFragment practiseFragment = new PractiseFragment();
+        practiseFragment.setArguments(bundle);
+
         final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.content_frame, new PractiseFragment(), "PractiseFragment");
+        fragmentTransaction.replace(R.id.content_frame, practiseFragment, "PractiseFragment");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 

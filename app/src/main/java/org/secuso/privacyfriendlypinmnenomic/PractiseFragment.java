@@ -1,6 +1,7 @@
 package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
@@ -25,7 +26,7 @@ public class PractiseFragment extends Fragment {
     EditText pinEditText;
 
     String visiblePin;
-    String pin;
+    String practicePIN;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
@@ -35,8 +36,13 @@ public class PractiseFragment extends Fragment {
 
         this.rootView = rootView;
 
+        Bundle bundle = this.getArguments();
+
+        if (bundle != null) {
+            practicePIN = bundle.getString("pin");
+        } else {practicePIN = "";}
+
         visiblePin = "";
-        pin = "";
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
@@ -56,7 +62,7 @@ public class PractiseFragment extends Fragment {
 
         SpannableString[] spannables = createSetSpannables();
 
-        for (int i=0; i<spannables.length; i++) {
+        for (int i = 0; i < spannables.length; i++) {
             spannables[i].setSpan(new RelativeSizeSpan(1.8f), 0, 2, 0);
             numpad[i].setText(spannables[i]);
         }
@@ -70,12 +76,9 @@ public class PractiseFragment extends Fragment {
 
                     if (pinEditText.getText().length() < 4) {
                         visiblePin = visiblePin += tempInt;
-                        pin = pin += tempInt;
-                        if (pin.length() == 2) {
-                            pin += "-";
-                        }
                         Log.d("PIN:", visiblePin);
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
+                        matchedPin(visiblePin);
                     }
                 }
             });
@@ -90,7 +93,6 @@ public class PractiseFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.setText(deletePinDigits(visiblePin));
                 visiblePin = deletePinDigits(visiblePin);
-                pin = deletePinDigits(visiblePin);
             }
         });
 
@@ -102,11 +104,19 @@ public class PractiseFragment extends Fragment {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();
-                resetPins();
+                visiblePin = "";
             }
         });
 
         return rootView;
+    }
+
+    public void matchedPin(String entered) {
+        if (practicePIN.length() == 4) {
+            if (entered.equals(practicePIN)) {
+                pinEditText.setTextColor(Color.GREEN);
+            } else pinEditText.setTextColor(Color.RED);
+        }
     }
 
     public String deletePinDigits(String visiblePin) {
@@ -136,7 +146,5 @@ public class PractiseFragment extends Fragment {
         return spannables;
     }
 
-    public void resetPins() {
-        visiblePin = pin = "";
-    }
 }
+
