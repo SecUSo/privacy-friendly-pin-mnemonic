@@ -19,6 +19,7 @@ public class AboutFragment extends Fragment {
 
         View rootView = inflater.inflate(R.layout.fragment_about, container, false);
         ((ActionBarActivity)getActivity()).getSupportActionBar().setSubtitle(R.string.action_about);
+        container.removeAllViews();
         return rootView;
 
     }

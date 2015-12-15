@@ -33,6 +33,7 @@ public class EnterPinFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
+        container.removeAllViews();
 
         ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_enter_pin);
 
