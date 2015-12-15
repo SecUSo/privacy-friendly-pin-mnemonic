@@ -32,7 +32,7 @@ public class DrawView extends View {
 
     public void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        drawArrowHead(canvas);
+        //drawArrowHead(canvas);
 
         int xStartView = startView.getLeft() + startView.getWidth()/2;
         int yStartView = startView.getTop() + startView.getHeight()/2;
@@ -41,7 +41,7 @@ public class DrawView extends View {
         int yEndView = endView.getTop() + endView.getHeight() / 2;
 
 
-        canvas.drawLine(xStartView, yStartView, xEndView, yEndView, paint);
+        //canvas.drawLine(xStartView, yStartView, xEndView, yEndView, paint);
     }
 
     public void drawArrowHead(Canvas canvas) {

@@ -2,29 +2,31 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="PIN Mnenomics">
+    <PreferenceCategory android:title="PIN Mnemonics">
         <Preference
-            android:icon="@drawable/one"
+            android:icon="@mipmap/help_one"
             android:summary="Digit is contained once" />
         <Preference
-            android:icon="@drawable/two"
+            android:icon="@mipmap/help_two"
             android:summary="Digit is contained twice" />
         <Preference
-            android:icon="@drawable/three"
+            android:icon="@mipmap/help_three"
             android:summary="Digit is contained three times" />
         <Preference
-            android:icon="@drawable/four"
+            android:icon="@mipmap/help_four"
             android:summary="Digit is contained four times" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="Stories">
         <Preference
-            android:icon="@drawable/six"
+            android:icon="@mipmap/story_two"
             android:summary="Use the displayed symbols to imagine a little story or sentence to remember the PIN." />
         <Preference
-            android:icon="@drawable/six"
-            android:summary="This would be the following story for the PIN 2314:....." />
-
+            android:icon="@mipmap/help_story"
+            android:summary="Example story for the PIN 4593: 'I hold a clover in my hand when a saw a cat at 3p.m.'" />
+        <Preference
+            android:summary="The symbols are just hints, you can make up any story that helps you remembering the PIN."
+            />
 
     </PreferenceCategory>
 
