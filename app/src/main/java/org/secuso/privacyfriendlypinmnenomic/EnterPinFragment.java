@@ -24,7 +24,6 @@ import org.secuso.privacyfriendlypin.R;
 
 public class EnterPinFragment extends Fragment {
 
-    private String pin;
     private String visiblePin;
     EditText pinEditText;
     Activity activity;
@@ -40,7 +39,7 @@ public class EnterPinFragment extends Fragment {
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
         pinEditText.setInputType(InputType.TYPE_NULL);
 
-        visiblePin = pin = "";
+        visiblePin = "";
 
         //Buttons
         Button[] numpad = new Button[10];
@@ -71,10 +70,7 @@ public class EnterPinFragment extends Fragment {
 
                     if (pinEditText.getText().length() < 4) {
                         visiblePin = visiblePin += tempInt;
-                        pin = pin += tempInt;
-                        if (pin.length() == 2) {
-                            pin += "-";
-                        }
+
                         Log.d("PIN:", visiblePin);
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
                     }
@@ -91,7 +87,6 @@ public class EnterPinFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.setText(deletePinDigits(visiblePin));
                 visiblePin = deletePinDigits(visiblePin);
-                pin = deletePinDigits(visiblePin);
             }
         });
 
@@ -111,7 +106,7 @@ public class EnterPinFragment extends Fragment {
 
             public void onClick(View v) {
                 pinEditText.getText().clear();
-                visiblePin = pin = "";
+                visiblePin = "";
             }
         });
 
@@ -126,7 +121,6 @@ public class EnterPinFragment extends Fragment {
 
             Bundle bundle = new Bundle();
             bundle.putString("pin", visiblePin);
-            bundle.putString("pinHyphen", pin);
 
             ShowHintFragment showHintFragment = new ShowHintFragment();
             showHintFragment.setArguments(bundle);

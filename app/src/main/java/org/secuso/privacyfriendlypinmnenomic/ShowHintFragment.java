@@ -39,15 +39,13 @@ public class ShowHintFragment extends Fragment {
         Bundle bundle = this.getArguments();
 
         String pin = "";
-        String pinHyphen = "";
 
         if (bundle != null) {
             pin = bundle.getString("pin");
-            pinHyphen = bundle.getString("pinHyphen");
         }
 
         TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
-        pinTextView.setText(pinHyphen);
+        pinTextView.setText(pin);
 
         //secure against Screenshot
         activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
