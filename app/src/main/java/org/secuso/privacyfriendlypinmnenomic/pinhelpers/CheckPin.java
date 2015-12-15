@@ -43,7 +43,7 @@ public class CheckPin {
 
     public String determineDate() {
 
-        String resultDate = input[0] + " - " + input[1]  + " - " + " (19)" + secondTwo;
+        String resultDate = "0" + input[0] + " - " + "0" + input[1]  + " - " + " (19)" + secondTwo;
 
         String[] monthsWordsArray = {"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(May)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Oct)", "(Nov)", "(Dec)"};
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
