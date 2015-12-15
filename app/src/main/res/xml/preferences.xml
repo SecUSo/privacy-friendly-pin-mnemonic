@@ -2,7 +2,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/app_name">
+    <PreferenceCategory android:title="@string/help_shape_heading">
         <Preference
             android:icon="@mipmap/help_one"
             android:summary="@string/help_one_highlighted" />
