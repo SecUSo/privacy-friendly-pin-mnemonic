@@ -50,9 +50,6 @@ public class ShowHintFragment extends Fragment {
             practicePIN = pin;
         }
 
-        TextView pinTextView = (TextView) rootView.findViewById(R.id.current_pin);
-        pinTextView.setText(pin);
-
         //secure against Screenshot
         activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                 WindowManager.LayoutParams.FLAG_SECURE);

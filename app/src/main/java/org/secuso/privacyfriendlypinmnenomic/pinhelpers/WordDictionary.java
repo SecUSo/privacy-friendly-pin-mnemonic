@@ -420,7 +420,7 @@ public class WordDictionary {
             "ehre", "ehrt", "eibe", "eide", "eier", "eile", "eilt", "eine", "eins", "eint", "eist",
             "ekel", "elan", "elbe", "elch", "elfe", "elke", "elle", "else", "emde", "emil", "emma",
             "emmy", "ende", "enge", "engt", "ente", "epos", "epik", "erbe", "erbt", "erde", "ergo",
-            "eric", "erle", "ernt", "eros", "erst", "esel", "esse", "esst", "este", "etas", "etui",
+            "eric", "erle", "ernt", "eros", "erst", "esel", "esse", "esst", "este", "etui",
             "erik", "etwa", "euch", "euer", "eule", "euro", "eure", "evtl", "ewig", "exil", "expo",
             "fach", "fakt", "fahl", "fahr", "fair", "fake", "fakt", "fall", "falt", "falz", "fand",
             "fang", "fans", "farm", "fase", "fass", "fast", "faul", "faun", "faxe", "fckw", "fegt",
