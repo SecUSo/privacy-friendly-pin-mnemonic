@@ -72,5 +72,15 @@
     <string name="more_info">More information can be found on:</string>
     <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/en/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
 
+    <!-- Tutorials global-->
+    <string name="confirm_button">Got it</string>
+    <string name="help_button">View Help</string>
+
+    <!-- Tutorials specific-->
+    <string name="tutorial_practice_title">Practice your PIN</string>
+    <string name="tutorial_practice_description">Enter your PIN repeatedly keeping the chosen mnemonic in mind.</string>
+    <string name="tutorial_mnemonics_title">View Mnemonics</string>
+    <string name="tutorial_mnemonics_description">This pages shows techniques to support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic.</string>
+
 </resources>
 

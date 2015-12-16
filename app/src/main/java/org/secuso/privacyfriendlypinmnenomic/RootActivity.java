@@ -228,26 +228,46 @@ public class RootActivity extends ActionBarActivity {
     public void tutorialDialogMnemonics() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
 
-        //String htmlText = "<html><body style=\"text-align:justify\"> %s </body></Html>";
-        //String myData = "This pages shows different techniques which can support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic. \n Further explanation can be found on the help page.";
+        alertDialog.setTitle(R.string.tutorial_mnemonics_title);
 
-        //WebView webView = new WebView(this);
-        //webView.loadData(String.format(htmlText, myData), "text/html", "utf-8");
-
-        alertDialog.setTitle("View Mnemonics");
-
-        //alertDialog.setView(webView);
-        alertDialog.setMessage("This pages shows techniques to support memorizing the PIN. " +
-              "Please practice entering your PIN after choosing a mnemonic.");
+        alertDialog.setMessage(R.string.tutorial_mnemonics_description);
 
         alertDialog.setIcon(R.mipmap.ic_tutorial);
 
-        alertDialog.setPositiveButton("Got it", new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int which) {
             }
         });
 
-        alertDialog.setNegativeButton("View Help", new DialogInterface.OnClickListener() {
+        alertDialog.setNegativeButton(getString(R.string.help_button), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+
+                final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.content_frame, new HelpFragment(), "HelpFragment");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                dialog.cancel();
+            }
+        });
+
+        alertDialog.show();
+    }
+
+    public void tutorialDialogPractice() {
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
+
+        alertDialog.setTitle(R.string.tutorial_practice_title);
+
+        alertDialog.setMessage(R.string.tutorial_practice_description);
+
+        alertDialog.setIcon(R.mipmap.ic_tutorial);
+
+        alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog,int which) {
+            }
+        });
+
+        alertDialog.setNegativeButton(getString(R.string.help_button), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
 
                 final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();

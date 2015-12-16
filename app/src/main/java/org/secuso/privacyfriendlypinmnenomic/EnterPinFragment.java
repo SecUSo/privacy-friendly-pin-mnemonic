@@ -3,9 +3,7 @@ package org.secuso.privacyfriendlypinmnenomic;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.text.SpannableString;
@@ -129,8 +127,6 @@ public class EnterPinFragment extends Fragment {
             fragmentTransaction.replace(R.id.content_frame, showHintFragment, "ShowHintFragment");
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
-
-            doFirstRun();
         }
     }
 
@@ -140,21 +136,6 @@ public class EnterPinFragment extends Fragment {
             return visiblePin = visiblePin.substring(0, visiblePin.length() - 1);
         }
         return visiblePin;
-    }
-
-    private void doFirstRun() {
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
-        sharedPreferences.edit().putString("versionname", "").commit();
-        SharedPreferences settings = activity.getSharedPreferences("versionname", activity.getBaseContext().MODE_PRIVATE);
-        //if (settings.getBoolean("isFirstRun", true)) {
-
-            //Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.show_help_hint), Toast.LENGTH_LONG);
-            //toast.setGravity(Gravity.CENTER, 0, 0);
-            //toast.show();
-            SharedPreferences.Editor editor = settings.edit();
-            editor.putBoolean("isFirstRun", false);
-            editor.commit();
-       // }
     }
 
     public SpannableString[] createSetSpannables() {

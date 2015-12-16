@@ -2,8 +2,10 @@ package org.secuso.privacyfriendlypinmnenomic;
 
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.text.SpannableString;
@@ -37,6 +39,8 @@ public class PractiseFragment extends Fragment {
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
         ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practice);
+
+        doFirstRun();
 
         this.rootView = rootView;
 
@@ -116,6 +120,19 @@ public class PractiseFragment extends Fragment {
         });
 
         return rootView;
+    }
+
+    private void doFirstRun() {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
+        sharedPreferences.edit().putString("firstpractice", "").commit();
+        SharedPreferences settings = activity.getSharedPreferences("firstpractice", activity.getBaseContext().MODE_PRIVATE);
+        if (settings.getBoolean("isFirstRun", true)) {
+            ((RootActivity)getActivity()).tutorialDialogPractice();
+
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("isFirstRun", false);
+            editor.commit();
+        }
     }
 
     public void matchedPin(String entered) {

@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
@@ -35,11 +37,11 @@ public class ShowHintFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
         this.rootView = rootView;
 
+        doFirstRun();
+
         ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_pin_mnemonics);
 
         Bundle bundle = this.getArguments();
-
-        ((RootActivity)getActivity()).tutorialDialogMnemonics();
 
         String pin = "";
 
@@ -177,6 +179,18 @@ public class ShowHintFragment extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
+    }
+
+    private void doFirstRun() {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(activity);
+        sharedPreferences.edit().putString("firstShow", "").commit();
+        SharedPreferences settings = activity.getSharedPreferences("firstShow", activity.getBaseContext().MODE_PRIVATE);
+        if (settings.getBoolean("isFirstRun", true)) {
+            ((RootActivity)getActivity()).tutorialDialogMnemonics();
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("isFirstRun", false);
+        editor.commit();
+         }
     }
 
     public SpannableString[] createSetSpannables() {
