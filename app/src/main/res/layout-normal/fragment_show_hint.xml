@@ -4,14 +4,13 @@
     android:id="@+id/show_hint_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="30dp">
+    android:layout_marginTop="15dp">
 
     <TextView
         android:id="@+id/shapeHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/practiseButton"
-        android:layout_alignStart="@+id/practiseButton"
+        android:layout_marginLeft="20dp"
         android:text="@string/shape_heading"
         android:textSize="15sp" />
 
@@ -166,7 +165,7 @@
         android:layout_alignLeft="@+id/shapeHeading"
         android:layout_alignStart="@+id/shapeHeading"
         android:layout_below="@+id/numbers_show_hint"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="@string/word_heading"
         android:textSize="15sp" />
 
@@ -250,22 +249,22 @@
 
         <ImageView
             android:id="@+id/symbolImageView2"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_width="40sp"
             android:layout_height="40sp"/>
 
         <ImageView
             android:id="@+id/symbolImageView3"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_width="40sp"
             android:layout_height="40sp"/>
 
         <ImageView
             android:id="@+id/symbolImageView4"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_width="40sp"
             android:layout_height="40sp"/>
 
@@ -278,7 +277,8 @@
         android:layout_below="@+id/storyHeading"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/practice_button"
         android:text="@string/practise_button"
         android:textColor="@color/white" />

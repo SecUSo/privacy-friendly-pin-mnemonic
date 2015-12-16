@@ -52,9 +52,9 @@
 
         <Button
             android:id="@+id/button_one"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -62,9 +62,9 @@
 
         <Button
             android:id="@+id/button_two"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -72,9 +72,9 @@
 
         <Button
             android:id="@+id/button_three"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -82,9 +82,9 @@
 
         <Button
             android:id="@+id/button_four"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -92,9 +92,9 @@
 
         <Button
             android:id="@+id/button_five"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -102,9 +102,9 @@
 
         <Button
             android:id="@+id/button_six"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -114,9 +114,9 @@
 
         <Button
             android:id="@+id/button_seven"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -124,9 +124,9 @@
 
         <Button
             android:id="@+id/button_eight"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -134,9 +134,9 @@
 
         <Button
             android:id="@+id/button_nine"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -144,9 +144,9 @@
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/delete_reset_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -154,9 +154,9 @@
 
         <Button
             android:id="@+id/button_zero"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnenomic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -164,9 +164,9 @@
 
         <Button
             android:id="@+id/button_delete"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/delete_reset_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
