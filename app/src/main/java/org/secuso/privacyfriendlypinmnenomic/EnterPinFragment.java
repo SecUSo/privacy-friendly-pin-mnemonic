@@ -23,11 +23,12 @@ public class EnterPinFragment extends Fragment {
     private String visiblePin;
     EditText pinEditText;
     Activity activity;
+    View rootView;
 
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
+        rootView = inflater.inflate(R.layout.fragment_enter_pin, container, false);
         container.removeAllViews();
 
         ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_enter_pin);
@@ -52,7 +53,7 @@ public class EnterPinFragment extends Fragment {
 
         SpannableString[] spannables = createSetSpannables();
 
-        for (int i=0; i<spannables.length; i++) {
+        for (int i = 0; i < spannables.length; i++) {
             spannables[i].setSpan(new RelativeSizeSpan(1.8f), 0, 2, 0);
             numpad[i].setText(spannables[i]);
         }
@@ -70,9 +71,14 @@ public class EnterPinFragment extends Fragment {
                         Log.d("PIN:", visiblePin);
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
                     }
+
+                    if (pinEditText.getText().length() == 4) {
+                        activateDoneButton();
+                    }
                 }
             });
         }
+
 
         Button deleteButton = (Button) rootView.findViewById(R.id.button_delete);
         SpannableString delete = new SpannableString("  \n DEL");
@@ -83,14 +89,7 @@ public class EnterPinFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.setText(deletePinDigits(visiblePin));
                 visiblePin = deletePinDigits(visiblePin);
-            }
-        });
-
-        Button doneButton = (Button) rootView.findViewById(R.id.button_done);
-        doneButton.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-                clickDoneButton();
+                deactivateDoneButton();
             }
         });
 
@@ -103,6 +102,7 @@ public class EnterPinFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.getText().clear();
                 visiblePin = "";
+                deactivateDoneButton();
             }
         });
 
@@ -128,6 +128,30 @@ public class EnterPinFragment extends Fragment {
             fragmentTransaction.addToBackStack(null);
             fragmentTransaction.commit();
         }
+    }
+
+    public void activateDoneButton() {
+        Button doneButton = (Button) rootView.findViewById(R.id.button_done);
+        doneButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.practice_button));
+
+        doneButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                clickDoneButton();
+            }
+        });
+    }
+
+    public void deactivateDoneButton() {
+        Button doneButton = (Button) rootView.findViewById(R.id.button_done);
+        doneButton.setBackgroundDrawable(getResources().getDrawable(R.drawable.inactive_button));
+
+        doneButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                //done nothing
+            }
+        });
     }
 
     public String deletePinDigits(String visiblePin) {

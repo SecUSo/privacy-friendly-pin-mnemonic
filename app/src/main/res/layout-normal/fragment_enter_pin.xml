@@ -202,7 +202,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/show_mnemonics_button"
-            android:background="@drawable/practice_button"
+            android:background="@drawable/inactive_button"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:textColor="@color/white"

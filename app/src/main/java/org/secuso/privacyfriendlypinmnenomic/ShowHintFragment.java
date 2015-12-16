@@ -104,7 +104,6 @@ public class ShowHintFragment extends Fragment {
         for (int i = 0; i < 4; i++) {
             if (i < 3) {
                 drawArrow(numpad[input[i]], numpad[input[i + 1]], input[i], input[i + 1]);
-                //System.out.println("STELLE IM INPUT ARRAY " + Integer.toString(input[i]) + " " + Integer.toString(input[i + 1]));
             }
         }
 
@@ -237,34 +236,34 @@ public class ShowHintFragment extends Fragment {
     public void assignSymbol(int digit, ImageView imageView) {
         switch (digit) {
             case 0:
-                imageView.setImageResource(R.mipmap.story_zero);
+                imageView.setImageResource(R.drawable.story_zero);
                 break;
             case 1:
-                imageView.setImageResource(R.mipmap.story_one);
+                imageView.setImageResource(R.drawable.story_one);
                 break;
             case 2:
-                imageView.setImageResource(R.mipmap.story_two);
+                imageView.setImageResource(R.drawable.story_two);
                 break;
             case 3:
-                imageView.setImageResource(R.mipmap.story_three);
+                imageView.setImageResource(R.drawable.story_three);
                 break;
             case 4:
-                imageView.setImageResource(R.mipmap.story_four);
+                imageView.setImageResource(R.drawable.story_four);
                 break;
             case 5:
-                imageView.setImageResource(R.mipmap.story_five);
+                imageView.setImageResource(R.drawable.story_five);
                 break;
             case 6:
-                imageView.setImageResource(R.mipmap.story_six);
+                imageView.setImageResource(R.drawable.story_six);
                 break;
             case 7:
-                imageView.setImageResource(R.mipmap.story_seven);
+                imageView.setImageResource(R.drawable.story_seven);
                 break;
             case 8:
-                imageView.setImageResource(R.mipmap.story_eight);
+                imageView.setImageResource(R.drawable.story_eight);
                 break;
             case 9:
-                imageView.setImageResource(R.mipmap.story_nine);
+                imageView.setImageResource(R.drawable.story_nine);
                 break;
             default:
                 imageView.setImageResource(0);
