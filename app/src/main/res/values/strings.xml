@@ -34,7 +34,6 @@
     <!-- EnterPINFragment-->
     <string name="enter_pin">Enter your PIN: </string>
     <string name="show_mnemonics_button">Show Mnemonics</string>
-    <string name="show_help_hint">Further Explanation can be found in the help menu</string>
 
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>
@@ -44,14 +43,13 @@
     <string name="your_pin_heading">Your PIN:</string>
     <string name="practise_button">Practice entering your PIN</string>
     <string name="practised_pin_heading">Practiced PIN:</string>
-    <string name="practise_pin_description">Practice entering your PIN repeatedly, keeping the mnemonic(s) in your mind.</string>
     <string name="toast_success">You\'ve entered the right PIN. Please repeat a few times.</string>
-    <string name="toast_fail">You\'ve entered the wrong PIN. Re-read the mnemonics and try again.</string>
+    <string name="toast_fail">You\'ve entered the wrong PIN. Please re-read the mnemonics and try again.</string>
 
     <!-- HelpFragment-->
     <string name="help_overview_heading">Overview</string>
     <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your PIN by presenting up to 5 strategies.</string>
-    <string name="help_tip_two">Don't forget to practice entering your PIN multiple times for internalization.</string>
+    <string name="help_tip_two">Don\'t forget to practice entering your PIN multiple times for internalization.</string>
     <string name="help_tip_three">PIN-Numpads often do not have letters on it. Use your phone as a crib.</string>
 
     <string name="help_shape_heading">Shape</string>
@@ -67,7 +65,7 @@
     <string name="help_pin_storage_heading">PIN Storage</string>
     <string name="help_pin_storage_description">Your PIN is neither stored nor transmitted</string>
     <string name="help_permissions_heading">Permissions</string>
-    <string name="help_permissions_description">Privacy Friendly PIN Mnenomics does not use any permissions</string>
+    <string name="help_permissions_description">Privacy Friendly PIN Mnemonics does not use any permissions</string>
 
     <!-- AboutFragment-->
     <string name="version_number">Version 1.0</string>
