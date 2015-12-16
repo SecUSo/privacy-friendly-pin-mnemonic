@@ -58,7 +58,7 @@ public class DrawView extends View {
         path.lineTo( endView.getLeft() + endView.getWidth()/2 + (strokeWidth*3), endView.getTop() + endView.getHeight()/2);
 
         path.lineTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 + (strokeWidth*2));
-        
+
         path.close();
 
         //turns triangle

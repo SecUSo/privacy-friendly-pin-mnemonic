@@ -278,7 +278,7 @@
         android:layout_below="@+id/storyHeading"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/practice_button"
         android:text="@string/practise_button"
         android:textColor="@color/white" />
