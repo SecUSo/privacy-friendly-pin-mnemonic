@@ -229,7 +229,7 @@ public class ShowHintFragment extends Fragment {
                 //System.out.println(Integer.toString(multiple) + " WHITE");
                 break;
             default:
-                button.setBackgroundResource(R.drawable.mnenomic_numpad_button);
+                button.setBackgroundResource(R.drawable.mnemonic_numpad_button);
                 break;
         }
     }

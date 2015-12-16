@@ -31,7 +31,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"
@@ -42,7 +42,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -52,7 +52,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -62,7 +62,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -72,7 +72,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -82,7 +82,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -92,7 +92,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -102,7 +102,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -112,7 +112,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
@@ -132,7 +132,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="2dp"
-            android:background="@drawable/mnenomic_numpad_button"
+            android:background="@drawable/mnemonic_numpad_button"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textAllCaps="false"/>
