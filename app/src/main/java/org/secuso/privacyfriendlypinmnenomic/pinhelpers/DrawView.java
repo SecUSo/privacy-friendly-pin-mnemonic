@@ -100,7 +100,7 @@ public class DrawView extends View {
             return 270;
         }
         //Arrow should point down from left to right
-        if (((first < second)) && (((second - first == 4) || second - first == 8) || first - second == 7)) {
+        if  ((first != 3) && (((first < second)) && (((second - first == 4) || second - first == 8) || first - second == 7))) {
             System.out.println("Angle: 45");
             return 45;
         }
@@ -120,22 +120,22 @@ public class DrawView extends View {
             return -135;
         }
         //Arrow should point down angularly from left to right
-        if (((first < second) && (second - first == 7)) || (first == 4 )) {
+        if (((first < second) && (second - first == 7)) || (first == 4 && second != 9 && second != 3)) {
             System.out.println("Angle: 67");
             return 67;
         }
         //Arrow should point down angularly from right to left
-        if (((first < second) && ((second - first == 5) && first !=1 )) || (first == 6 )) {
+        if (((first < second) && ((second - first == 5) && first !=1 && first != 4))) {
             System.out.println("Angle: 112");
             return 112;
         }
-        //Arrow should point up angularly from left to right
-        if (((first > second) && (first - second == 7)) || (second == 4 )) {
+        //Arrow should point up angularly from right to left
+        if (first!=3 && (((first > second) && (first - second == 7)) || (second == 4 ))) {
             System.out.println("Angle: -112");
             return -112;
         }
-        //Arrow should point up angularly from right to left
-        if (((first > second) && ((first - second == 5)) && first != 1) || (second == 6)) {
+        //Arrow should point up angularly from left to right
+        if (((first > second) && ((first - second == 5)) && (first != 1) && (first != 6))) {
             System.out.println("Angle: -67");
             return -67;
         }

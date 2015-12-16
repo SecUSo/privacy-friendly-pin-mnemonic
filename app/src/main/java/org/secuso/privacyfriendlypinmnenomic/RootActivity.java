@@ -173,7 +173,6 @@ public class RootActivity extends ActionBarActivity {
 
         if (getFragmentManager().getBackStackEntryCount() > 0) {
             getFragmentManager().popBackStack();
-            System.out.println("STACK: " + getFragmentManager().getBackStackEntryCount());
         } else {
             super.onBackPressed();
         }
