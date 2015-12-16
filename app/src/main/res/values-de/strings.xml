@@ -19,10 +19,6 @@
     <string name="display_date_year_1900s">Ein gültiges Jahr der 90er</string>
     <string name="display_date_year_2000s">Ein gültiges Jahr dieses Jahrhunderts</string>
     <string name="display_date_year_any">Gültiges vergangenes Jahr</string>
-    <string name="display_math_large">fache von</string>
-    <string name="display_math_small">kleiner als</string>
-    <string name="display_math_is">ist</string>
-    <string name="display_math_by">durch</string>
     <string name="display_math_stepping">Stufen-PIN: </string>
     <string name="display_entered_pin">Ihre PIN ist: </string>
     <string name="shape_heading">Form:</string>

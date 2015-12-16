@@ -35,15 +35,11 @@ public class CheckPin {
         String tmp2 = input[2];
         firstTwo = tmp1 += input[1];
         secondTwo = tmp2 += input[3];
-
-        //for (int i = 0; i < 4; i++) {
-        //    System.out.println("INPUT: " + input[i]);
-        //}
     }
 
     public String determineDate() {
 
-        String resultDate = "0" + input[0] + "-" + "0" + input[1]  + "-" + " (19)" + secondTwo;
+        String resultDate = "0" + input[0] + "-" + "0" + input[1]  + "-" + "(19)" + secondTwo;
 
         String[] monthsWordsArray = {"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(May)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Oct)", "(Nov)", "(Dec)"};
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
@@ -67,7 +63,7 @@ public class CheckPin {
                     resultDate = monthsWordsArray[Integer.parseInt(secondTwo)] + " " + firstTwo + "-" + secondTwo;
                     break;
                 } else if ((firstTwo.equals(monthsArray[j])) && (secondTwo.equals(daysArray[i]))) {
-                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + firstTwo + "-" + secondTwo;
+                    resultDate = monthsWordsArray[Integer.parseInt(firstTwo)] + " " + firstTwo + "-" + secondTwo;
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
                     resultDate = context.getString(R.string.display_date_year_1900s);
@@ -95,7 +91,6 @@ public class CheckPin {
         String[] wordDictionary = wordDictionaryClass.getWordDictionary(Locale.getDefault().getLanguage());
 
         String[] getKeysArray = intArrayToStringArray(userInput, wordDictionaryClass);
-        //System.out.println("PIN AHHHHHHHHH " + Integer.toString(a));
 
         List<String> wordList = mapKeysToWords(getKeysArray);
 
@@ -104,7 +99,6 @@ public class CheckPin {
         List<String> possibleWords = findWords(wordArray, wordDictionary);
 
         int random = (int) (Math.random() * possibleWords.size());
-        //System.out.println("Random is " + random);
 
         // assign the number to a mapped word
         for (int i = 0; i < userInput.length; i++) {
@@ -116,7 +110,6 @@ public class CheckPin {
             }
 
         }
-        //System.out.println("Your word is " + word);
         if (word.equals("")) {
             return context.getString(R.string.display_no_word);
         }
@@ -150,10 +143,7 @@ public class CheckPin {
             if (secondHalf != 0 && firstHalf % secondHalf == 0) {
                 if (firstHalf == i * secondHalf) {
                     resultCalculation =
-                            firstTwo + " " + context.getString(R.string.display_math_is)
-                                    + " " + Integer.toString(i)
-                                    + context.getString(R.string.display_math_large) + " " + secondTwo;
-                    System.out.println(resultCalculation);
+                            firstTwo + " = " + secondTwo + " x " + Integer.toString(i);
                 }
             }
         }
@@ -162,32 +152,22 @@ public class CheckPin {
             if (firstHalf != 0 && secondHalf % firstHalf == 0) {
                 if (secondHalf == j * firstHalf) {
                     resultCalculation =
-                            secondTwo + " " + context.getString(R.string.display_math_is)
-                                    + " " + Integer.toString(j) + " "
-                                    + context.getString(R.string.display_math_large) + " " + firstTwo;
-                    System.out.println(resultCalculation);
+                            secondTwo + " = " + firstTwo + " x " + Integer.toString(j);
                 }
             }
         }
 
         if ((differenceBA == 22 || differenceAB == 22) || (differenceBA == 44 || differenceAB == 44)) {
             resultCalculation = context.getString(R.string.display_math_stepping) + " " + firstTwo + secondTwo;
-            System.out.println(resultCalculation);
         }
 
         for (int k = 3; k > 0; k--) {
             if (differenceAB == k) {
                 resultCalculation =
-                        firstTwo + " " + context.getString(R.string.display_math_large)
-                                + " " + secondTwo + " " + context.getString(R.string.display_math_by)
-                                + " " + Integer.toString(k);
-                System.out.println(resultCalculation);
+                        firstTwo + " = " + secondTwo + " + " + Integer.toString(k);
             } else if (differenceBA == k) {
                 resultCalculation =
-                        firstTwo + " " + context.getString(R.string.display_math_small)
-                                + " " + secondTwo + " " + context.getString(R.string.display_math_by)
-                                + " " + Integer.toString(k);
-                System.out.println(resultCalculation);
+                        firstTwo + " = " + secondTwo + " - " + Integer.toString(k);
             }
         }
 

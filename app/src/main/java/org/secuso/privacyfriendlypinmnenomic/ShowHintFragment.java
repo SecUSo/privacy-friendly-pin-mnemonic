@@ -119,6 +119,8 @@ public class ShowHintFragment extends Fragment {
 
         wordTextView.setText(checkPin.determineWord());
         dateFrameTextView.setText(checkPin.determineDate());
+
+        //HERERERERER
         mathFrameTextView.setText(checkPin.determineCalculation());
 
         ImageView[] symbolRow = new ImageView[4];

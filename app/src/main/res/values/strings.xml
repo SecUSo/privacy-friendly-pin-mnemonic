@@ -19,10 +19,6 @@
     <string name="display_date_year_1900s">It is a valid year in the 1900s</string>
     <string name="display_date_year_2000s">It is a valid year in this century</string>
     <string name="display_date_year_any">It is a valid year from the past</string>
-    <string name="display_math_large">times as large as</string>
-    <string name="display_math_small">is smaller than</string>
-    <string name="display_math_is">is</string>
-    <string name="display_math_by">by</string>
     <string name="display_math_stepping">It is a stepping PIN: </string>
     <string name="display_entered_pin">Your PIN is: </string>
     <string name="shape_heading">Shape:</string>
