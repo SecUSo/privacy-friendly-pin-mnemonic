@@ -2,13 +2,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="Overview">
+    <PreferenceCategory android:title="@string/help_overview_heading">
         <Preference
-            android:summary="Privacy Friendly PIN Mnemonic helps you memorizing your PIN by presenting up to 5 strategies." />
+            android:summary="@string/help_tip_one" />
         <Preference
-            android:summary="Don't forget to practice entering your PIN multiple times for internalization." />
+            android:summary="@string/help_tip_two" />
         <Preference
-            android:summary="PIN-Numpads often do not have letters on it. Use your phone as a crib." />
+            android:summary="@string/help_tip_three" />
     </PreferenceCategory>
 
 

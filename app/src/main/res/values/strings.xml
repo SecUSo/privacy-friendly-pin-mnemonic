@@ -49,6 +49,11 @@
     <string name="toast_fail">You\'ve entered the wrong PIN. Re-read the mnemonics and try again.</string>
 
     <!-- HelpFragment-->
+    <string name="help_overview_heading">Overview</string>
+    <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your PIN by presenting up to 5 strategies.</string>
+    <string name="help_tip_two">Don't forget to practice entering your PIN multiple times for internalization.</string>
+    <string name="help_tip_three">PIN-Numpads often do not have letters on it. Use your phone as a crib.</string>
+
     <string name="help_shape_heading">Shape</string>
     <string name="help_one_highlighted">Digit is contained once</string>
     <string name="help_two_highlighted">Digit is contained twice</string>
