@@ -14,25 +14,25 @@
 
     <PreferenceCategory android:title="@string/help_shape_heading">
         <Preference
-            android:icon="@mipmap/help_one"
+            android:icon="@drawable/help_one"
             android:summary="@string/help_one_highlighted" />
         <Preference
-            android:icon="@mipmap/help_two"
+            android:icon="@drawable/help_two"
             android:summary="@string/help_two_highlighted" />
         <Preference
-            android:icon="@mipmap/help_three"
+            android:icon="@drawable/help_three"
             android:summary="@string/help_three_highlighted" />
         <Preference
-            android:icon="@mipmap/help_four"
+            android:icon="@drawable/help_four"
             android:summary="@string/help_four_highlighted" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/help_story_heading">
         <Preference
-            android:icon="@mipmap/story_two"
+            android:icon="@drawable/story_two"
             android:summary="@string/help_story_description" />
         <Preference
-            android:icon="@mipmap/help_story"
+            android:icon="@drawable/help_story"
             android:summary="@string/help_story_example" />
         <Preference
             android:summary="@string/help_story_additional"

@@ -62,10 +62,10 @@ public class RootActivity extends ActionBarActivity {
 
         ObjectDrawerItem[] drawerItem = new ObjectDrawerItem[4];
 
-        drawerItem[0] = new ObjectDrawerItem(R.mipmap.ic_action_dialpad, getString(R.string.action_enter_pin), "");
-        drawerItem[1] = new ObjectDrawerItem(R.mipmap.ic_action_replay, getString(R.string.action_practice), "");
-        drawerItem[2] = new ObjectDrawerItem(R.mipmap.ic_action_help, getString(R.string.action_help), "");
-        drawerItem[3] = new ObjectDrawerItem(R.mipmap.ic_action_about, getString(R.string.action_about), "");
+        drawerItem[0] = new ObjectDrawerItem(R.drawable.ic_action_dialpad, getString(R.string.action_enter_pin), "");
+        drawerItem[1] = new ObjectDrawerItem(R.drawable.ic_action_replay, getString(R.string.action_practice), "");
+        drawerItem[2] = new ObjectDrawerItem(R.drawable.ic_action_help, getString(R.string.action_help), "");
+        drawerItem[3] = new ObjectDrawerItem(R.drawable.ic_action_about, getString(R.string.action_about), "");
 
         DrawerItemCustomAdapter adapter = new DrawerItemCustomAdapter(this, R.layout.listview_item_row, drawerItem);
         drawerList.setAdapter(adapter);
@@ -231,7 +231,7 @@ public class RootActivity extends ActionBarActivity {
 
         alertDialog.setMessage(R.string.tutorial_mnemonics_description);
 
-        alertDialog.setIcon(R.mipmap.ic_tutorial);
+        alertDialog.setIcon(R.drawable.ic_tutorial);
 
         alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int which) {
@@ -259,7 +259,7 @@ public class RootActivity extends ActionBarActivity {
 
         alertDialog.setMessage(R.string.tutorial_practice_description);
 
-        alertDialog.setIcon(R.mipmap.ic_tutorial);
+        alertDialog.setIcon(R.drawable.ic_tutorial);
 
         alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog,int which) {
