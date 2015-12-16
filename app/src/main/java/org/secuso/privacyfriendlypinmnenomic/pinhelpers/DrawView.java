@@ -18,6 +18,7 @@ public class DrawView extends View {
     View endView;
     int digitOne;
     int digitTwo;
+    int strokeWidth;
 
     public DrawView(Context context, View startView, View endView, int digitOne, int digitTwo) {
         super(context);
@@ -51,13 +52,13 @@ public class DrawView extends View {
         }
 
         Path path = new Path();
-
         //draws triangle pointing to the right
-        path.moveTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 - 17);
+        path.moveTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 - (strokeWidth*2));
         //arrow head
-        path.lineTo( endView.getLeft() + endView.getWidth()/2 + 30, endView.getTop() + endView.getHeight()/2);
+        path.lineTo( endView.getLeft() + endView.getWidth()/2 + (strokeWidth*3), endView.getTop() + endView.getHeight()/2);
 
-        path.lineTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 + 17);
+        path.lineTo( endView.getLeft() + endView.getWidth()/2, endView.getTop() + endView.getHeight()/2 + (strokeWidth*2));
+        
         path.close();
 
         //turns triangle
@@ -164,6 +165,7 @@ public class DrawView extends View {
 
     public void setStrokeWidth(int strokeWidth) {
         paint.setStrokeWidth(strokeWidth);
+        this.strokeWidth = strokeWidth;
         invalidate();
     }
 

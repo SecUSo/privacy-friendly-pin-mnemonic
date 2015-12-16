@@ -28,8 +28,9 @@
     <string name="story_heading">Story:</string>
 
     <!-- EnterPINFragment-->
-    <string name="enter_pin">PIN eingeben: </string>
+    <string name="enter_pin">4-stellige PIN eingeben: </string>
     <string name="show_mnemonics_button">Merkstrategien anzeigen</string>
+    <string name="four_digits">Bitte 4 Zahlen eingeben.</string>
 
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>

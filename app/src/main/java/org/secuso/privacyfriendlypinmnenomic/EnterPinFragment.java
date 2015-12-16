@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 
@@ -78,6 +79,15 @@ public class EnterPinFragment extends Fragment {
                 }
             });
         }
+
+        Button doneButton = (Button) rootView.findViewById(R.id.button_done);
+        doneButton.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.four_digits), Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
 
 
         Button deleteButton = (Button) rootView.findViewById(R.id.button_delete);
@@ -149,7 +159,8 @@ public class EnterPinFragment extends Fragment {
         doneButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
-                //done nothing
+                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.four_digits), Toast.LENGTH_SHORT);
+                toast.show();
             }
         });
     }

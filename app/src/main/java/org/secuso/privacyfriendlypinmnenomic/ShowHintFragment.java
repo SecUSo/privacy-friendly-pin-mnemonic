@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -134,7 +135,11 @@ public class ShowHintFragment extends Fragment {
 
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {
         DrawView drawView = new DrawView(activity, first, second, digitOne, digitTwo);
-        drawView.setStrokeWidth(10);
+
+        Display display = activity.getWindowManager().getDefaultDisplay();
+        int temp = display.getWidth() / 80;
+        drawView.setStrokeWidth(temp);
+        //drawView.setStrokeWidth(10);
         RelativeLayout numpadLayout = (RelativeLayout) rootView.findViewById(R.id.numpadFrame);
         numpadLayout.addView(drawView);
     }
