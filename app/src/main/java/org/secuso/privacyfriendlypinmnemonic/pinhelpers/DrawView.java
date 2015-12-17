@@ -1,11 +1,10 @@
-package org.secuso.privacyfriendlypinmnenomic.pinhelpers;
+package org.secuso.privacyfriendlypinmnemonic.pinhelpers;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.graphics.Point;
 import android.view.View;
 
 /**

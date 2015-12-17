@@ -1,4 +1,4 @@
-package de.tudarmstadt.informatik.secuso.privacyfriendlypin;
+package org.secuso.privacyfriendlypinmnemonic;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

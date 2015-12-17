@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnenomic;
+package org.secuso.privacyfriendlypinmnemonic;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -22,8 +22,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.secuso.privacyfriendlypin.R;
-import org.secuso.privacyfriendlypinmnenomic.pinhelpers.CheckPin;
-import org.secuso.privacyfriendlypinmnenomic.pinhelpers.DrawView;
+import org.secuso.privacyfriendlypinmnemonic.pinhelpers.CheckPin;
+import org.secuso.privacyfriendlypinmnemonic.pinhelpers.DrawView;
 
 public class ShowHintFragment extends Fragment {
 

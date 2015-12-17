@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnenomic;
+package org.secuso.privacyfriendlypinmnemonic;
 
 /**
  * Created by yonjuni on 19.11.15.
