@@ -135,10 +135,10 @@ public class ShowHintFragment extends Fragment {
 
     /**
      *
-     * @param first
-     * @param second
-     * @param digitOne
-     * @param digitTwo
+     * @param first button where arrow starts
+     * @param second button where arrow finishes
+     * @param digitOne digit on first button
+     * @param digitTwo digit on second button
      */
     public void drawArrow(Button first, Button second, int digitOne, int digitTwo) {
         DrawView drawView = new DrawView(activity, first, second, digitOne, digitTwo);

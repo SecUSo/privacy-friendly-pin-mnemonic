@@ -19,6 +19,13 @@ public class DrawView extends View {
     int digitTwo;
     int strokeWidth;
 
+    /**
+     *
+     * @param startView button where arrow/line starts
+     * @param endView button where arrow/line finishes
+     * @param digitOne digit on first button
+     * @param digitTwo digit on second button
+     */
     public DrawView(Context context, View startView, View endView, int digitOne, int digitTwo) {
         super(context);
         this.startView = startView;
