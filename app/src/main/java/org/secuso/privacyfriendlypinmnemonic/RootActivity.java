@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnenomic;
+package org.secuso.privacyfriendlypinmnemonic;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -19,13 +19,11 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import org.secuso.privacyfriendlypin.R;
 

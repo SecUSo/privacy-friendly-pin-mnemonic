@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnenomic;
+package org.secuso.privacyfriendlypinmnemonic;
 
 import android.app.Activity;
 import android.app.Fragment;

@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnenomic.pinhelpers;
+package org.secuso.privacyfriendlypinmnemonic.pinhelpers;
 
 import android.content.Context;
 import android.util.Log;
