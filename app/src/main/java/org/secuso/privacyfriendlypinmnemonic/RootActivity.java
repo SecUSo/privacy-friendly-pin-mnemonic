@@ -278,4 +278,42 @@ public class RootActivity extends ActionBarActivity {
         alertDialog.show();
     }
 
+    public void guiClearDialog() {
+
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
+
+        alertDialog.setTitle("Test");
+
+        alertDialog.setMessage("The interface was reset for security reasons.");
+
+        alertDialog.setIcon(R.drawable.ic_tutorial);
+
+        alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+
+        alertDialog.setNegativeButton(getString(R.string.help_button), new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+
+                final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.content_frame, new HelpFragment(), "HelpFragment");
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+                dialog.cancel();
+            }
+        });
+
+        final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.content_frame, new EnterPinFragment(), "EnterPinFragment");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+
+        alertDialog.show();
+    }
+
 }

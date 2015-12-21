@@ -6,6 +6,7 @@ import android.app.FragmentTransaction;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.SpannableString;
@@ -31,8 +32,11 @@ public class ShowHintFragment extends Fragment {
     String practicePIN;
     Activity activity;
     View rootView;
+    boolean securityReset;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        this.securityReset = false;
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
@@ -201,6 +205,8 @@ public class ShowHintFragment extends Fragment {
          }
     }
 
+
+
     public SpannableString[] createSetSpannables() {
 
         SpannableString[] spannables = new SpannableString[10];
@@ -289,10 +295,20 @@ public class ShowHintFragment extends Fragment {
 
     public void onResume() {
         super.onResume();
+        if (securityReset) {
+            ((RootActivity)getActivity()).guiClearDialog();
+        }
     }
 
     public void onPause() {
         super.onPause();
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            public void run() {
+                securityReset = true;
+            }
+        }, 10000);
     }
 
 }
