@@ -61,7 +61,7 @@ public class RootActivity extends ActionBarActivity {
         ObjectDrawerItem[] drawerItem = new ObjectDrawerItem[4];
 
         drawerItem[0] = new ObjectDrawerItem(R.drawable.ic_action_dialpad, getString(R.string.action_enter_pin), "");
-        drawerItem[1] = new ObjectDrawerItem(R.drawable.ic_action_replay, getString(R.string.action_practice), "");
+        drawerItem[1] = new ObjectDrawerItem(R.drawable.ic_action_replay, getString(R.string.action_numpad), "");
         drawerItem[2] = new ObjectDrawerItem(R.drawable.ic_action_help, getString(R.string.action_help), "");
         drawerItem[3] = new ObjectDrawerItem(R.drawable.ic_action_about, getString(R.string.action_about), "");
 
@@ -76,7 +76,7 @@ public class RootActivity extends ActionBarActivity {
     }
 
     private void addDrawerItems() {
-        String[] mNavigationDrawerItemTitles = {getString(R.string.action_enter_pin), getString(R.string.action_practice), getString(R.string.action_help), getString(R.string.action_about)};
+        String[] mNavigationDrawerItemTitles = {getString(R.string.action_enter_pin), getString(R.string.action_numpad), getString(R.string.action_help), getString(R.string.action_about)};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mNavigationDrawerItemTitles);
         drawerList.setAdapter(adapter);
 
@@ -138,7 +138,7 @@ public class RootActivity extends ActionBarActivity {
                 fragment = new EnterPinFragment();
                 break;
             case 1:
-                fragment = new PractiseFragment();
+                fragment = new NumpadFragment();
                 break;
             case 2:
                 fragment = new HelpFragment();

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enter_pin_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <GridLayout
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_pin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:columnCount="3"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_one"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_two"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_three"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_four"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_five"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_six"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+
+            />
+
+        <Button
+            android:id="@+id/button_seven"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_eight"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_nine"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/invisible_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_zero"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/button_delete"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/invisible_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/helpNumpad"
+        android:layout_below="@+id/numbers"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="35dp"
+        android:text="If you use the word strategy be aware that many PIN entering devices do not display letters on the number pad. The number pad above can be used as a crib."
+        />
+</RelativeLayout>

@@ -5,6 +5,7 @@
     <!-- Menu Items-->
     <string name="action_help">Help</string>
     <string name="action_about">About</string>
+    <string name="action_numpad">Number Pad</string>
     <string name="action_practice">Practice</string>
     <string name="action_enter_pin">Enter PIN</string>
     <string name="action_navigation">Navigation</string>

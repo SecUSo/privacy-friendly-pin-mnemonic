@@ -6,6 +6,7 @@
     <string name="action_help">Hilfe</string>
     <string name="action_about">Über</string>
     <string name="action_practice">PIN-Eingabe üben</string>
+    <string name="action_numpad">Ziffernblock</string>
     <string name="action_enter_pin">PIN eingeben</string>
     <string name="action_pin_mnemonics">Merkstrategien</string>
     <string name="action_navigation">Navigation</string>
