@@ -117,6 +117,9 @@ public class ShowHintFragment extends Fragment {
         TextView wordTextView = (TextView) rootView.findViewById(R.id.word);
         TextView dateFrameTextView = (TextView) rootView.findViewById(R.id.date);
         TextView mathFrameTextView = (TextView) rootView.findViewById(R.id.math);
+        TextView pinTextView = (TextView) rootView.findViewById(R.id.pin);
+
+        pinTextView.setText(pin);
 
         wordTextView.setText(checkPin.determineWord());
         dateFrameTextView.setText(checkPin.determineDate());

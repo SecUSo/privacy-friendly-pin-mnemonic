@@ -4,12 +4,33 @@
     android:id="@+id/show_hint_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="30dp">
+    android:layout_marginTop="15dp">
+
+    <TextView
+        android:id="@+id/pinHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/practiseButton"
+        android:layout_alignStart="@+id/practiseButton"
+        android:text="@string/display_entered_pin"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_alignTop="@+id/pinHeading"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
     <TextView
         android:id="@+id/shapeHeading"
+        android:layout_below="@+id/pinHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_alignLeft="@+id/practiseButton"
         android:layout_alignStart="@+id/practiseButton"
         android:text="@string/shape_heading"
@@ -157,7 +178,7 @@
         android:layout_alignLeft="@+id/numbers_show_hint"
         android:layout_alignRight="@+id/numbers_show_hint"
         android:layout_alignStart="@+id/numbers_show_hint"
-        android:layout_below="@+id/show_current_pin"></RelativeLayout>
+        android:layout_alignTop="@+id/numbers_show_hint"></RelativeLayout>
 
     <TextView
         android:id="@+id/wordHeading"
