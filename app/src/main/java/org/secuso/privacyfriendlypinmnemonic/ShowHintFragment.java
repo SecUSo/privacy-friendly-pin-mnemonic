@@ -311,7 +311,7 @@ public class ShowHintFragment extends Fragment {
             public void run() {
                 securityReset = true;
             }
-        }, 10000);
+        }, 300000);
     }
 
 }
