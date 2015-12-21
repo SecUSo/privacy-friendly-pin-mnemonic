@@ -13,7 +13,7 @@
     <string name="drawer_open">Navigation drawer öffnen</string>
     <string name="drawer_close">Navigation drawer schließen</string>
 
-    <!-- Mnenomic Items and Headings from ShowHintFragment-->
+    <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">Kein Wort möglich</string>
     <string name="display_no_math">Keine mathematische Formel</string>
     <string name="display_date_year_1900s">Ein gültiges Jahr der 90er</string>
@@ -45,7 +45,7 @@
 
     <!-- HelpFragment-->
     <string name="help_overview_heading">Allgemein</string>
-    <string name="help_tip_one">Privacy Friendly PIN Merkstategien hilft beim Merken von PINs durch biszu 5 Strategien.</string>
+    <string name="help_tip_one">Privacy Friendly PIN Merkstategien hilft beim Merken von 4-stelligen PINs durch biszu 5 Strategien.</string>
     <string name="help_tip_two">Wiederholes Einüben der PIN-Eingabe hilft bei der Verinnerlichung.</string>
     <string name="help_tip_three">Wird die Wort-Strategie gewählt, sollte beachtet werden, PIN-Eingabegeräte häufig keine Buchstaben aufgedruckt haben. Hier kann das Handy als Spickzettel verwendet werden.</string>
 

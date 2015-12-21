@@ -45,7 +45,7 @@
 
     <!-- HelpFragment-->
     <string name="help_overview_heading">Overview</string>
-    <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your PIN by presenting up to 5 strategies.</string>
+    <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit-PIN by presenting up to 5 strategies.</string>
     <string name="help_tip_two">Don\'t forget to practice entering your PIN multiple times for internalization.</string>
     <string name="help_tip_three">If you\'re using the word strategy be aware that most of PIN-Numpads don\'t have letters on it. You can use your phone as a crib.</string>
 
