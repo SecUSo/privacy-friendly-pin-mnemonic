@@ -34,6 +34,8 @@ public class PractiseFragment extends Fragment {
     String visiblePin;
     String practicePIN;
 
+    int buttonCounter = 0;
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         container.removeAllViews();
@@ -48,7 +50,9 @@ public class PractiseFragment extends Fragment {
 
         if (bundle != null) {
             practicePIN = bundle.getString("pin");
-        } else {practicePIN = "";}
+        } else {
+            practicePIN = "";
+        }
 
         visiblePin = "";
 
@@ -88,6 +92,16 @@ public class PractiseFragment extends Fragment {
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
                     }
 
+                    buttonCounter++;
+
+                    if (buttonCounter > 4) {
+                        visiblePin = "";
+                        visiblePin = visiblePin += tempInt;
+                        pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
+                        pinEditText.setTextColor(Color.BLACK);
+                        buttonCounter = 1;
+                    }
+
                     if (pinEditText.getText().length() == 4 && !practicePIN.equals("")) {
                         matchedPin(visiblePin);
                     }
@@ -104,6 +118,7 @@ public class PractiseFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.setText(deletePinDigits(visiblePin));
                 visiblePin = deletePinDigits(visiblePin);
+                buttonCounter--;
             }
         });
 
@@ -116,6 +131,7 @@ public class PractiseFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.getText().clear();
                 visiblePin = "";
+                buttonCounter = 0;
             }
         });
 
@@ -127,7 +143,7 @@ public class PractiseFragment extends Fragment {
         sharedPreferences.edit().putString("firstpractice", "").commit();
         SharedPreferences settings = activity.getSharedPreferences("firstpractice", activity.getBaseContext().MODE_PRIVATE);
         if (settings.getBoolean("isFirstRun", true)) {
-            ((RootActivity)getActivity()).tutorialDialogPractice();
+            ((RootActivity) getActivity()).tutorialDialogPractice();
 
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean("isFirstRun", false);
@@ -136,13 +152,15 @@ public class PractiseFragment extends Fragment {
     }
 
     public void matchedPin(String entered) {
-            if (entered.equals(practicePIN)) {
-                pinEditText.setTextColor(Color.GREEN);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_success), Toast.LENGTH_LONG);
-                toast.show();
-            } else { pinEditText.setTextColor(Color.RED);
-                Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_fail), Toast.LENGTH_LONG);
-                toast.show();}
+        if (entered.equals(practicePIN)) {
+            pinEditText.setTextColor(Color.GREEN);
+            Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_success), Toast.LENGTH_LONG);
+            toast.show();
+        } else {
+            pinEditText.setTextColor(Color.RED);
+            Toast toast = Toast.makeText(activity.getApplicationContext(), getString(R.string.toast_fail), Toast.LENGTH_LONG);
+            toast.show();
+        }
 
 
     }
