@@ -83,5 +83,9 @@
     <string name="tutorial_mnemonics_title">View Mnemonics</string>
     <string name="tutorial_mnemonics_description">This pages shows techniques to support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic.</string>
 
+    <!-- Security reset-->
+    <string name="security_reset_title">Security reset</string>
+    <string name="security_reset_description">The app was minimized for more than 5 minutes. The interface has been reset for security reasons to protect your PIN.</string>
+    <string name="security_reset_okay">Okay</string>
 </resources>
 

@@ -5,6 +5,7 @@ import android.app.Fragment;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
@@ -31,16 +32,19 @@ public class PractiseFragment extends Fragment {
 
     Activity activity;
 
-    String visiblePin;
-    String practicePIN;
+    private String visiblePin;
+    private String practicePIN;
 
     int buttonCounter = 0;
+    boolean securityReset;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
         ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practice);
+
+        securityReset = false;
 
         doFirstRun();
 
@@ -195,6 +199,24 @@ public class PractiseFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         this.activity = activity;
+    }
+
+    public void onResume() {
+        super.onResume();
+        if (securityReset) {
+            ((RootActivity)getActivity()).guiClearDialog();
+        }
+    }
+
+    public void onPause() {
+        super.onPause();
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            public void run() {
+                securityReset = true;
+            }
+        }, 10000);
     }
 
 }

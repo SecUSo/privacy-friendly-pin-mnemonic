@@ -28,8 +28,8 @@ import org.secuso.privacyfriendlypinmnemonic.pinhelpers.DrawView;
 
 public class ShowHintFragment extends Fragment {
 
-    int[] input = new int[4];
-    String practicePIN;
+    private int[] input = new int[4];
+    private String practicePIN;
     Activity activity;
     View rootView;
     boolean securityReset;

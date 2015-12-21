@@ -83,6 +83,11 @@
     <string name="tutorial_mnemonics_title">Merkstategien anschauen</string>
     <string name="tutorial_mnemonics_description">Diese Seite zeigt Techniken zum erleichterten Merken von PINs an. Wiederholtes Einüben hilft beim Verinnerlichen.</string>
 
+    <!-- Security reset-->
+    <string name="security_reset_title">Sicherheitsreset</string>
+    <string name="security_reset_description">Die App wurde über 5 Minuten minimiert. Um die PIN zu schützen wurde das Interface zurückgesetzt.</string>
+    <string name="security_reset_okay">Okay</string>
+
 </resources>
 
 

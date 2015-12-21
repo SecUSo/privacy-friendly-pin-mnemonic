@@ -6,19 +6,27 @@ package org.secuso.privacyfriendlypinmnemonic.pinhelpers;
 public class WordDictionary {
 
     public String[] getWordDictionary(String language) {
-            if (language.equals("de")) {
-                    return wordDictionaryDE;
-            } else {
-                    return wordDictionaryEN;
-            }
+        if (language.equals("de")) {
+            return wordDictionaryDE;
+        } else {
+            return wordDictionaryEN;
+        }
+    }
+
+    public String[] getMonths(String language) {
+        if (language.equals("de")) {
+            return new String[]{"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(Mai)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Okt)", "(Nov)", "(Dez)"};
+        } else {
+            return new String[]{"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(May)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Oct)", "(Nov)", "(Dec)"};
+        }
     }
 
     public String[] getKeyboard(String language) {
-            if (language.equals("de")) {
-                    return new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuüv", "wxyz"};
-            } else {
-                    return new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-            }
+        if (language.equals("de")) {
+            return new String[]{"", "", "äabc", "def", "ghi", "jkl", "mnoö", "pqrs", "tuüv", "wxyz"};
+        } else {
+            return new String[]{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        }
     }
 
 

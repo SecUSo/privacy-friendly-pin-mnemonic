@@ -15,11 +15,11 @@ import java.util.Locale;
  */
 public class CheckPin {
 
-    String firstTwo;
-    String secondTwo;
-    String[] input;
-    Context context;
-    int[] userInput;
+    private String firstTwo;
+    private String secondTwo;
+    private String[] input;
+    private Context context;
+    private int[] userInput;
 
     public CheckPin(String pin, Context context) {
 
@@ -41,7 +41,9 @@ public class CheckPin {
 
         String resultDate = "0" + input[0] + "-" + "0" + input[1]  + "-" + "(19)" + secondTwo;
 
-        String[] monthsWordsArray = {"", "(Jan)", "(Feb)", "(Mar)", "(Apr)", "(May)", "(Jun)", "(Jul)", "(Aug)", "(Sep)", "(Oct)", "(Nov)", "(Dec)"};
+        WordDictionary wordDictionaryClass = new WordDictionary();
+
+        String[] monthsWordsArray = wordDictionaryClass.getMonths(Locale.getDefault().getLanguage());;
         String[] monthsArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"};
         String[] daysArray = new String[]{"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12",
                 "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24",

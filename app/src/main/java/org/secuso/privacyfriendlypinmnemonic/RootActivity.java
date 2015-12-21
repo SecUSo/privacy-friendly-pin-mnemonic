@@ -285,13 +285,13 @@ public class RootActivity extends ActionBarActivity {
 
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(RootActivity.this);
 
-        alertDialog.setTitle("Test");
+        alertDialog.setTitle(getString(R.string.security_reset_title));
 
-        alertDialog.setMessage("The interface was reset for security reasons.");
+        alertDialog.setMessage(getString(R.string.security_reset_description));
 
         alertDialog.setIcon(R.drawable.ic_tutorial);
 
-        alertDialog.setPositiveButton(getString(R.string.confirm_button), new DialogInterface.OnClickListener() {
+        alertDialog.setPositiveButton(getString(R.string.security_reset_okay), new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
             }
