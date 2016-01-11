@@ -147,6 +147,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_margin="35dp"
-        android:text="If you use the word strategy be aware that many PIN entering devices do not display letters on the number pad. The number pad above can be used as a crib."
+        android:text="@string/hint_numpad"
         />
 </RelativeLayout>

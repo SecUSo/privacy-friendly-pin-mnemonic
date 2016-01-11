@@ -36,19 +36,19 @@
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>
     <string name="numpad_reset">RESET</string>
+    <string name="hint_numpad">Wird die Wort-Strategie gewählt, sollte beachtet werden, dass PIN-Eingabegeräte nicht immer Buchstaben aufgedruckt haben. Hier kann dieser Ziffernblock als Spickzettel verwendet werden.</string>
 
     <!-- PractiseFragment-->
     <string name="your_pin_heading">Ihre PIN:</string>
-    <string name="practise_button">PIN-Eingabe üben</string>
     <string name="practised_pin_heading">Eingegebene PIN:</string>
     <string name="toast_success">Richtig! Durch wiederholtes Eingeben wird die PIN besser verinnerlicht.</string>
     <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes lesen der Strategien.</string>
 
     <!-- HelpFragment-->
     <string name="help_overview_heading">Allgemein</string>
-    <string name="help_tip_one">Privacy Friendly PIN Merkstategien hilft beim Merken von 4-stelligen PINs durch biszu 5 Strategien.</string>
-    <string name="help_tip_two">Wiederholes Einüben der PIN-Eingabe hilft bei der Verinnerlichung.</string>
-    <string name="help_tip_three">Wird die Wort-Strategie gewählt, sollte beachtet werden, PIN-Eingabegeräte häufig keine Buchstaben aufgedruckt haben. Hier kann das Handy als Spickzettel verwendet werden.</string>
+    <string name="help_tip_one">Privacy Friendly PIN Merkstrategien hilft beim Merken von 4-stelligen PINs durch bis zu 5 Strategien.</string>
+    <string name="help_tip_two">Wiederholtes Einüben der PIN-Eingabe hilft bei der Verinnerlichung.</string>
+    <string name="help_tip_three">Wird die Wort-Strategie gewählt, sollte beachtet werden, dass PIN-Eingabegeräte nicht immer Buchstaben aufgedruckt haben. Hier kann das Handy als Spickzettel verwendet werden.</string>
 
     <string name="help_shape_heading">Form</string>
     <string name="help_one_highlighted">Zahl einmal enthalten</string>
@@ -63,7 +63,7 @@
     <string name="help_pin_storage_heading">PIN-Speicherung</string>
     <string name="help_pin_storage_description">Die PIN wird weder im Telefon gespeichert, noch übertragen.</string>
     <string name="help_permissions_heading">Berechtigungen</string>
-    <string name="help_permissions_description">Privacy Friendly PIN Merkstrategien verwendet keine Berechtigungen</string>
+    <string name="help_permissions_description">Privacy Friendly PIN Merkstrategien verwendet keine Berechtigungen.</string>
 
     <!-- AboutFragment-->
     <string name="version_number">Version 0.5</string>

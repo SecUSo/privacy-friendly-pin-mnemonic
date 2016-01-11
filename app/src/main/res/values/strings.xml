@@ -6,8 +6,8 @@
     <string name="action_help">Help</string>
     <string name="action_about">About</string>
     <string name="action_numpad">Number Pad</string>
-    <string name="action_practice">Practice</string>
     <string name="action_enter_pin">Enter PIN</string>
+    <string name="action_practice">Practice</string>
     <string name="action_navigation">Navigation</string>
     <string name="action_pin_mnemonics">PIN Mnemonics</string>
 
@@ -36,6 +36,7 @@
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>
     <string name="numpad_reset">RESET</string>
+    <string name="hint_numpad">If you use the word strategy be aware that many PIN entering devices do not display letters on the number pad. The number pad above can be used as a crib.</string>
 
     <!-- PractiseFragment-->
     <string name="your_pin_heading">Your PIN:</string>

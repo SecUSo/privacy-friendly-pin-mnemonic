@@ -193,7 +193,6 @@ public class ShowHintFragment extends Fragment {
         fragmentTransaction.replace(R.id.content_frame, practiseFragment, "PractiseFragment");
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
-
     }
 
     private void doFirstRun() {

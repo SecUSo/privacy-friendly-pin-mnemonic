@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">PIN Mnemonikas</string>
+    <string name="app_name_long">Privacy Friendly PIN Mnemonikas</string>
+
+    <!-- Menu Items-->
+    <string name="action_help">Palīdzība</string>
+    <string name="action_about">Informācija</string>
+    <string name="action_numpad">Tastatūra</string>
+    <string name="action_practice">Vingrinies ievadīt PIN</string>
+    <string name="action_enter_pin">Ievadīt PIN</string>
+    <string name="action_pin_mnemonics">Mnemonikas</string>
+    <string name="action_navigation">Navigācija</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- Mnemonic Items and Headings from ShowHintFragment-->
+    <string name="display_no_word">nav atrasts</string>
+    <string name="display_no_math">nav atrasta</string>
+    <string name="display_date_year_1900s">Gadskaitlis 90-tajos</string>
+    <string name="display_date_year_2000s">Gadskaitlis šajā gadsimtā</string>
+    <string name="display_date_year_any">Gadskaitlis</string>
+    <string name="display_math_stepping">Trepju PIN: </string>
+    <string name="display_entered_pin">PIN: </string>
+    <string name="shape_heading">Forma:</string>
+    <string name="word_heading">Vārds:</string>
+    <string name="date_heading">Datums:</string>
+    <string name="math_heading">Formula:</string>
+    <string name="story_heading">Stāstiņš:</string>
+
+    <!-- EnterPINFragment-->
+    <string name="enter_pin">Ievadies 4 ciparu PIN: </string>
+    <string name="show_mnemonics_button">Parādīt mnemonikas</string>
+    <string name="four_digits">Lūdzu ievadiet 4 ciparus.</string>
+
+    <!-- NumPad-->
+    <string name="numpad_delete">DEL</string>
+    <string name="numpad_reset">RESET</string>
+    <string name="hint_numpad">Ja Jūs izvēlējāties vārdu, ņemiet vērā, ka uz PIN tastatūrām bieži nav uzdrukāti burti. Šajā gadijumā Jūs varat izmantot šo tastatūru kā špikeri.</string>
+
+    <!-- PractiseFragment-->
+    <string name="your_pin_heading">Jūsu PIN:</string>
+    <string name="practise_button">Vingrināties ievadīt PIN</string>
+    <string name="practised_pin_heading">Jūs ievadījāt:</string>
+    <string name="toast_success">Pareizi! Vingrinieties vairākas reizes, lai labāk atcerētos savu PIN.</string>
+    <string name="toast_fail">Diemžēl nepareizi. Varbūt apskatiet mnemonikas vēl vienu reizi?</string>
+
+    <!-- HelpFragment-->
+    <string name="help_overview_heading">Allgemein</string>
+    <string name="help_tip_one">Privacy Friendly PIN Menmonikas palīdz Jums atcerēties savu 4 ciparu PIN ar līdz pat 5 mnemonikām.</string>
+    <string name="help_tip_two">Atkārtotota PIN ievadīšana palīdz to labāk atcerēties.</string>
+    <string name="help_tip_three">Ja Jūs izvēlējāties vārdu, ņemiet vērā, ka uz PIN tastatūrām bieži nav uzdrukāti burti. Šajā gadijumā Jūs varat izmantot telefona tastatūru kā špikeri.</string>
+
+    <string name="help_shape_heading">Forma</string>
+    <string name="help_one_highlighted">Cipars iekļauts 1 reizi</string>
+    <string name="help_two_highlighted">Cipars iekļauts 2 reizes</string>
+    <string name="help_three_highlighted">Cipars iekļauts 3 reizes</string>
+    <string name="help_four_highlighted">Cipars iekļauts 4 reizes</string>
+    <string name="help_story_heading">Stāstiņi</string>
+    <string name="help_story_description">Izmantojiet bildītes kā iedvesmu maziem stāstiņiem.</string>
+    <string name="help_story_example">Piemēram ar PIN 4587: Ar četrlapu āboliņu rokā es eju spēlēt bilijardu, pulkstens septiņos.</string>
+    <string name="help_story_additional">Jūs varat izmantot arī citas asociācijas.</string>
+    <string name="help_privacy_heading">Datu drošības informācija</string>
+    <string name="help_pin_storage_heading">Vai mans PIN tiek saglabāts?</string>
+    <string name="help_pin_storage_description">Jūsu PIN netiek ne saglabāts telefonā ne pārsūtīts tālāk.</string>
+    <string name="help_permissions_heading">Kādas privilēģijas ir šai programai?</string>
+    <string name="help_permissions_description">Privacy Friendly PIN Mnemonikas neizmanto nekādu īpašu priviļēģiju.</string>
+
+    <!-- AboutFragment-->
+    <string name="version_number">Versija 0.5</string>
+    <string name="about_author">Autors: Karola Marky</string>
+    <string name="about_affiliation">Sadarbībā ar</string>
+    <string name="privacy_friendly">Šī aplikācija ir no Privacy Friendly Apps aplikāciju kataloga.</string>
+    <string name="more_info">Papildus informācija (angļu valodā):</string>
+    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/de/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+
+    <!-- Tutorials global-->
+    <string name="confirm_button">Labi</string>
+    <string name="help_button">Palīdzība</string>
+
+    <!-- Tutorials specific-->
+    <string name="tutorial_practice_title">Vingrināties ievadīt PIN</string>
+    <string name="tutorial_practice_description">Atkārtota vaingrināšanās palīdz Jums labāk iegaumēt PIN. Vingrinoties domājiet par mnemonikām!</string>
+    <string name="tutorial_mnemonics_title">Apskatīt mnemonikas</string>
+    <string name="tutorial_mnemonics_description">Šī lapa satur stratēģijas, kuras palīdz vieglāk iegaumēt PIN. Ievadiet PIN vairākas reizes, lai to labāk iegaumētu.</string>
+
+    <!-- Security reset-->
+    <string name="security_reset_title">Drošības rīsets</string>
+    <string name="security_reset_description">Propgrama bija minimēta vismaz 5 minūtes. Drošības pēc Jūsu PIN tika izdzēsts no interfeisa.</string>
+    <string name="security_reset_okay">Labi</string>
+
+</resources>
+
+
+
