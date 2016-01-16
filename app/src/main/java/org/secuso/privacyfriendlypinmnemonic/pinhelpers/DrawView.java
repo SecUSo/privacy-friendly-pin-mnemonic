@@ -86,6 +86,28 @@ public class DrawView extends View {
             second = 11;
         }
 
+        if (first == 3 && second == 11) {
+            return 105;
+        }
+
+        if (first == 11 && second == 3) {
+            return -75;
+        }
+
+        if (first == 1 && second == 11) {
+            return 75;
+        }
+
+        if (first == 11 && second == 1) {
+            return -105;
+        }
+
+        //Arrow should point from right to left
+        if ((((first > second) || (second == 1)) && (view1.getY() == view2.getY())) || (first == 2 || first == 3) && second == 1) {
+            System.out.println("Angle: 180");
+            return 180;
+        }
+
         //Arrow should point from right to left
         if ((((first > second) || (second == 1)) && (view1.getY() == view2.getY())) || (first == 2 || first == 3) && second == 1) {
             System.out.println("Angle: 180");
