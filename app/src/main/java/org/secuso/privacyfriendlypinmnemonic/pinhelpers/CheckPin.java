@@ -159,7 +159,11 @@ public class CheckPin {
             }
         }
 
-        if ((differenceBA == 22 || differenceAB == 22) || (differenceBA == 44 || differenceAB == 44)) {
+        int diffDC = Integer.parseInt(input[3])-Integer.parseInt(input[2]);
+        int diffCB = Integer.parseInt(input[2])-Integer.parseInt(input[1]);
+        int diffBA = Integer.parseInt(input[1])-Integer.parseInt(input[0]);
+
+        if (diffDC == diffCB && diffCB == diffBA && diffDC == diffBA) {
             resultCalculation = context.getString(R.string.display_math_stepping) + " " + firstTwo + secondTwo;
         }
 

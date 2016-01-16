@@ -16,7 +16,7 @@
 
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">No word possible</string>
-    <string name="display_no_math">No mathematical rule</string>
+    <string name="display_no_math">No formula found</string>
     <string name="display_date_year_1900s">It is a valid year in the 1900s</string>
     <string name="display_date_year_2000s">It is a valid year in this century</string>
     <string name="display_date_year_any">It is a valid year from the past</string>
