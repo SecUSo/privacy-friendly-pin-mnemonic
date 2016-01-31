@@ -40,6 +40,7 @@
 
     <!-- PractiseFragment-->
     <string name="your_pin_heading">Ihre PIN:</string>
+    <string name="practise_button">PIN-Eingabe üben</string>
     <string name="practised_pin_heading">Eingegebene PIN:</string>
     <string name="toast_success">Richtig! Durch wiederholtes Eingeben wird die PIN besser verinnerlicht.</string>
     <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes lesen der Strategien.</string>
