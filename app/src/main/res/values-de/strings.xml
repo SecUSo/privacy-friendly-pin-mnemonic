@@ -81,7 +81,7 @@
     <!-- Tutorials specific-->
     <string name="tutorial_practice_title">PIN üben</string>
     <string name="tutorial_practice_description">Durch wiederholtes Eingeben wird die PIN besser verinnerlicht. Hierbei sollte an die Merkstrategie gedacht werden.</string>
-    <string name="tutorial_mnemonics_title">Merkstategien anschauen</string>
+    <string name="tutorial_mnemonics_title">Merkstrategien anschauen</string>
     <string name="tutorial_mnemonics_description">Diese Seite zeigt Techniken zum erleichterten Merken von PINs an. Wiederholtes Einüben hilft beim Verinnerlichen.</string>
 
     <!-- Security reset-->
