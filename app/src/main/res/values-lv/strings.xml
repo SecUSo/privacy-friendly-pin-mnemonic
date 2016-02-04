@@ -67,7 +67,7 @@
     <string name="help_permissions_description">Privacy Friendly PIN Mnemonikas neizmanto nekādu īpašu priviļēģiju.</string>
 
     <!-- AboutFragment-->
-    <string name="version_number">Versija 0.5</string>
+    <string name="version_number">Versija 1.1</string>
     <string name="about_author">Autors: Karola Marky</string>
     <string name="about_affiliation">Sadarbībā ar</string>
     <string name="privacy_friendly">Šī aplikācija ir no Privacy Friendly Apps aplikāciju kataloga.</string>

@@ -67,7 +67,7 @@
     <string name="help_permissions_description">Privacy Friendly PIN Mnemonics does not use any permissions</string>
 
     <!-- AboutFragment-->
-    <string name="version_number">Version 1.0</string>
+    <string name="version_number">Version 1.1</string>
     <string name="about_author">Author: Karola Marky</string>
     <string name="about_affiliation">In affiliation with</string>
     <string name="privacy_friendly">This application belongs to the Privacy Friendly Apps.</string>

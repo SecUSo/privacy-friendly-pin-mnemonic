@@ -67,7 +67,7 @@
     <string name="help_permissions_description">Privacy Friendly PIN Merkstrategien verwendet keine Berechtigungen.</string>
 
     <!-- AboutFragment-->
-    <string name="version_number">Version 0.5</string>
+    <string name="version_number">Version 1.1</string>
     <string name="about_author">Autor: Karola Marky</string>
     <string name="about_affiliation">In Zusammenarbeit mit</string>
     <string name="privacy_friendly">Diese App gehört zur Gruppe der Privacy Friendly Apps.</string>
