@@ -14,16 +14,16 @@
 
     <PreferenceCategory android:title="@string/help_shape_heading">
         <Preference
-            android:icon="@drawable/help_one"
+            android:icon="@drawable/one_help"
             android:summary="@string/help_one_highlighted" />
         <Preference
-            android:icon="@drawable/help_two"
+            android:icon="@drawable/two_help"
             android:summary="@string/help_two_highlighted" />
         <Preference
-            android:icon="@drawable/help_three"
+            android:icon="@drawable/three_help"
             android:summary="@string/help_three_highlighted" />
         <Preference
-            android:icon="@drawable/help_four"
+            android:icon="@drawable/four_help"
             android:summary="@string/help_four_highlighted" />
     </PreferenceCategory>
 
