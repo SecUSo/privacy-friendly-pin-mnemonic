@@ -122,6 +122,7 @@ public class PractiseFragment extends Fragment {
             public void onClick(View v) {
                 pinEditText.setText(deletePinDigits(visiblePin));
                 visiblePin = deletePinDigits(visiblePin);
+                pinEditText.setTextColor(Color.BLACK);
                 buttonCounter--;
             }
         });
@@ -136,6 +137,7 @@ public class PractiseFragment extends Fragment {
                 pinEditText.getText().clear();
                 visiblePin = "";
                 buttonCounter = 0;
+                pinEditText.setTextColor(Color.BLACK);
             }
         });
 
