@@ -18,8 +18,8 @@
     <string name="display_no_word">Kein Wort möglich</string>
     <string name="display_no_math">Keine Formel gefunden</string>
     <string name="display_no_date">Kein Datum möglich</string>
-    <string name="display_date_year_1900s">Ein gültiges Jahr der 90er</string>
-    <string name="display_date_year_2000s">Ein gültiges Jahr dieses Jahrhunderts</string>
+    <string name="display_date_year_1900s">Gültiges Jahr der 90er</string>
+    <string name="display_date_year_2000s">Gültiges Jahr dieses Jahrhunderts</string>
     <string name="display_date_year_any">Gültiges vergangenes Jahr</string>
     <string name="display_math_stepping">Stufen-PIN: </string>
     <string name="display_entered_pin">PIN: </string>
@@ -44,7 +44,7 @@
     <string name="practise_button">PIN-Eingabe üben</string>
     <string name="practised_pin_heading">Eingegebene PIN:</string>
     <string name="toast_success">Richtig! Durch wiederholtes Eingeben wird die PIN besser verinnerlicht.</string>
-    <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes lesen der Strategien.</string>
+    <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes Lesen der Strategien.</string>
 
     <!-- HelpFragment-->
     <string name="help_overview_heading">Allgemein</string>

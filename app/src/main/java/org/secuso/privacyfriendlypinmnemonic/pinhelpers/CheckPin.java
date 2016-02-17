@@ -43,10 +43,6 @@ public class CheckPin {
             return context.getString(R.string.display_no_date);
         }
 
-        if (userInput[1] == 0) {
-            return context.getString(R.string.display_no_date);
-        }
-
         String resultDate = "0" + input[0] + "-" + "0" + input[1]  + "-" + "(19)" + secondTwo;
 
         WordDictionary wordDictionaryClass = new WordDictionary();
@@ -77,12 +73,17 @@ public class CheckPin {
                     break;
                 } else if (Integer.parseInt(firstTwo) == 19) {
                     resultDate = context.getString(R.string.display_date_year_1900s);
-                } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 15)) {
+                } else if ((Integer.parseInt(firstTwo) == 20) && (Integer.parseInt(secondTwo) <= 16)) {
                     resultDate = context.getString(R.string.display_date_year_2000s);
                 }
             }
         }
         Log.d("ANSWER ", resultDate);
+
+        if (userInput[1] == 0 && userInput[0] > 2) {
+            return context.getString(R.string.display_no_date);
+        }
+
         return resultDate;
     }
 
