@@ -16,6 +16,7 @@
 
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">nav atrasts</string>
+    <string name="display_no_date">nav atrasts</string>
     <string name="display_no_math">nav atrasta</string>
     <string name="display_date_year_1900s">Gadskaitlis 90-tajos</string>
     <string name="display_date_year_2000s">Gadskaitlis šajā gadsimtā</string>
