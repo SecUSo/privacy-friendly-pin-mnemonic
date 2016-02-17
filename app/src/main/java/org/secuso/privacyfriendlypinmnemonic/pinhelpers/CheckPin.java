@@ -43,6 +43,10 @@ public class CheckPin {
             return context.getString(R.string.display_no_date);
         }
 
+        if (userInput[1] == 0) {
+            return context.getString(R.string.display_no_date);
+        }
+
         String resultDate = "0" + input[0] + "-" + "0" + input[1]  + "-" + "(19)" + secondTwo;
 
         WordDictionary wordDictionaryClass = new WordDictionary();
