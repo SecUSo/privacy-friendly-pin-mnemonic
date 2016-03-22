@@ -15,5 +15,5 @@ Further development requires Android Studio.
 
 ## License
 
-Privacy Friendly PIN Mnemonic is lisenced under the GPLv3.
+Privacy Friendly PIN Mnemonic is lisenced under the GPLv3. The icons used in the nagivation drawer are licensed under the CC BY 2.5 (http://creativecommons.org/licenses/by/2.5/)
 
