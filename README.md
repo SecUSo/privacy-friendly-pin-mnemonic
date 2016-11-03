@@ -1,6 +1,8 @@
-## Privacy Friendly App Example
+## Privacy Friendly PIN Mnemonic
 
-This application contains the basic design of a Privacy Friendly App without any other functionality. It includes a Navigation Drawer, examples for buttons, a help page and the about page. It further shows an example of the main menu for a Privacy Friendly Game App. This app belongs to the group of Privacy Friendly Apps developed by the Technische Universität Darmstadt. 
+Privacy Friendly PIN Mnenomic is an Android application which can provide strategies to memorize a 4-digit PIN. Therefore it determines whether the PIN forms a T9-word, underlies a mathematical rule or forms a date or year.
+
+It does not use any permission, as the app can provide its full functionality without the usage of permissions. It also does neither include advertisement nor tracking mechanisms. As a plus taking screenshots of the app is programmatically disabled so that it is not possible to take a screenshot of the entered PIN.  This app belongs to the group of Privacy Friendly Apps developed by the Technische Universität Darmstadt. 
 
 ## Motivation
 
@@ -8,16 +10,16 @@ This application has been developed to be used as a basis for a Privacy Friendly
 
 ## Download and more Information
 
-Further development requires Android Studio, we recommend to use at least version 2.1.2
+Further development requires Android Studio, we recommend to use at least version 2.2.2
  
 ### API Reference
 
 Mininum SDK: 17
-Target SDK: 23 
+Target SDK: 25 
 
 ## License
 
-Privacy Friendly App Example is licensed under the GPLv3.
+Privacy Friendly PIN Mnemonic is licensed under the GPLv3.
 Copyright (C) 2016  Karola Marky
 
 This program is free software: you can redistribute it and/or modify
@@ -41,8 +43,7 @@ App-Icon: <br />
 Markus Hau<br />
 
 Github-Users: <br />
-Yonjuni <br />
-Kamuno
+Yonjuni (Karola Marky)
 
 
 
