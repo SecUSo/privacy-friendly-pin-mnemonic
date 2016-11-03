@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.secuso.privacyfriendlypinmnemonic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.secuso.privacyfriendlypinmnemonic.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name="org.secuso.privacyfriendlypinmnemonic.AboutActivity"
+            android:label="@string/about"
+            android:parentActivityName="org.secuso.privacyfriendlypinmnemonic.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.secuso.privacyfriendlypinmnemonic.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.secuso.privacyfriendlypinmnemonic.HelpActivity"
+            android:label="@string/help"
+            android:parentActivityName="org.secuso.privacyfriendlypinmnemonic.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.secuso.privacyfriendlypinmnemonic.MainActivity" />
+        </activity>
+        <activity
+            android:name="org.secuso.privacyfriendlypinmnemonic.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="org.secuso.privacyfriendlypinmnemonic.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.secuso.privacyfriendlypinmnemonic.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

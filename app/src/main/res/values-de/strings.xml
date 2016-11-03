@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">PIN Merkstrategien</string>
+    <string name="app_name_long">Privacy Friendly PIN Merkstrategien</string>
+
+    <!-- Menu Items-->
+    <string name="action_help">Hilfe</string>
+    <string name="action_about">Über</string>
+    <string name="action_practice">PIN-Eingabe üben</string>
+    <string name="action_numpad">Ziffernblock</string>
+    <string name="action_enter_pin">PIN eingeben</string>
+    <string name="action_pin_mnemonics">Merkstrategien</string>
+    <string name="action_navigation">Navigation</string>
+
+    <string name="drawer_open">Navigation drawer öffnen</string>
+    <string name="drawer_close">Navigation drawer schließen</string>
+
+    <!-- Mnemonic Items and Headings from ShowHintFragment-->
+    <string name="display_no_word">Kein Wort möglich</string>
+    <string name="display_no_math">Keine Formel gefunden</string>
+    <string name="display_no_date">Kein Datum möglich</string>
+    <string name="display_date_year_1900s">Gültiges Jahr der 90er</string>
+    <string name="display_date_year_2000s">Gültiges Jahr dieses Jahrhunderts</string>
+    <string name="display_date_year_any">Gültiges vergangenes Jahr</string>
+    <string name="display_math_stepping">Stufen-PIN: </string>
+    <string name="display_entered_pin">PIN: </string>
+    <string name="shape_heading">Form:</string>
+    <string name="word_heading">Wort:</string>
+    <string name="date_heading">Datum:</string>
+    <string name="math_heading">Mathe:</string>
+    <string name="story_heading">Story:</string>
+
+    <!-- EnterPINFragment-->
+    <string name="enter_pin">4-stellige PIN eingeben: </string>
+    <string name="show_mnemonics_button">Merkstrategien anzeigen</string>
+    <string name="four_digits">Bitte 4 Zahlen eingeben.</string>
+
+    <!-- NumPad-->
+    <string name="numpad_delete">DEL</string>
+    <string name="numpad_reset">RESET</string>
+    <string name="hint_numpad">Wird die Wort-Strategie gewählt, sollte beachtet werden, dass PIN-Eingabegeräte nicht immer Buchstaben aufgedruckt haben. Hier kann dieser Ziffernblock als Spickzettel verwendet werden.</string>
+
+    <!-- PracticeFragment-->
+    <string name="your_pin_heading">Ihre PIN:</string>
+    <string name="practise_button">PIN-Eingabe üben</string>
+    <string name="practised_pin_heading">Eingegebene PIN:</string>
+    <string name="toast_success">Richtig! Durch wiederholtes Eingeben wird die PIN besser verinnerlicht.</string>
+    <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes Lesen der Strategien.</string>
+
+    <!-- HelpFragment-->
+    <string name="help_overview_heading">Allgemein</string>
+    <string name="help_tip_one">Privacy Friendly PIN Merkstrategien hilft beim Merken von 4-stelligen PINs durch bis zu 5 Strategien.</string>
+    <string name="help_tip_two">Wiederholtes Einüben der PIN-Eingabe hilft bei der Verinnerlichung.</string>
+    <string name="help_tip_three">Wird die Wort-Strategie gewählt, sollte beachtet werden, dass PIN-Eingabegeräte nicht immer Buchstaben aufgedruckt haben. Hier kann das Handy als Spickzettel verwendet werden.</string>
+
+    <string name="help_shape_heading">Form</string>
+    <string name="help_one_highlighted">Zahl einmal enthalten</string>
+    <string name="help_two_highlighted">Zahl zweimal enthalten</string>
+    <string name="help_three_highlighted">Zahl dreimal enthalten</string>
+    <string name="help_four_highlighted">Zahl viermal enthalten</string>
+    <string name="help_story_heading">Storys</string>
+    <string name="help_story_description">Die angezeigten Symbole können genutzt werden um eine kurze Geschichte zu erfinden.</string>
+    <string name="help_story_example">Beispiel für die PIN 4587: Ich hielt ein Kleeblatt in der Hand, dann ging ich zum Billard um 7 Uhr.</string>
+    <string name="help_story_additional">Selbstverständlich können eigene Assoziationen verwendet werden.</string>
+    <string name="help_privacy_heading">Datenschutz-Info</string>
+    <string name="help_pin_storage_heading">PIN-Speicherung</string>
+    <string name="help_pin_storage_description">Die PIN wird weder im Telefon gespeichert, noch übertragen.</string>
+    <string name="help_permissions_heading">Berechtigungen</string>
+    <string name="help_permissions_description">Privacy Friendly PIN Merkstrategien verwendet keine Berechtigungen.</string>
+
+    <!-- AboutFragment-->
+    <string name="version_number">Version 1.2</string>
+    <string name="about_author">Autor: Karola Marky</string>
+    <string name="about_affiliation">In Zusammenarbeit mit</string>
+    <string name="privacy_friendly">Diese App gehört zur Gruppe der Privacy Friendly Apps.</string>
+    <string name="more_info">Mehr Informationen unter:</string>
+    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/de/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+
+    <!-- Tutorials global-->
+    <string name="confirm_button">Okay</string>
+    <string name="help_button">Hilfe anzeigen</string>
+
+    <!-- Tutorials specific-->
+    <string name="tutorial_practice_title">PIN üben</string>
+    <string name="tutorial_practice_description">Durch wiederholtes Eingeben wird die PIN besser verinnerlicht. Hierbei sollte an die Merkstrategie gedacht werden.</string>
+    <string name="tutorial_mnemonics_title">Merkstrategien anschauen</string>
+    <string name="tutorial_mnemonics_description">Diese Seite zeigt Techniken zum erleichterten Merken von PINs an. Wiederholtes Einüben hilft beim Verinnerlichen.</string>
+
+    <!-- Security reset-->
+    <string name="security_reset_title">Sicherheitsreset</string>
+    <string name="security_reset_description">Die App wurde über 5 Minuten minimiert. Um die PIN zu schützen wurde das Interface zurückgesetzt.</string>
+    <string name="security_reset_okay">Okay</string>
+
+</resources>
+

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_hint_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="25dp">
+
+    <TextView
+        android:id="@+id/pinHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/practiseButton"
+        android:layout_alignStart="@+id/practiseButton"
+        android:text="@string/display_entered_pin"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_alignTop="@+id/pinHeading"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/shapeHeading"
+        android:layout_below="@+id/pinHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/practiseButton"
+        android:layout_alignStart="@+id/practiseButton"
+        android:text="@string/shape_heading"
+        android:textSize="15sp" />
+
+    <GridLayout
+        android:id="@+id/numbers_show_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/shapeHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_one_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/button_two_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_three_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_four_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_five_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_six_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_seven_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_eight_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_nine_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_zero_space_left"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/invisible_button"
+            android:textColor="@color/transparent"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_zero_hint"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/mnemonic_numpad_button"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_zero_space_right"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/invisible_button"
+            android:textColor="@color/transparent"
+            android:textSize="9sp"
+            android:textAllCaps="false"/>
+    </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/numpadFrame"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/wordHeading"
+        android:layout_alignEnd="@+id/numbers_show_hint"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignRight="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_alignTop="@+id/numbers_show_hint"></RelativeLayout>
+
+    <TextView
+        android:id="@+id/wordHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
+        android:layout_below="@+id/numbers_show_hint"
+        android:layout_marginTop="20dp"
+        android:text="@string/word_heading"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/dateHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
+        android:layout_below="@+id/wordHeading"
+        android:layout_marginTop="10dp"
+        android:text="@string/date_heading"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mathHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
+        android:layout_below="@+id/dateHeading"
+        android:layout_marginTop="10dp"
+        android:text="@string/math_heading"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/storyHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shapeHeading"
+        android:layout_alignStart="@+id/shapeHeading"
+        android:layout_below="@+id/mathHeading"
+        android:layout_marginTop="30dp"
+        android:text="@string/story_heading"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_alignTop="@+id/wordHeading"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_below="@+id/wordHeading"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numbers_show_hint"
+        android:layout_alignStart="@+id/numbers_show_hint"
+        android:layout_below="@+id/dateHeading"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <GridLayout
+        android:id="@+id/symbolRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/practiseButton"
+        android:layout_alignLeft="@+id/math"
+        android:layout_alignStart="@+id/math"
+        android:columnCount="4">
+
+        <ImageView android:id="@+id/symbolImageView1"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
+
+        <ImageView
+            android:id="@+id/symbolImageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
+
+        <ImageView
+            android:id="@+id/symbolImageView3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
+
+        <ImageView
+            android:id="@+id/symbolImageView4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="40sp"
+            android:layout_height="40sp"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/practiseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storyHeading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/practice_button"
+        android:text="@string/practise_button"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
