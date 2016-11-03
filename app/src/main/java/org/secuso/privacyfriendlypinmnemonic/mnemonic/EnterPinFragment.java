@@ -8,7 +8,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;

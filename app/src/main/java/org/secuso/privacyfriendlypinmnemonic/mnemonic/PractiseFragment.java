@@ -9,7 +9,6 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.text.InputType;
 import android.text.SpannableString;

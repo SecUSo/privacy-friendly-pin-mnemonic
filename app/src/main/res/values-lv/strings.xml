@@ -67,13 +67,14 @@
     <string name="help_permissions_heading">Kādas privilēģijas ir šai programai?</string>
     <string name="help_permissions_description">Privacy Friendly PIN Mnemonikas neizmanto nekādu īpašu priviļēģiju.</string>
 
-    <!-- AboutFragment-->
-    <string name="version_number">Versija 1.2</string>
-    <string name="about_author">Autors: Karola Marky</string>
+    <!--About-->
+    <string name="about">Informācija</string>
+    <string name="version_number">Versija 2.0</string>
+    <string name="about_author">Autors: Karola Marky un līdzstrādnieki.</string>
     <string name="about_affiliation">Sadarbībā ar</string>
-    <string name="privacy_friendly">Šī aplikācija ir no Privacy Friendly Apps aplikāciju kataloga.</string>
+    <string name="privacy_friendly">Šī lietotne ir no Technische Universität Darmstadt izstrādātā Privacy Friendly Apps lietotņu kataloga. Bilžu autortiesības pieder TU Darmstadt un Google Inc.</string>
     <string name="more_info">Papildus informācija (angļu valodā):</string>
-    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/de/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+
 
     <!-- Tutorials global-->
     <string name="confirm_button">Labi</string>
