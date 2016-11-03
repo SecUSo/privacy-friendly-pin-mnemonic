@@ -35,11 +35,11 @@ public class ShowHintFragment extends Fragment {
     private String practicePIN;
     Activity activity;
     View rootView;
-    boolean securityReset;
+    //boolean securityReset;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        this.securityReset = false;
+        //this.securityReset = false;
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
@@ -296,22 +296,22 @@ public class ShowHintFragment extends Fragment {
         this.activity = activity;
     }
 
-    public void onResume() {
-        super.onResume();
-        if (securityReset) {
-            //((MainActivity)getActivity()).guiClearDialog();
-        }
-    }
-
-    public void onPause() {
-        super.onPause();
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-
-            public void run() {
-                securityReset = true;
-            }
-        }, 300000);
-    }
+//    public void onResume() {
+//        super.onResume();
+//        if (securityReset) {
+//            //((MainActivity)getActivity()).guiClearDialog();
+//        }
+//    }
+//
+//    public void onPause() {
+//        super.onPause();
+//        final Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//
+//            public void run() {
+//                securityReset = true;
+//            }
+//        }, 300000);
+//    }
 
 }

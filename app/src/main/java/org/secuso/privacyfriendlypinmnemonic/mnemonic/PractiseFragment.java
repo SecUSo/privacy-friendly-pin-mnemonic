@@ -35,14 +35,14 @@ public class PractiseFragment extends Fragment {
     private String practicePIN;
 
     int buttonCounter = 0;
-    boolean securityReset;
+    //boolean securityReset;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
 
-        securityReset = false;
+        //securityReset = false;
 
         doFirstRun();
 
@@ -201,22 +201,22 @@ public class PractiseFragment extends Fragment {
         this.activity = activity;
     }
 
-    public void onResume() {
-        super.onResume();
-        if (securityReset) {
-            //((MainActivity)getActivity()).guiClearDialog();
-        }
-    }
-
-    public void onPause() {
-        super.onPause();
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-
-            public void run() {
-                securityReset = true;
-            }
-        }, 300000);
-    }
+//    public void onResume() {
+//        super.onResume();
+//        if (securityReset) {
+//            //((MainActivity)getActivity()).guiClearDialog();
+//        }
+//    }
+//
+//    public void onPause() {
+//        super.onPause();
+//        final Handler handler = new Handler();
+//        handler.postDelayed(new Runnable() {
+//
+//            public void run() {
+//                securityReset = true;
+//            }
+//        }, 300000);
+//    }
 
 }

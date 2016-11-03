@@ -7,16 +7,21 @@ import android.app.DialogFragment;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 
 import org.secuso.privacyfriendlypinmnemonic.mnemonic.EnterPinFragment;
 
 public class MainActivity extends BaseActivity {
 
+    boolean securityReset;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.securityReset = false;
 
         final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.main_content, new EnterPinFragment(), "EnterPinFragment");
@@ -45,7 +50,7 @@ public class MainActivity extends BaseActivity {
             LayoutInflater i = getActivity().getLayoutInflater();
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setView(i.inflate(R.layout.dialog_welcome, null));
-            builder.setIcon(R.mipmap.icon);
+            builder.setIcon(R.mipmap.app_icon);
             builder.setTitle(getActivity().getString(R.string.welcome));
             builder.setPositiveButton(getActivity().getString(R.string.okay), null);
             builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
@@ -72,7 +77,7 @@ public class MainActivity extends BaseActivity {
             LayoutInflater i = getActivity().getLayoutInflater();
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setView(i.inflate(R.layout.dialog_mnemonics, null));
-            builder.setIcon(R.mipmap.icon);
+            builder.setIcon(R.mipmap.app_icon);
             builder.setTitle(getActivity().getString(R.string.tutorial_mnemonics_title));
             builder.setPositiveButton(getActivity().getString(R.string.okay), null);
             builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
@@ -99,7 +104,7 @@ public class MainActivity extends BaseActivity {
             LayoutInflater i = getActivity().getLayoutInflater();
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setView(i.inflate(R.layout.dialog_reset, null));
-            builder.setIcon(R.mipmap.icon);
+            builder.setIcon(R.mipmap.app_icon);
             builder.setTitle(getActivity().getString(R.string.security_reset_title));
             builder.setPositiveButton(getActivity().getString(R.string.okay), null);
             builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
@@ -126,7 +131,7 @@ public class MainActivity extends BaseActivity {
             LayoutInflater i = getActivity().getLayoutInflater();
             AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
             builder.setView(i.inflate(R.layout.dialog_reset, null));
-            builder.setIcon(R.mipmap.icon);
+            builder.setIcon(R.mipmap.app_icon);
             builder.setTitle(getActivity().getString(R.string.tutorial_practice_title));
             builder.setPositiveButton(getActivity().getString(R.string.okay), null);
             builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
@@ -140,6 +145,24 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    public void onResume() {
+        super.onResume();
+        if (securityReset) {
+            ResetDialog resetDialog = new ResetDialog();
+            resetDialog.show(getFragmentManager(), "ResetDialog");
+        }
+    }
+
+    public void onPause() {
+        super.onPause();
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+
+            public void run() {
+                securityReset = true;
+            }
+        }, 300000);
+    }
 
 
 
