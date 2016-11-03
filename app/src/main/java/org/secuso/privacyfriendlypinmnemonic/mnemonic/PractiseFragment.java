@@ -7,8 +7,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
-import android.support.v7.app.ActionBarActivity;
-import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
@@ -20,7 +18,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.secuso.privacyfriendlypinmnemonic.MainActivity;
 import org.secuso.privacyfriendlypinmnemonic.R;
 
 /**
@@ -43,7 +40,6 @@ public class PractiseFragment extends Fragment {
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_practise, container, false);
-        ((ActionBarActivity) getActivity()).getSupportActionBar().setSubtitle(R.string.action_practice);
 
         securityReset = false;
 
@@ -62,7 +58,7 @@ public class PractiseFragment extends Fragment {
         visiblePin = "";
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
-        pinEditText.setInputType(InputType.TYPE_NULL);
+        //pinEditText.setInputType(InputType.TYPE_NULL);
 
         //Buttons
         Button[] numpad = new Button[10];
