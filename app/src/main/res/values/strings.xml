@@ -99,10 +99,9 @@
     <string name="security_reset_okay">Okay</string>
 
     <!-- ### WELCOME DIALOG ### -->
-    <string name="welcome_text">This App serves as a guideline to see the basic design of Privacy Friendly Apps. The sourcecode is available at GitHub. For further explanations have a look at the Privacy Friendly App Guide.\n\nThe welcome screen should introduce the app and the key elements of the start page.</string>
+    <string name="welcome_text">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit PIN. Start by entering the PIN.</string>
     <string name="welcome">Welcome</string>
     <string name="okay">Okay</string>
     <string name="viewhelp">View Help</string>
-    <string name="main_button_welcomedialog">Show Welcome</string>
 </resources>
 
