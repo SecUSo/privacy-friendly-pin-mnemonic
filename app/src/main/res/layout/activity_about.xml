@@ -67,11 +67,18 @@
             android:gravity="center">
 
             <TextView
+                android:id="@+id/textFieldAuthorNames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_author_names" />
+
+            <TextView
                 android:id="@+id/textFieldContributors"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text="ELER" />
+                android:layout_toEndOf="@+id/textFieldAuthorNames"
+                android:text="@string/about_author_contributors" />
 
         </RelativeLayout>
 
@@ -109,21 +116,21 @@
             android:text="@string/more_info" />
 
         <TextView
+            android:id="@+id/secusoWebsite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:autoLink="web"
             android:text="@string/url"
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/githubURL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:autoLink="web"
             android:gravity="center_horizontal"
-            android:text="GITHUB"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:text="@string/github" />
 
     </LinearLayout>
 

@@ -67,13 +67,13 @@
     <string name="help_permissions_heading">Berechtigungen</string>
     <string name="help_permissions_description">Privacy Friendly PIN Merkstrategien verwendet keine Berechtigungen.</string>
 
-    <!-- AboutFragment-->
-    <string name="version_number">Version 1.2</string>
-    <string name="about_author">Autor: Karola Marky</string>
+    <string name="about">Über</string>
+    <string name="version_number">Version 2.1</string>
+    <string name="about_author">Autoren: </string>
+    <string name="about_author_contributors">und Mitwirkende.</string>
     <string name="about_affiliation">In Zusammenarbeit mit</string>
-    <string name="privacy_friendly">Diese App gehört zur Gruppe der Privacy Friendly Apps.</string>
-    <string name="more_info">Mehr Informationen unter:</string>
-    <string name="url"><a href="https://www.secuso.informatik.tu-darmstadt.de/de/research/results/privacy-friendly-apps">https://www.secuso.org</a></string>
+    <string name="privacy_friendly">Diese App gehört zur Gruppe der Privacy Friendly Apps entwickelt von der Technischen Universität Darmstadt. Quelltext lizenziert unter GPLv3. Bilder copyright TU Darmstadt und Google Inc.</string>
+    <string name="more_info">Weitere Infos unter:</string>
 
     <!-- Tutorials global-->
     <string name="confirm_button">Okay</string>
