@@ -11,9 +11,6 @@
     <string name="action_pin_mnemonics">Merkstrategien</string>
     <string name="action_navigation">Navigation</string>
 
-    <string name="drawer_open">Navigation drawer öffnen</string>
-    <string name="drawer_close">Navigation drawer schließen</string>
-
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">Kein Wort möglich</string>
     <string name="display_no_math">Keine Formel gefunden</string>
@@ -47,6 +44,7 @@
     <string name="toast_fail">Leider falsch. Vielleicht hilft ein erneutes Lesen der Strategien.</string>
 
     <!-- HelpFragment-->
+    <string name="help">Hilfe</string>
     <string name="help_overview_heading">Allgemein</string>
     <string name="help_tip_one">Privacy Friendly PIN Merkstrategien hilft beim Merken von 4-stelligen PINs durch bis zu 5 Strategien.</string>
     <string name="help_tip_two">Wiederholtes Einüben der PIN-Eingabe hilft bei der Verinnerlichung.</string>
@@ -80,6 +78,9 @@
     <string name="help_button">Hilfe anzeigen</string>
 
     <!-- Tutorials specific-->
+    <string name="okay">Okay</string>
+    <string name="welcome">Willkommen</string>
+    <string name="welcome_text">Privacy Friendly PIN Merkstragien hilft beim Merken von 4-stelligen PINs. Bitten starten Sie durch die Eingabe der PIN.</string>
     <string name="tutorial_practice_title">PIN üben</string>
     <string name="tutorial_practice_description">Durch wiederholtes Eingeben wird die PIN besser verinnerlicht. Hierbei sollte an die Merkstrategie gedacht werden.</string>
     <string name="tutorial_mnemonics_title">Merkstrategien anschauen</string>
@@ -89,6 +90,7 @@
     <string name="security_reset_title">Sicherheitsreset</string>
     <string name="security_reset_description">Die App wurde über 5 Minuten minimiert. Um die PIN zu schützen wurde das Interface zurückgesetzt.</string>
     <string name="security_reset_okay">Okay</string>
+    <string name="viewhelp">Hilfe anzeigen</string>
 
 </resources>
 

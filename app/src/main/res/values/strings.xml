@@ -3,9 +3,6 @@
     <string name="app_name_long">Privacy Friendly PIN Mnemonic</string>
 
     <!-- ###DRAWER###-->
-    <string name="action_main">Main</string>
-    <string name="action_game">Game</string>
-
     <string name="action_help">Help</string>
     <string name="action_about">About</string>
     <string name="action_numpad">Number Pad</string>
@@ -14,8 +11,8 @@
     <string name="action_navigation">Navigation</string>
     <string name="action_pin_mnemonics">PIN Mnemonics</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">No word possible</string>

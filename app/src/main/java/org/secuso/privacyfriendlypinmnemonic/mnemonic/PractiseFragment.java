@@ -206,24 +206,6 @@ public class PractiseFragment extends Fragment {
         this.activity = activity;
     }
 
-//    public void onResume() {
-//        super.onResume();
-//        if (securityReset) {
-//            //((MainActivity)getActivity()).guiClearDialog();
-//        }
-//    }
-//
-//    public void onPause() {
-//        super.onPause();
-//        final Handler handler = new Handler();
-//        handler.postDelayed(new Runnable() {
-//
-//            public void run() {
-//                securityReset = true;
-//            }
-//        }, 300000);
-//    }
-
     public static class PracticeDialog extends DialogFragment {
 
         @Override

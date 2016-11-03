@@ -326,22 +326,4 @@ public class ShowHintFragment extends Fragment {
         }
     }
 
-//    public void onResume() {
-//        super.onResume();
-//        if (securityReset) {
-//            //((MainActivity)getActivity()).guiClearDialog();
-//        }
-//    }
-//
-//    public void onPause() {
-//        super.onPause();
-//        final Handler handler = new Handler();
-//        handler.postDelayed(new Runnable() {
-//
-//            public void run() {
-//                securityReset = true;
-//            }
-//        }, 300000);
-//    }
-
 }

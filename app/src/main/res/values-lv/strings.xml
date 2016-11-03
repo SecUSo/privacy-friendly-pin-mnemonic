@@ -11,9 +11,6 @@
     <string name="action_pin_mnemonics">Mnemonikas</string>
     <string name="action_navigation">Navigācija</string>
 
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">nav atrasts</string>
     <string name="display_no_date">nav atrasts</string>
@@ -47,7 +44,8 @@
     <string name="toast_fail">Diemžēl nepareizi. Varbūt apskatiet mnemonikas vēl vienu reizi?</string>
 
     <!-- HelpFragment-->
-    <string name="help_overview_heading">Allgemein</string>
+    <string name="help">Palīdzība</string>
+    <string name="help_overview_heading">Visparīgi</string>
     <string name="help_tip_one">Privacy Friendly PIN Menmonikas palīdz Jums atcerēties savu 4 ciparu PIN ar līdz pat 5 mnemonikām.</string>
     <string name="help_tip_two">Atkārtotota PIN ievadīšana palīdz to labāk atcerēties.</string>
     <string name="help_tip_three">Ja Jūs izvēlējāties vārdu, ņemiet vērā, ka uz PIN tastatūrām bieži nav uzdrukāti burti. Šajā gadijumā Jūs varat izmantot telefona tastatūru kā špikeri.</string>
@@ -70,7 +68,8 @@
     <!--About-->
     <string name="about">Informācija</string>
     <string name="version_number">Versija 2.0</string>
-    <string name="about_author">Autors: Karola Marky un līdzstrādnieki.</string>
+    <string name="about_author">Autors: Karola Marky</string>
+    <string name="about_author_contributors">un līdzstrādnieki.</string>
     <string name="about_affiliation">Sadarbībā ar</string>
     <string name="privacy_friendly">Šī lietotne ir no Technische Universität Darmstadt izstrādātā Privacy Friendly Apps lietotņu kataloga. Bilžu autortiesības pieder TU Darmstadt un Google Inc.</string>
     <string name="more_info">Papildus informācija (angļu valodā):</string>
@@ -81,6 +80,9 @@
     <string name="help_button">Palīdzība</string>
 
     <!-- Tutorials specific-->
+    <string name="okay">Labi</string>
+    <string name="welcome">Laipni lūdzam</string>
+    <string name="welcome_text">Privacy Friendly PIN Mnemonikas palīdz iegaumēt 4 skaitļu PIN kodus. Lūdzu saciet ievadot PIN kodu.</string>
     <string name="tutorial_practice_title">Vingrināties ievadīt PIN</string>
     <string name="tutorial_practice_description">Atkārtota vaingrināšanās palīdz Jums labāk iegaumēt PIN. Vingrinoties domājiet par mnemonikām!</string>
     <string name="tutorial_mnemonics_title">Apskatīt mnemonikas</string>
@@ -90,6 +92,7 @@
     <string name="security_reset_title">Drošības rīsets</string>
     <string name="security_reset_description">Propgrama bija minimēta vismaz 5 minūtes. Drošības pēc Jūsu PIN tika izdzēsts no interfeisa.</string>
     <string name="security_reset_okay">Labi</string>
+    <string name="viewhelp">Palīdzība</string>
 
 </resources>
 
