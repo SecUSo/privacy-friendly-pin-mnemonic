@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -96,6 +97,16 @@ public class MainActivity extends BaseActivity {
         }
     }
 
+    private void resetGUI() {
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
+
+        final FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.main_content, new EnterPinFragment(), "EnterPinFragment");
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
+
     private void doFirstRun() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         sharedPreferences.edit().putString("firstpractice", "").commit();
@@ -113,6 +124,7 @@ public class MainActivity extends BaseActivity {
     public void onResume() {
         super.onResume();
         if (securityReset) {
+            resetGUI();
             ResetDialog resetDialog = new ResetDialog();
             resetDialog.show(getFragmentManager(), "ResetDialog");
         }
