@@ -16,11 +16,11 @@
 
         <include layout="@layout/toolbar" />
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <RelativeLayout
             android:id="@+id/enter_pin_fragment"
             android:layout_width="match_parent"
+            android:layout_marginTop="?attr/actionBarSize"
             android:layout_height="match_parent">
-
 
             <GridLayout
                 android:id="@+id/numbers"

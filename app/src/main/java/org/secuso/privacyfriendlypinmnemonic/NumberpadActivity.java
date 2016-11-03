@@ -6,10 +6,6 @@ import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.widget.Button;
 
-/**
- * Created by karo on 03.11.16.
- */
-
 public class NumberpadActivity extends BaseActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
