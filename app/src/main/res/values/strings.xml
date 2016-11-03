@@ -135,13 +135,6 @@
     <string name="about_author_contributors">and contributors.</string>
     <string name="github" translatable="false"><a href="https://github.com/SecUSo/privacy-friendly-app-example">Github-Repo</a></string>
 
-    <!-- ###SETTINGS### -->
-    <string name="title_activity_settings">Settings</string>
-    <string name="pref_header_general">General</string>
-    <string name="pref_example_switch">Example Switch</string>
-    <string name="pref_example_switch_summary">Example Switch Summary</string>
-    <string name="pref_example_summary">Example Summary</string>
-
     <!-- ### WELCOME DIALOG ### -->
     <string name="welcome_text">This App serves as a guideline to see the basic design of Privacy Friendly Apps. The sourcecode is available at GitHub. For further explanations have a look at the Privacy Friendly App Guide.\n\nThe welcome screen should introduce the app and the key elements of the start page.</string>
     <string name="welcome">Welcome</string>
