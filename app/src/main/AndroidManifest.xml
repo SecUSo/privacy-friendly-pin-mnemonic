@@ -25,7 +25,7 @@
         </activity>
         <activity
             android:name="org.secuso.privacyfriendlypinmnemonic.NumberpadActivity"
-            android:label="@string/help"
+            android:label="@string/action_numpad"
             android:parentActivityName="org.secuso.privacyfriendlypinmnemonic.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

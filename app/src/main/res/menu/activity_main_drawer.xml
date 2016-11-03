@@ -6,11 +6,11 @@
         <item
             android:id="@+id/nav_example"
             android:icon="@drawable/ic_tutorial"
-            android:title="ENTER PIN" />
+            android:title="@string/action_enter_pin" />
         <item
             android:id="@+id/nav_numberpad"
             android:icon="@drawable/ic_action_dialpad"
-            android:title="NUMBERPAD" />
+            android:title="@string/action_numpad" />
     </group>
 
     <group android:id="@+id/nav_group_add"
