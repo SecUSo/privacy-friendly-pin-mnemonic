@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.text.InputType;
 import android.text.SpannableString;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
@@ -58,7 +59,7 @@ public class PractiseFragment extends Fragment {
         visiblePin = "";
 
         pinEditText = (EditText) rootView.findViewById(R.id.displayPin);
-        //pinEditText.setInputType(InputType.TYPE_NULL);
+        pinEditText.setInputType(InputType.TYPE_NULL);
 
         //Buttons
         Button[] numpad = new Button[10];

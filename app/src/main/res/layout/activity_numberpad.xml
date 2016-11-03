@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="org.secuso.privacyfriendlypinmnemonic.NumberpadActivity">
+
+        <include layout="@layout/toolbar" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/enter_pin_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <GridLayout
+                android:id="@+id/numbers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_one"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_two"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_three"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_four"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_five"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_six"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+
+                    />
+
+                <Button
+                    android:id="@+id/button_seven"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_eight"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_nine"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_reset"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/invisible_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_zero"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/mnemonic_numpad_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/button_delete"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/invisible_button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/helpNumpad"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/numbers"
+                android:layout_margin="35dp"
+                android:text="@string/hint_numpad" />
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
