@@ -3,12 +3,12 @@ package org.secuso.privacyfriendlypinmnemonic.pinhelpers;
 import android.content.Context;
 import android.util.Log;
 
+import org.secuso.privacyfriendlypinmnemonic.R;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
-
-import org.secuso.privacyfriendlypinmnemonic.R;
 
 /**
  * Created by yonjuni on 27.10.15.
@@ -261,5 +261,5 @@ public class CheckPin {
         return duplicates;
 
     }
-
 }
+

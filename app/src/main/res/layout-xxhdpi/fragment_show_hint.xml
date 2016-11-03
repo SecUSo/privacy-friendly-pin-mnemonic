@@ -4,7 +4,7 @@
     android:id="@+id/show_hint_main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="25dp">
+    android:layout_marginTop="15dp">
 
     <TextView
         android:id="@+id/pinHeading"
@@ -44,7 +44,8 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:columnCount="3"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+         >
 
         <Button
             android:id="@+id/button_one_hint"
@@ -303,5 +304,5 @@
         android:text="@string/practise_button"
         android:textColor="@color/white" />
 
-</RelativeLayout>
 
+</RelativeLayout>

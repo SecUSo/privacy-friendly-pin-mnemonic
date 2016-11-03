@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Built application files
 /*/build/
 
@@ -35,3 +36,13 @@ local.properties
 .Trashes
 ehthumbs.db
 Thumbs.db
+=======
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+/app/src/androidTest
+>>>>>>> 0d4f27c3fffdde050c2107b3c286b9562a6edbb1

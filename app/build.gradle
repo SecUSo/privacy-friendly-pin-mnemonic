@@ -11,6 +11,7 @@ android {
         versionCode 5
         versionName "2.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false

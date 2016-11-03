@@ -5,56 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/enter_pin"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/pin_message_enter_pin"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_pin"
+        android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/pin_message_enter_pin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:text="@string/practised_pin_heading"
-            android:textSize="20sp" />
-
-        <EditText
-            android:id="@+id/displayPin"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/pin_message_enter_pin"
-            android:layout_toEndOf="@+id/pin_message_enter_pin"
-            android:layout_toRightOf="@+id/pin_message_enter_pin"
-            android:background="#00000000"
-            android:maxWidth="60dp"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </RelativeLayout>
+    <EditText
+        android:id="@+id/displayPin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pin_message_enter_pin"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <GridLayout
         android:id="@+id/numbers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/enter_pin"
         android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
         android:columnCount="3"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_one"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -62,9 +48,9 @@
 
         <Button
             android:id="@+id/button_two"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -72,9 +58,9 @@
 
         <Button
             android:id="@+id/button_three"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -82,9 +68,9 @@
 
         <Button
             android:id="@+id/button_four"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -92,9 +78,9 @@
 
         <Button
             android:id="@+id/button_five"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -102,9 +88,9 @@
 
         <Button
             android:id="@+id/button_six"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -114,9 +100,9 @@
 
         <Button
             android:id="@+id/button_seven"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -124,9 +110,9 @@
 
         <Button
             android:id="@+id/button_eight"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -134,9 +120,9 @@
 
         <Button
             android:id="@+id/button_nine"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -144,9 +130,9 @@
 
         <Button
             android:id="@+id/button_reset"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/delete_reset_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -154,9 +140,9 @@
 
         <Button
             android:id="@+id/button_zero"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/mnemonic_numpad_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
@@ -164,14 +150,40 @@
 
         <Button
             android:id="@+id/button_delete"
-            android:layout_width="65dp"
-            android:layout_height="65dp"
-            android:layout_margin="3dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="2dp"
             android:background="@drawable/delete_reset_button"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="12sp" />
 
     </GridLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/numbers"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/inactive_button"
+            android:text="@string/show_mnemonics_button"
+            android:textColor="@color/white" />
+
+        />
+
+    </RelativeLayout>
 
 </RelativeLayout>

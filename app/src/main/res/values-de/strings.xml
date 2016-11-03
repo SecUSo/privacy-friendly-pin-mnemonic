@@ -39,7 +39,7 @@
     <string name="numpad_reset">RESET</string>
     <string name="hint_numpad">Wird die Wort-Strategie gewählt, sollte beachtet werden, dass PIN-Eingabegeräte nicht immer Buchstaben aufgedruckt haben. Hier kann dieser Ziffernblock als Spickzettel verwendet werden.</string>
 
-    <!-- PracticeFragment-->
+    <!-- PractiseFragment-->
     <string name="your_pin_heading">Ihre PIN:</string>
     <string name="practise_button">PIN-Eingabe üben</string>
     <string name="practised_pin_heading">Eingegebene PIN:</string>

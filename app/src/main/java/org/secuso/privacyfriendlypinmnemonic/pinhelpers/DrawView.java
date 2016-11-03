@@ -201,4 +201,6 @@ public class DrawView extends View {
         paint.setColor(color);
         invalidate();
     }
+
 }
+

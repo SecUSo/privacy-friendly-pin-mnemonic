@@ -1,5 +1,6 @@
 package org.secuso.privacyfriendlypinmnemonic.pinhelpers;
 
+
 import org.secuso.privacyfriendlypinmnemonic.R;
 
 /**
@@ -522,4 +523,6 @@ public class WordDictionary {
             "zero", "zeug", "zieh", "ziel", "zier", "zimt", "zink", "zinn", "zins", "zick", "zipp",
             "zivi", "zofe", "zoll", "zone", "zoom", "zopf", "zorn", "zuge", "zwar", "zwei"
     };
+
 }
+
