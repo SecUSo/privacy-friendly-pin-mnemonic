@@ -2,7 +2,6 @@ package org.secuso.privacyfriendlypinmnemonic;
 
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-import android.view.View;
 
 /**
  * Created by yonjuni on 17.06.16.
