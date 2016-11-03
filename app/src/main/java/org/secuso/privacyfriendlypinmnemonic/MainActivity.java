@@ -64,32 +64,32 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    public static class MnemonicsDialog extends DialogFragment {
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-        }
-
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-
-            LayoutInflater i = getActivity().getLayoutInflater();
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setView(i.inflate(R.layout.dialog_mnemonics, null));
-            builder.setIcon(R.mipmap.app_icon);
-            builder.setTitle(getActivity().getString(R.string.tutorial_mnemonics_title));
-            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
-            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    ((MainActivity)getActivity()).goToNavigationItem(R.id.nav_help);
-                }
-            });
-
-            return builder.create();
-        }
-    }
+//    public static class MnemonicsDialog extends DialogFragment {
+//
+//        @Override
+//        public void onAttach(Activity activity) {
+//            super.onAttach(activity);
+//        }
+//
+//        @Override
+//        public Dialog onCreateDialog(Bundle savedInstanceState) {
+//
+//            LayoutInflater i = getActivity().getLayoutInflater();
+//            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//            builder.setView(i.inflate(R.layout.dialog_mnemonics, null));
+//            builder.setIcon(R.mipmap.app_icon);
+//            builder.setTitle(getActivity().getString(R.string.tutorial_mnemonics_title));
+//            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
+//            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    ((MainActivity)getActivity()).goToNavigationItem(R.id.nav_help);
+//                }
+//            });
+//
+//            return builder.create();
+//        }
+//    }
 
     public static class ResetDialog extends DialogFragment {
 
@@ -118,32 +118,32 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    public static class PraticeDialog extends DialogFragment {
-
-        @Override
-        public void onAttach(Activity activity) {
-            super.onAttach(activity);
-        }
-
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-
-            LayoutInflater i = getActivity().getLayoutInflater();
-            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-            builder.setView(i.inflate(R.layout.dialog_reset, null));
-            builder.setIcon(R.mipmap.app_icon);
-            builder.setTitle(getActivity().getString(R.string.tutorial_practice_title));
-            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
-            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    ((MainActivity)getActivity()).goToNavigationItem(R.id.nav_help);
-                }
-            });
-
-            return builder.create();
-        }
-    }
+//    public static class PracticeDialog extends DialogFragment {
+//
+//        @Override
+//        public void onAttach(Activity activity) {
+//            super.onAttach(activity);
+//        }
+//
+//        @Override
+//        public Dialog onCreateDialog(Bundle savedInstanceState) {
+//
+//            LayoutInflater i = getActivity().getLayoutInflater();
+//            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+//            builder.setView(i.inflate(R.layout.dialog_reset, null));
+//            builder.setIcon(R.mipmap.app_icon);
+//            builder.setTitle(getActivity().getString(R.string.tutorial_practice_title));
+//            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
+//            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
+//                @Override
+//                public void onClick(DialogInterface dialog, int which) {
+//                    ((MainActivity)getActivity()).goToNavigationItem(R.id.nav_help);
+//                }
+//            });
+//
+//            return builder.create();
+//        }
+//    }
 
     public void onResume() {
         super.onResume();

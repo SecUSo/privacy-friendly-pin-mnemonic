@@ -85,7 +85,7 @@ public class BaseActivity extends AppCompatActivity implements OnNavigationItemS
         return goToNavigationItem(itemId);
     }
 
-    protected boolean goToNavigationItem(final int itemId) {
+    public boolean goToNavigationItem(final int itemId) {
 
         if (itemId == getNavigationDrawerID()) {
             // just close drawer because we are already in this activity

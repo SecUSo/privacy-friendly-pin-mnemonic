@@ -1,7 +1,11 @@
 package org.secuso.privacyfriendlypinmnemonic.mnemonic;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,6 +23,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.secuso.privacyfriendlypinmnemonic.MainActivity;
 import org.secuso.privacyfriendlypinmnemonic.R;
 
 /**
@@ -147,7 +152,8 @@ public class PractiseFragment extends Fragment {
         sharedPreferences.edit().putString("firstpractice", "").commit();
         SharedPreferences settings = activity.getSharedPreferences("firstpractice", activity.getBaseContext().MODE_PRIVATE);
         if (settings.getBoolean("isFirstRun", true)) {
-            //((MainActivity) getActivity()).tutorialDialogPractice();
+            PracticeDialog practiceDialog = new PracticeDialog();
+            practiceDialog.show(getFragmentManager(), "PracticeDialog");
 
             SharedPreferences.Editor editor = settings.edit();
             editor.putBoolean("isFirstRun", false);
@@ -218,5 +224,32 @@ public class PractiseFragment extends Fragment {
 //            }
 //        }, 300000);
 //    }
+
+    public static class PracticeDialog extends DialogFragment {
+
+        @Override
+        public void onAttach(Activity activity) {
+            super.onAttach(activity);
+        }
+
+        @Override
+        public Dialog onCreateDialog(Bundle savedInstanceState) {
+
+            LayoutInflater i = getActivity().getLayoutInflater();
+            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+            builder.setView(i.inflate(R.layout.dialog_practise, null));
+            builder.setIcon(R.mipmap.app_icon);
+            builder.setTitle(getActivity().getString(R.string.tutorial_practice_title));
+            builder.setPositiveButton(getActivity().getString(R.string.okay), null);
+            builder.setNegativeButton(getActivity().getString(R.string.viewhelp), new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    ((MainActivity) getActivity()).goToNavigationItem(R.id.nav_help);
+                }
+            });
+
+            return builder.create();
+        }
+    }
 
 }

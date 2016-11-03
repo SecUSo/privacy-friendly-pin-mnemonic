@@ -19,8 +19,8 @@
         <RelativeLayout
             android:id="@+id/enter_pin_fragment"
             android:layout_width="match_parent"
-            android:layout_marginTop="?attr/actionBarSize"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginTop="?attr/actionBarSize">
 
             <GridLayout
                 android:id="@+id/numbers"
@@ -161,7 +161,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_below="@+id/numbers"
+                android:layout_gravity="center"
                 android:layout_margin="35dp"
+                android:gravity="center_horizontal"
                 android:text="@string/hint_numpad" />
         </RelativeLayout>
 
