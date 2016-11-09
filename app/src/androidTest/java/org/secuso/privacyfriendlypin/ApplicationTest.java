@@ -1,4 +1,4 @@
-package org.secuso.privacyfriendlypinmnemonic;
+package org.secuso.privacyfriendlypin;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

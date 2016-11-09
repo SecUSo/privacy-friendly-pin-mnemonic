@@ -70,7 +70,7 @@ public class EnterPinFragment extends Fragment {
                     if (pinEditText.getText().length() < 4) {
                         visiblePin = visiblePin += tempInt;
 
-                        Log.d("PIN:", visiblePin);
+                        //Log.d("PIN:", visiblePin);
                         pinEditText.setText(visiblePin, TextView.BufferType.EDITABLE);
                     }
 

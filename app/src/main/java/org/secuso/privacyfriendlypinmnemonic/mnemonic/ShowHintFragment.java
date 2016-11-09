@@ -37,11 +37,8 @@ public class ShowHintFragment extends Fragment {
     private String practicePIN;
     Activity activity;
     View rootView;
-    //boolean securityReset;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        //this.securityReset = false;
 
         container.removeAllViews();
         View rootView = inflater.inflate(R.layout.fragment_show_hint, container, false);
