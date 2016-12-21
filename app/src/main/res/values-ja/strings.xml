@@ -1,0 +1,98 @@
+﻿<resources>
+    <string name="app_name">PIN Mnemonic</string>
+    <string name="app_name_long">Privacy Friendly PIN Mnemonic</string>
+
+    <!-- ###DRAWER###-->
+    <string name="action_help">ヘルプ</string>
+    <string name="action_about">アプリについて</string>
+    <string name="action_numpad">数字パッド</string>
+    <string name="action_enter_pin">PIN を入力</string>
+    <string name="action_practice">練習</string>
+    <string name="action_navigation">ナビゲーション</string>
+    <string name="action_pin_mnemonics">PIN ニーモニック</string>
+
+    <!-- Mnemonic Items and Headings from ShowHintFragment-->
+    <string name="display_no_word">単語がありません</string>
+    <string name="display_no_math">数式が見つかりません</string>
+    <string name="display_no_date">データが見つかりません</string>
+    <string name="display_date_year_1900s">1900 年代で有効な年です</string>
+    <string name="display_date_year_2000s">今世紀で有効な年です</string>
+    <string name="display_date_year_any">過去から有効な年です</string>
+    <string name="display_math_stepping">ステッピング PIN です: </string>
+    <string name="display_entered_pin">PIN: </string>
+    <string name="shape_heading">シェイプ:</string>
+    <string name="word_heading">単語:</string>
+    <string name="date_heading">日付:</string>
+    <string name="math_heading">計算:</string>
+    <string name="story_heading">ストーリー:</string>
+
+    <!-- EnterPINFragment-->
+    <string name="enter_pin">4-桁-PIN を入力: </string>
+    <string name="show_mnemonics_button">ニーモニックを表示</string>
+    <string name="four_digits">4 桁の数字を入力してください。</string>
+
+    <!-- NumPad-->
+    <string name="numpad_delete">DEL</string>
+    <string name="numpad_reset">ﾘｾｯﾄ</string>
+    <string name="hint_numpad">単語ストラテジーを使用する場合、多くの PIN 入力デバイスでは数字パッドに文字を表示しないことに注意してください。 上の数字パッドは枠として使用できます。</string>
+
+    <!-- PracticeFragment-->
+    <string name="your_pin_heading">PIN:</string>
+    <string name="practise_button">PIN の入力練習</string>
+    <string name="practised_pin_heading">練習の PIN:</string>
+    <string name="toast_success">正しい PIN を入力しました。 数回繰り返してください。</string>
+    <string name="toast_fail">間違った PIN を入力しました。 ニーモニックを読んで、もう一度お試しください。</string>
+
+    <!-- HelpFragment-->
+    <string name="help">ヘルプ</string>
+    <string name="help_overview_heading">概要</string>
+    <string name="help_tip_one">プライバシーフレンドリーな PIN ニーモニックは、最大 5 つのストラテジーを提示することで、4 桁PINを暗記するのに役立ちます。</string>
+    <string name="help_tip_two">習得するために、PIN を何度も入力する練習をすることを忘れないでください。</string>
+    <string name="help_tip_three">単語ストラテジーを使用しているのであれば、大部分の PIN 数字パッドに文字がないことに気をつけてください。 お使いの電話を枠として使用することができます。</string>
+
+    <string name="help_shape_heading">シェイプ</string>
+    <string name="help_one_highlighted">数字は 1 回含まれています</string>
+    <string name="help_two_highlighted">数字は 2 回含まれています</string>
+    <string name="help_three_highlighted">数字は 3 回含まれています</string>
+    <string name="help_four_highlighted">数字は 4 回含まれています</string>
+    <string name="help_story_heading">ストーリー</string>
+    <string name="help_story_description">表示された記号を使用して、PIN を覚えるための小さなストーリーや文章を想像してください。</string>
+    <string name="help_story_example">PIN 4587 の例: 私はクローバーを手で握った後、ビリヤードを午後 7 時にしました。</string>
+    <string name="help_story_additional">記号はまさにヒントです。PIN を覚えておくのに役立つどんなストーリーも作り上げることができます。</string>
+    <string name="help_privacy_heading">プライバシー情報</string>
+    <string name="help_pin_storage_heading">PIN ストレージ</string>
+    <string name="help_pin_storage_description">PIN は保存も送信も行いません</string>
+    <string name="help_permissions_heading">アクセス許可</string>
+    <string name="help_permissions_description">プライバシーフレンドリーな PIN ニーネニックはアクセス許可を使用していません</string>
+
+    <!-- AboutActivity-->
+    <string name="about">アプリについて</string>
+    <string name="version_number">Version 2.0.1</string>
+    <string name="about_author">作者: </string>
+    <string name="about_author_contributors">と貢献者。</string>
+    <string name="about_affiliation">提携</string>
+    <string name="privacy_friendly">このアプリケーションは、ダルムシュタット工科大学 (Technische Universität Darmstadt, Germany) が開発したプライバシーフレンドリーアプリのグループに属しています。ソースコードは GPLv3 の下でライセンスされます。画像の著作権は TU Darmstadt および Google Inc.</string>
+    <string name="more_info">さらに詳しい情報は以下でご覧ください:</string>
+
+    <!-- Tutorials global-->
+    <string name="confirm_button">了解</string>
+    <string name="help_button">ヘルプを表示</string>
+
+    <!-- Tutorials specific-->
+    <string name="tutorial_practice_title">PIN の練習</string>
+    <string name="tutorial_practice_description">選択したニーモニックを念頭に置いて PIN を繰り返し入力してください。</string>
+    <string name="tutorial_mnemonics_title">ニーモニックを表示</string>
+    <string name="tutorial_mnemonics_description">このページは、PIN を記憶するためのテクニックが示されています。 ニーモニックを選択した後 PIN を入力する練習をしてください。</string>
+
+    <!-- Security reset-->
+    <string name="security_reset_title">セキュリティ リセット</string>
+    <string name="security_reset_description">アプリが 5 分以上最小化されました。 PIN を保護するために、セキュリティ上の理由からインターフェイスがリセットされました。</string>
+    <string name="security_reset_okay">OK</string>
+
+    <!-- ### WELCOME DIALOG ### -->
+    <string name="welcome_text">プライバシーフレンドりーな PIN ニーモニックは、4 桁の PIN を暗記するのに役立ちます。 まず PIN を入力してください。</string>
+    <string name="welcome">ようこそ</string>
+    <string name="okay">OK</string>
+    <string name="viewhelp">ヘルプを表示</string>
+</resources>
+
