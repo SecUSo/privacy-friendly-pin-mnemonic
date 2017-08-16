@@ -1,103 +1,98 @@
 <resources>
-    <string name="app_name">PIN Mnemonic</string>
-    <string name="app_name_long">Privacy Friendly PIN Mnemonic</string>
+    <string name="app_name">PIN Mnémotechnique</string>
+    <string name="app_name_long">PIN Mnémotechnique Privacy Friendly</string>
 
     <!-- ###DRAWER###-->
     <string name="action_help">Aide</string>
     <string name="action_about">À propos</string>
-    <string name="action_numpad">Number Pad</string>
-    <string name="action_enter_pin">Enter PIN</string>
-    <string name="action_practice">Practice</string>
+    <string name="action_numpad">Clavier Numérique</string>
+    <string name="action_enter_pin">Entrer le PIN</string>
+    <string name="action_practice">Pratiquer</string>
     <string name="action_navigation">Navigation</string>
-    <string name="action_pin_mnemonics">PIN Mnemonics</string>
+    <string name="action_pin_mnemonics">PIN Mnémotechnique</string>
 
-    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
-    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
-    <string name="display_no_word">No word possible</string>
-    <string name="display_no_math">No formula found</string>
-    <string name="display_no_date">No date found</string>
-    <string name="display_date_year_1900s">It is a valid year in the 1900s</string>
-    <string name="display_date_year_2000s">It is a valid year in this century</string>
-    <string name="display_date_year_any">It is a valid year from the past</string>
-    <string name="display_math_stepping">It is a stepping PIN: </string>
-    <string name="display_entered_pin">PIN: </string>
-    <string name="shape_heading">Shape:</string>
-    <string name="word_heading">Word:</string>
-    <string name="date_heading">Date:</string>
-    <string name="math_heading">Math:</string>
-    <string name="story_heading">Story:</string>
+    <string name="display_no_word">Aucun mot disponible</string>
+    <string name="display_no_math">Aucune formule trouvée</string>
+    <string name="display_no_date">Aucune date trouvée</string>
+    <string name="display_date_year_1900s">C\'est une date valide du 19ème</string>
+    <string name="display_date_year_2000s">C\'est une année valide dans ce siècle</string>
+    <string name="display_date_year_any">C\'est une année valide du passé</string>
+    <string name="display_math_stepping">C\'est un PIN à étape :</string>
+    <string name="display_entered_pin">PIN :</string>
+    <string name="shape_heading">Forme :</string>
+    <string name="word_heading">Mot :</string>
+    <string name="date_heading">Date :</string>
+    <string name="math_heading">Maths :</string>
+    <string name="story_heading">Histoire :</string>
 
     <!-- EnterPINFragment-->
-    <string name="enter_pin">Enter your 4-digit-PIN: </string>
-    <string name="show_mnemonics_button">Show Mnemonics</string>
-    <string name="four_digits">Please enter 4 digits.</string>
+    <string name="enter_pin">Entrez votre PIN à 4 chiffres :</string>
+    <string name="show_mnemonics_button">Montrer les Mnémotechniques</string>
+    <string name="four_digits">Veuillez entrer 4 chiffres.</string>
 
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>
     <string name="numpad_reset">RESET</string>
-    <string name="hint_numpad">If you use the word strategy be aware that many PIN entering devices do not display letters on the number pad. The number pad above can be used as a crib.</string>
+    <string name="hint_numpad">Si vous utilisez la stratégie du mot, faites attention car beaucoup de claviers PIN n\'affichent pas les lettres à côté des nombres. Le clavier ci-dessus peut être utilisé pour vous entraîner.</string>
 
     <!-- PracticeFragment-->
-    <string name="your_pin_heading">Your PIN:</string>
-    <string name="practise_button">Practice entering your PIN</string>
-    <string name="practised_pin_heading">Practiced PIN:</string>
-    <string name="toast_success">You\'ve entered the right PIN. Please repeat a few times.</string>
-    <string name="toast_fail">You\'ve entered the wrong PIN. Please re-read the mnemonics and try again.</string>
+    <string name="your_pin_heading">Votre PIN :</string>
+    <string name="practise_button">Pratiquez en entrant votre PIN</string>
+    <string name="practised_pin_heading">PIN essayé :</string>
+    <string name="toast_success">Vous avez entré le bon PIN. Veuillez recommencer quelques fois.</string>
+    <string name="toast_fail">Vous avez entré un mauvais PIN. Veuillez relire les mnémotechniques et réessayer.</string>
 
     <!-- HelpFragment-->
-    <string name="help">Help</string>
-    <string name="help_overview_heading">Overview</string>
-    <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit-PIN by presenting up to 5 strategies.</string>
-    <string name="help_tip_two">Don\'t forget to practice entering your PIN multiple times for internalization.</string>
-    <string name="help_tip_three">If you\'re using the word strategy be aware that most of PIN-Numpads don\'t have letters on it. You can use your phone as a crib.</string>
+    <string name="help">Aide</string>
+    <string name="help_overview_heading">Vue d\'ensemble</string>
+    <string name="help_tip_one">PIN Mnémotechnique Privacy Friendly vous aide à mémoriser votre code PIN à 4 chiffres en présentant jusqu\'à 5 stratégies.</string>
+    <string name="help_tip_two">N\'oubliez pas de vous entraîner en entrant votre code PIN plusieurs fois pour le mémoriser.</string>
+    <string name="help_tip_three">Si vous utilisez la stratégie du mot, faites attention car la majorité des claviers PIN n\'affichent pas les lettres.</string>
 
-    <string name="help_shape_heading">Shape</string>
-    <string name="help_one_highlighted">Digit is contained once</string>
-    <string name="help_two_highlighted">Digit is contained twice</string>
-    <string name="help_three_highlighted">Digit is contained three times</string>
-    <string name="help_four_highlighted">Digit is contained four times</string>
-    <string name="help_story_heading">Stories</string>
-    <string name="help_story_description">Use the displayed symbols to imagine a little story or sentence to remember the PIN.</string>
-    <string name="help_story_example">Example story for the PIN 4587: I held a clover in my hand, then I went to play billiards at 7p.m.</string>
-    <string name="help_story_additional">The symbols are just hints, you can make up any story that helps you remembering the PIN.</string>
-    <string name="help_privacy_heading">Privacy Info</string>
-    <string name="help_pin_storage_heading">PIN Storage</string>
-    <string name="help_pin_storage_description">Your PIN is neither stored nor transmitted</string>
+    <string name="help_shape_heading">Circuit</string>
+    <string name="help_one_highlighted">Le chiffre est contenu une fois</string>
+    <string name="help_two_highlighted">Le chiffre est contenu deux fois</string>
+    <string name="help_three_highlighted">Le chiffre est contenu 3 fois</string>
+    <string name="help_four_highlighted">Le chiffre est présent 4 fois</string>
+    <string name="help_story_heading">Histoires</string>
+    <string name="help_story_description">Utilisez les symboles affichés pour imaginer une petite histoire ou phrase permettant de se souvenir du code PIN.</string>
+    <string name="help_story_example">Exemple d\'histoire pour le code PIN 4587 : je tenais un trèfle dans ma main, puis je suis allé jouer au billard à 7h.</string>
+    <string name="help_story_additional">Les symboles sont juste des indices, vous pouvez composer n\'importe quelle histoire qui vous aide à vous souvenir de votre code PIN.</string>
+    <string name="help_privacy_heading">Confidentialité</string>
+    <string name="help_pin_storage_heading">Stockage du PIN</string>
+    <string name="help_pin_storage_description">Votre PIN n\'est ni stocké ni transmis</string>
     <string name="help_permissions_heading">Permissions</string>
-    <string name="help_permissions_description">Privacy Friendly PIN Mnemonics does not use any permissions</string>
+    <string name="help_permissions_description">PIN Mnémotechnique Privacy Friendly n\'utilise aucune permission</string>
 
     <!-- AboutActivity-->
-    <string name="about">About</string>
+    <string name="about">À propos</string>
     <string name="version_number">Version 2.0.1</string>
-    <string name="about_author">Authors: </string>
-    <string name="about_author_names" translatable="false">Karola Marky</string>
-    <string name="about_author_contributors">and contributors.</string>
-    <string name="about_affiliation">In affiliation with</string>
-    <string name="privacy_friendly">This application belongs to the group of Privacy Friendly Apps developed by Technische Universität Darmstadt. Sourcecode licensed under GPLv3. Images copyright TU Darmstadt and Google Inc.</string>
-    <string name="more_info">More information can be found on:</string>
-    <string name="github" translatable="false"><a href="https://github.com/SecUSo/privacy-friendly-pin-mnemonic/">Github-Repo</a></string>
-    <string name="url" translatable="false"><a href="https://www.secuso.org/pfa">SECUSO-Website</a></string>
+    <string name="about_author">Auteurs :</string>
+    <string name="about_author_contributors">et les contributeurs.</string>
+    <string name="about_affiliation">En affiliation avec</string>
+    <string name="privacy_friendly">Cette application fait partie du groupe d\'applications respectant votre vie privée développées par la Technische Universität Darmstadt. Le code source est sous licence GPLv3. Copyright des images : TU Darmstadt et Google Inc.</string>
+    <string name="more_info">Plus d\'informations sur</string>
 
     <!-- Tutorials global-->
-    <string name="confirm_button">Got it</string>
-    <string name="help_button">View Help</string>
+    <string name="confirm_button">OK</string>
+    <string name="help_button">Voir l\'Aide</string>
 
     <!-- Tutorials specific-->
-    <string name="tutorial_practice_title">Practice your PIN</string>
-    <string name="tutorial_practice_description">Enter your PIN repeatedly keeping the chosen mnemonic in mind.</string>
-    <string name="tutorial_mnemonics_title">View Mnemonics</string>
-    <string name="tutorial_mnemonics_description">This pages shows techniques to support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic.</string>
+    <string name="tutorial_practice_title">Pratiquez votre PIN</string>
+    <string name="tutorial_practice_description">Entrez votre code PIN plusieurs fois en gardant en mémoire le moyen mnémotechnique choisi.</string>
+    <string name="tutorial_mnemonics_title">Voir les Mnémotechniques</string>
+    <string name="tutorial_mnemonics_description">Ces pages montrent des techniques aidant à mémoriser un code PIN. Veuillez vous entraîner à taper votre PIN après avoir choisi un moyen mnémonique.</string>
 
     <!-- Security reset-->
-    <string name="security_reset_title">Security reset</string>
-    <string name="security_reset_description">The app was minimized for more than 5 minutes. The interface has been reset for security reasons to protect your PIN.</string>
-    <string name="security_reset_okay">Okay</string>
+    <string name="security_reset_title">Remise à zéro</string>
+    <string name="security_reset_description">Cette app a été minimisée pendant plus de 5 minutes. L\'interface a été réinitialisée pour protéger votre code PIN.</string>
+    <string name="security_reset_okay">OK</string>
 
     <!-- ### WELCOME DIALOG ### -->
-    <string name="welcome_text">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit PIN. Start by entering the PIN.</string>
-    <string name="welcome">Welcome</string>
-    <string name="okay">Okay</string>
-    <string name="viewhelp">View Help</string>
+    <string name="welcome_text">PIN Mnémotechnique Privacy Friendly vous aide à mémoriser votre code PIN à 4 signes. Commencez par entrer votre PIN.</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="okay">OK</string>
+    <string name="viewhelp">Voir l\'Aide</string>
 </resources>
