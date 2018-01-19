@@ -12,7 +12,7 @@ This application has been developed to be used as a basis for a Privacy Friendly
 
 ## Building
 
-Further development requires Android Studio, we recommend to use at least version 2.2.2
+Further development requires Android Studio, we recommend to use at least version 3.0.1
  
 ### API Reference
 
@@ -22,7 +22,7 @@ Target SDK: 25
 ## License
 
 Privacy Friendly PIN Mnemonic is licensed under the GPLv3.
-Copyright (C) 2016  Karola Marky
+Copyright (C) 2016-2018  Karola Marky
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -37,7 +37,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-The icons used in the nagivation drawer are licensed under the [CC BY 2.5] (http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo, the app logo and the splash screen logo) copyright [Technische Universtität Darmstadt](www.tu-darmstadt.de) (2016).
+The icons used in the nagivation drawer are licensed under the [CC BY 2.5](http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo, the app logo and the splash screen logo) copyright [Technische Universtität Darmstadt](www.tu-darmstadt.de) (2016-2018).
 
 ## Contributors
 
