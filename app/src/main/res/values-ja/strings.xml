@@ -67,7 +67,7 @@
 
     <!-- AboutActivity-->
     <string name="about">アプリについて</string>
-    <string name="version_number">Version 2.0.1</string>
+    <string name="version_number">Version v%s</string>
     <string name="about_author">作者: </string>
     <string name="about_author_contributors">と貢献者。</string>
     <string name="about_affiliation">提携</string>
