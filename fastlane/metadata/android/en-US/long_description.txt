@@ -1,0 +1,15 @@
+The Privacy Friendly PIN Mnemonic application can be used to find out strategies to memorize a Personal Identification Number (PIN). It belongs to the Privacy Friendly Apps group developed by the research group SECUSO at Technische Universität Darmstadt. More information can be found an secuso.org/pfa
+
+After entering the PIN, the application displays up to five strategies for memorizing the PIN:
+1) It draws the shape on the number pad and highlights the numbers corresponding to the PIN.
+2) It determines whether the PIN forms a word using the letters of the number pad.
+3) It checks if the PIN is in year or date format.
+4) It checks if the PIN underlies a mathematical rule.
+5) It provides symbols for inventing a little story to facilitate memorizing the PIN.
+
+The application also provides the possibility to practice entering the PIN keeping the preferred mnemonic(s) in mind.
+
+Our app differs from other applications with respect to two aspects:
+1. The Privacy Friendly PIN Mnemonic App does not use any permission.
+2. The Privacy Friendly PIN Mnemonic App completely relinquishes advertisement.
+Many other free apps in the Google Play Store dazzle annoying advertising and also shortens battery life.
