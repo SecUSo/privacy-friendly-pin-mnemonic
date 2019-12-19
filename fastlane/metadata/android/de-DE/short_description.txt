@@ -1,1 +1,1 @@
-Die App PIN Merkstrategien soll Usern dabei helfen sich erhaltene Persönliche Identifikationsnummern (PINs) besser merken zu können.
+Strategien zum besseren Behalten von Persönlichen Identifikationsnummern (PINs)
