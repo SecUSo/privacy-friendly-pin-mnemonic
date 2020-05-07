@@ -28,7 +28,7 @@
     <string name="story_heading">Histoire:</string>
 
     <!-- EnterPINFragment-->
-    <string name="enter_pin">Entrez votre PIN à 4 chiffres :</string>
+    <string name="enter_pin">Entrez votre PIN à 4 chiffres:</string>
     <string name="show_mnemonics_button">Montrer les Mnémotechniques</string>
     <string name="four_digits">Veuillez entrer 4 chiffres.</string>
 
@@ -38,9 +38,9 @@
     <string name="hint_numpad">Si vous utilisez la stratégie du mot, faites attention car beaucoup de claviers PIN n\'affichent pas les lettres à côté des nombres. Le clavier ci-dessus peut être utilisé pour vous entraîner.</string>
 
     <!-- PracticeFragment-->
-    <string name="your_pin_heading">Votre PIN :</string>
+    <string name="your_pin_heading">Votre PIN:</string>
     <string name="practise_button">Pratiquez en entrant votre PIN</string>
-    <string name="practised_pin_heading">PIN essayé :</string>
+    <string name="practised_pin_heading">PIN essayé:</string>
     <string name="toast_success">Vous avez entré le bon PIN. Veuillez recommencer quelques fois.</string>
     <string name="toast_fail">Vous avez entré un mauvais PIN. Veuillez relire les mnémotechniques et réessayer.</string>
 
@@ -51,7 +51,7 @@
     <string name="help_tip_two">N\'oubliez pas de vous entraîner en entrant votre code PIN plusieurs fois pour le mémoriser.</string>
     <string name="help_tip_three">Si vous utilisez la stratégie du mot, faites attention car la majorité des claviers PIN n\'affichent pas les lettres.</string>
 
-    <string name="help_shape_heading">Circuit</string>
+    <string name="help_shape_heading">Forme</string>
     <string name="help_one_highlighted">Le chiffre est contenu une fois</string>
     <string name="help_two_highlighted">Le chiffre est contenu deux fois</string>
     <string name="help_three_highlighted">Le chiffre est contenu 3 fois</string>
@@ -68,8 +68,8 @@
 
     <!-- AboutActivity-->
     <string name="about">À propos</string>
-    <string name="version_number">Version 2.0.1</string>
-    <string name="about_author">Auteurs :</string>
+    <string name="version_number">Version v%s</string>
+    <string name="about_author">Auteurs:</string>
     <string name="about_author_contributors">et les contributeurs.</string>
     <string name="about_affiliation">En affiliation avec</string>
     <string name="privacy_friendly">Cette application fait partie du groupe d\'applications respectant votre vie privée développées par la Technische Universität Darmstadt. Le code source est sous licence GPLv3. Copyright des images : TU Darmstadt et Google Inc.</string>
