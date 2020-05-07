@@ -19,13 +19,13 @@
     <string name="display_date_year_1900s">C\'est une date valide du 19ème</string>
     <string name="display_date_year_2000s">C\'est une année valide dans ce siècle</string>
     <string name="display_date_year_any">C\'est une année valide du passé</string>
-    <string name="display_math_stepping">C\'est un PIN à étape :</string>
-    <string name="display_entered_pin">PIN :</string>
-    <string name="shape_heading">Forme :</string>
-    <string name="word_heading">Mot :</string>
-    <string name="date_heading">Date :</string>
-    <string name="math_heading">Maths :</string>
-    <string name="story_heading">Histoire :</string>
+    <string name="display_math_stepping">C\'est un PIN à étape:</string>
+    <string name="display_entered_pin">PIN:</string>
+    <string name="shape_heading">Forme:</string>
+    <string name="word_heading">Mot:</string>
+    <string name="date_heading">Date:</string>
+    <string name="math_heading">Maths:</string>
+    <string name="story_heading">Histoire:</string>
 
     <!-- EnterPINFragment-->
     <string name="enter_pin">Entrez votre PIN à 4 chiffres :</string>
