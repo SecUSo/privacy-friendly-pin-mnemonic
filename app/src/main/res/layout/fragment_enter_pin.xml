@@ -182,7 +182,7 @@
             android:layout_marginRight="60dp"
             android:background="@drawable/inactive_button"
             android:text="@string/show_mnemonics_button"
-            android:textColor="@color/white" />
+            android:textColor="#3D3D3D" />
 
         />
 
