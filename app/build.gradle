@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion '27.0.3'
+    compileSdk 33
 
     defaultConfig {
         applicationId "org.secuso.privacyfriendlypin"
         minSdkVersion 17
-        targetSdkVersion 25
-        versionCode 7
-        versionName "2.0.2"
+        targetSdkVersion 33
+        versionCode 8
+        versionName "2.0.3"
     }
 
     buildTypes {
@@ -17,6 +17,11 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 }
 
@@ -26,4 +31,13 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:25.0.0'
     implementation 'com.android.support:design:25.0.0'
     implementation 'com.android.support:support-v4:25.0.0'
+
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
 }
