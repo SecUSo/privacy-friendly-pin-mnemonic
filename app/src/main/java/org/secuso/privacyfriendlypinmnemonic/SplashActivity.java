@@ -2,7 +2,7 @@ package org.secuso.privacyfriendlypinmnemonic;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * Created by karo on 03.11.16.
