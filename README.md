@@ -16,7 +16,7 @@
 
 Privacy Friendly PIN Mnenomic is an Android application which can provide strategies to memorize a 4-digit PIN. Therefore it determines whether the PIN forms a T9-word, underlies a mathematical rule or forms a date or year.
 
-It does not use any permission, as the app can provide its full functionality without the usage of permissions. It also does neither include advertisement nor tracking mechanisms. As a plus taking screenshots of the app is programmatically disabled so that it is not possible to take a screenshot of the entered PIN.  This app belongs to the group of Privacy Friendly Apps developed by the Technische Universität Darmstadt. 
+It does not use any permission, as the app can provide its full functionality without the usage of permissions. It also does neither include advertisement nor tracking mechanisms. As a plus taking screenshots of the app is programmatically disabled so that it is not possible to take a screenshot of the entered PIN.  This app belongs to the group of Privacy Friendly Apps developed by the Karlsruhe Insitute of Technology. 
 
 ## Motivation
 
@@ -49,7 +49,7 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-The icons used in the nagivation drawer are licensed under the [CC BY 2.5](http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo, the app logo and the splash screen logo) copyright [Technische Universtität Darmstadt](www.tu-darmstadt.de) (2016-2018).
+The icons used in the nagivation drawer are licensed under the [CC BY 2.5](http://creativecommons.org/licenses/by/2.5/). In addition to them the app uses icons from [Google Design Material Icons](https://design.google.com/icons/index.html) licensed under Apache License Version 2.0. All other images (the logo of Privacy Friendly Apps, the SECUSO logo, the app logo and the splash screen logo) copyright [SECUSO](www.secuso.org) (2019).
 
 ## Contributors
 
