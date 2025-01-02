@@ -38,7 +38,7 @@ android {
 
     android.applicationVariants.configureEach { variant ->
         variant.outputs.configureEach {
-            def appName = "pin-mnemonic-2048"
+            def appName = "pin-mnemonic"
             outputFileName = appName + "-${variant.name}-v${variant.versionName}.apk"
         }
     }
