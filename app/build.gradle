@@ -8,8 +8,8 @@ android {
         applicationId "org.secuso.privacyfriendlypin"
         minSdkVersion 17
         targetSdkVersion 34
-        versionCode 9
-        versionName "2.0.4"
+        versionCode 10
+        versionName "2.0.5"
     }
 
     buildTypes {
