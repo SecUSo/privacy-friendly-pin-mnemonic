@@ -1,27 +1,39 @@
 # Changelog
 
-<a name="v2.0.3"></a>
-## [Privacy Friendly Pin Mnemonic (v2.0.3)](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.3) - 24 Oct 2023
+<a id="v2.0.4"></a>
+## [Privacy Friendly Pin Mnemonic (v2.0.4)](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.4) - 2025-01-02
 
 ## What's Changed
-* japanese translation by [@naofum](https://github.com/naofum) in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/13
-* Repo Cleanup by [@Yonjuni](https://github.com/Yonjuni) in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/16
-* French translation by [@Poussinou](https://github.com/Poussinou) in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/15
-* V2.0.3 by [@coderPaddyS](https://github.com/coderPaddyS) in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/18
+* Development by [@coderPaddyS](https://github.com/coderPaddyS) in [#23](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/23)
+
+
+**Full Changelog**: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.3...v2.0.4
+
+[Changes][v2.0.4]
+
+
+<a id="v2.0.3"></a>
+## [Privacy Friendly Pin Mnemonic (v2.0.3)](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.3) - 2023-10-24
+
+## What's Changed
+* japanese translation by [@naofum](https://github.com/naofum) in [#13](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/13)
+* Repo Cleanup by [@Yonjuni](https://github.com/Yonjuni) in [#16](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/16)
+* French translation by [@Poussinou](https://github.com/Poussinou) in [#15](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/15)
+* V2.0.3 by [@coderPaddyS](https://github.com/coderPaddyS) in [#18](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/18)
 
 ## New Contributors
-* [@naofum](https://github.com/naofum) made their first contribution in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/13
-* [@Yonjuni](https://github.com/Yonjuni) made their first contribution in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/16
-* [@Poussinou](https://github.com/Poussinou) made their first contribution in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/15
-* [@coderPaddyS](https://github.com/coderPaddyS) made their first contribution in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/18
+* [@naofum](https://github.com/naofum) made their first contribution in [#13](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/13)
+* [@Yonjuni](https://github.com/Yonjuni) made their first contribution in [#16](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/16)
+* [@Poussinou](https://github.com/Poussinou) made their first contribution in [#15](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/15)
+* [@coderPaddyS](https://github.com/coderPaddyS) made their first contribution in [#18](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/18)
 
 **Full Changelog**: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.1...v2.0.3
 
 [Changes][v2.0.3]
 
 
-<a name="v2.0.1"></a>
-## [Privacy Friendly Mnemonic v2.0.1](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.1) - 10 Nov 2016
+<a id="v2.0.1"></a>
+## [Privacy Friendly Mnemonic v2.0.1](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.1) - 2016-11-10
 
 Minor Bugs Fixes
 
@@ -29,8 +41,8 @@ Minor Bugs Fixes
 [Changes][v2.0.1]
 
 
-<a name="v2.0"></a>
-## [Privacy Friendly Mnemonic v2.0](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0) - 03 Nov 2016
+<a id="v2.0"></a>
+## [Privacy Friendly Mnemonic v2.0](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0) - 2016-11-03
 
 Privacy Friendly PIN Mnemonic has had a major design update. 
 
@@ -38,8 +50,8 @@ Privacy Friendly PIN Mnemonic has had a major design update.
 [Changes][v2.0]
 
 
-<a name="v1.3"></a>
-## [Privacy Friendly Mnemonic v1.3](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.3) - 17 Feb 2016
+<a id="v1.3"></a>
+## [Privacy Friendly Mnemonic v1.3](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.3) - 2016-02-17
 
 - Special Handling of PINs containing zeros.
 - Layout for low density devices fixed.
@@ -48,8 +60,8 @@ Privacy Friendly PIN Mnemonic has had a major design update.
 [Changes][v1.3]
 
 
-<a name="v1.2"></a>
-## [Privacy Friendly Mnemonic v1.2](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.2) - 04 Feb 2016
+<a id="v1.2"></a>
+## [Privacy Friendly Mnemonic v1.2](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.2) - 2016-02-04
 
 - Typo fixes
 - Improvement of Practice Page
@@ -58,8 +70,8 @@ Privacy Friendly PIN Mnemonic has had a major design update.
 [Changes][v1.2]
 
 
-<a name="v1.1"></a>
-## [Privacy Friendly Mnemonic v1.1](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.1) - 31 Jan 2016
+<a id="v1.1"></a>
+## [Privacy Friendly Mnemonic v1.1](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v1.1) - 2016-01-31
 
 More minor optimizations. 
 
@@ -67,8 +79,8 @@ More minor optimizations.
 [Changes][v1.1]
 
 
-<a name="1.0"></a>
-## [Privacy Friendly Mnemonic v1.0](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/1.0) - 16 Jan 2016
+<a id="1.0"></a>
+## [Privacy Friendly Mnemonic v1.0](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/1.0) - 2016-01-16
 
 This is version 1 of the Android application Privacy Friendly PIN Mnemonic. This application can provide strategies to memorize 4-digit-PINs.
 
@@ -76,6 +88,7 @@ This is version 1 of the Android application Privacy Friendly PIN Mnemonic. This
 [Changes][1.0]
 
 
+[v2.0.4]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.1...v2.0.3
 [v2.0.1]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0...v2.0.1
 [v2.0]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v1.3...v2.0
@@ -84,4 +97,4 @@ This is version 1 of the Android application Privacy Friendly PIN Mnemonic. This
 [v1.1]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/1.0...v1.1
 [1.0]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/tree/1.0
 
-<!-- Generated by https://github.com/rhysd/changelog-from-release v3.7.1 -->
+<!-- Generated by https://github.com/rhysd/changelog-from-release v3.9.0 -->
