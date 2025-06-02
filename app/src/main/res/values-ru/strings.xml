@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_entered_pin">ПИН:</string>
+    <string name="date_heading">Дата:</string>
+    <string name="display_date_year_any">Это год из прошлого</string>
+    <string name="four_digits">Пожалуйста, введите ПИН-код из 4 цифр.</string>
+    <string name="help_story_description">Используйте отображаемые символы, чтобы представить небольшую историю или предложение, чтобы запомнить ПИН.</string>
+    <string name="help_four_highlighted">Цифра содержится четыре раза</string>
+    <string name="display_math_stepping">Это пошаговый ПИН:</string>
+    <string name="word_heading">Слово:</string>
+    <string name="story_heading">Рассказ:</string>
+    <string name="show_mnemonics_button">Показывать Мнемонику</string>
+    <string name="help_story_heading">Рассказы</string>
+    <string name="help_story_example">Пример рассказа для ПИНа 4587: Я держал клевер в руке, а потом пошла играть в бильярд в 7 вечера.</string>
+    <string name="help_story_additional">Символы - это всего лишь намёки, вы можете составить любой рассказ, который поможет вам запомнить ПИН.</string>
+    <string name="enter_pin">Введите свой 4-значный ПИН:</string>
+    <string name="action_about">О приложении</string>
+    <string name="help">Справка</string>
+    <string name="help_permissions_heading">Разрешения</string>
+    <string name="about_author">Авторы:</string>
+    <string name="about_affiliation">В сотрудничестве с</string>
+    <string name="more_info">Больше информации на:</string>
+    <string name="help_button">Посмотреть справку</string>
+    <string name="okay">Ладно</string>
+    <string name="action_help">Справка</string>
+    <string name="about_author_contributors">и другие участники.</string>
+    <string name="privacy_friendly">Это приложение относится к группе приложений Privacy Friendly, разработанных Институтом технологий Карлсруэ. Sourcecode лицензируется под GPLv3. Images Copyright KIT и Google Inc.</string>
+    <string name="about">О приложении</string>
+    <string name="confirm_button">Понял</string>
+    <string name="app_name">Мнемоники ПИН</string>
+    <string name="help_privacy_heading">О конфиденциальности</string>
+    <string name="viewhelp">Смотреть Справку</string>
+</resources>
