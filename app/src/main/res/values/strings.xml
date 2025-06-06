@@ -1,7 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">PIN Mnemonic</string>
     <string name="app_name_long">Privacy Friendly PIN Mnemonic</string>
-
     <!-- ###DRAWER###-->
     <string name="action_help">Help</string>
     <string name="action_about">About</string>
@@ -10,10 +10,8 @@
     <string name="action_practice">Practice</string>
     <string name="action_navigation">Navigation</string>
     <string name="action_pin_mnemonics">PIN Mnemonics</string>
-
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
-
     <!-- Mnemonic Items and Headings from ShowHintFragment-->
     <string name="display_no_word">No word possible</string>
     <string name="display_no_math">No formula found</string>
@@ -28,31 +26,26 @@
     <string name="date_heading">Date:</string>
     <string name="math_heading">Math:</string>
     <string name="story_heading">Story:</string>
-
     <!-- EnterPINFragment-->
     <string name="enter_pin">Enter your 4-digit-PIN: </string>
     <string name="show_mnemonics_button">Show Mnemonics</string>
     <string name="four_digits">Please enter 4 digits.</string>
-
     <!-- NumPad-->
     <string name="numpad_delete">DEL</string>
     <string name="numpad_reset">RESET</string>
     <string name="hint_numpad">If you use the word strategy be aware that many PIN entering devices do not display letters on the number pad. The number pad above can be used as a crib.</string>
-
     <!-- PracticeFragment-->
     <string name="your_pin_heading">Your PIN:</string>
     <string name="practise_button">Practice entering your PIN</string>
     <string name="practised_pin_heading">Practiced PIN:</string>
     <string name="toast_success">You\'ve entered the right PIN. Please repeat a few times.</string>
     <string name="toast_fail">You\'ve entered the wrong PIN. Please re-read the mnemonics and try again.</string>
-
     <!-- HelpFragment-->
     <string name="help">Help</string>
     <string name="help_overview_heading">Overview</string>
     <string name="help_tip_one">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit-PIN by presenting up to 5 strategies.</string>
     <string name="help_tip_two">Don\'t forget to practice entering your PIN multiple times for internalization.</string>
     <string name="help_tip_three">If you\'re using the word strategy be aware that most of PIN-Numpads don\'t have letters on it. You can use your phone as a crib.</string>
-
     <string name="help_shape_heading">Shape</string>
     <string name="help_one_highlighted">Digit is contained once</string>
     <string name="help_two_highlighted">Digit is contained twice</string>
@@ -67,7 +60,6 @@
     <string name="help_pin_storage_description">Your PIN is neither stored nor transmitted</string>
     <string name="help_permissions_heading">Permissions</string>
     <string name="help_permissions_description">Privacy Friendly PIN Mnemonics does not use any permissions</string>
-
     <!-- AboutActivity-->
     <string name="about">About</string>
     <string name="version_number">Version v%s</string>
@@ -79,26 +71,21 @@
     <string name="more_info">More information can be found on:</string>
     <string name="github" translatable="false"><a href="https://github.com/SecUSo/privacy-friendly-pin-mnemonic/">Github-Repo</a></string>
     <string name="url" translatable="false"><a href="https://www.secuso.org/pfa">SECUSO-Website</a></string>
-
     <!-- Tutorials global-->
     <string name="confirm_button">Got it</string>
     <string name="help_button">View Help</string>
-
     <!-- Tutorials specific-->
     <string name="tutorial_practice_title">Practice your PIN</string>
     <string name="tutorial_practice_description">Enter your PIN repeatedly keeping the chosen mnemonic in mind.</string>
     <string name="tutorial_mnemonics_title">View Mnemonics</string>
     <string name="tutorial_mnemonics_description">This pages shows techniques to support memorizing the PIN. Please practice entering your PIN after choosing a mnemonic.</string>
-
     <!-- Security reset-->
     <string name="security_reset_title">Security reset</string>
     <string name="security_reset_description">The app was minimized for more than 5 minutes. The interface has been reset for security reasons to protect your PIN.</string>
     <string name="security_reset_okay">Okay</string>
-
     <!-- ### WELCOME DIALOG ### -->
     <string name="welcome_text">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit PIN. Start by entering the PIN.</string>
     <string name="welcome">Welcome</string>
     <string name="okay">Okay</string>
     <string name="viewhelp">View Help</string>
 </resources>
-
