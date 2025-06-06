@@ -13,7 +13,7 @@
      style="float: right; margin-right: 10px;" />
 # Privacy Friendly PIN Mnemonic
 
-[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdid=org.secuso.privacyfriendlypin)<a href="https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlypin"><img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" height="60"></a>
+[<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="60">](https://f-droid.org/repository/browse/?fdid=org.secuso.privacyfriendlypin)
 
 Privacy Friendly PIN Mnenomic is an Android application which can provide strategies to memorize a 4-digit PIN. Therefore it determines whether the PIN forms a T9-word, underlies a mathematical rule or forms a date or year.
 
