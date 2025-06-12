@@ -34,6 +34,7 @@ public class MainActivity extends BaseActivity {
         fragmentTransaction.commit();
 
         overridePendingTransition(0, 0);
+        GoodbyeGoogleHelperKt.checkGoodbyeGoogle(this, getLayoutInflater());
     }
 
     @Override
