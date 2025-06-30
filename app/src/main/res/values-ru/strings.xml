@@ -21,7 +21,7 @@
     <string name="about_affiliation">В сотрудничестве с</string>
     <string name="more_info">Больше информации на:</string>
     <string name="help_button">Посмотреть справку</string>
-    <string name="okay">Ладно</string>
+    <string name="okay">Хорошо</string>
     <string name="action_help">Справка</string>
     <string name="about_author_contributors">и другие участники.</string>
     <string name="privacy_friendly">Это одно из приложений группы Уважающих Конфиденциальность Приложений (Privacy Friendly Apps, PFA), разработанных исследовательской группой SECUSO в Технологическом Институте Карлсруэ (KIT). Исходный код доступен по лицензии GPLv3. Авторские права на изображения принадлежат KIT и Google Inc.</string>
@@ -29,7 +29,7 @@
     <string name="confirm_button">Понял</string>
     <string name="app_name">Мнемоники ПИН</string>
     <string name="help_privacy_heading">О конфиденциальности</string>
-    <string name="viewhelp">Смотреть Справку</string>
+    <string name="viewhelp">Просмотр справки</string>
     <string name="app_name_long">Мнемоники ПИН-кода (PFA)</string>
     <string name="action_numpad">Цифровая клавиатура</string>
     <string name="action_enter_pin">Введите ПИН-код</string>
