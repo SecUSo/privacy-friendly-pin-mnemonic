@@ -86,6 +86,6 @@
     <!-- ### WELCOME DIALOG ### -->
     <string name="welcome_text">Privacy Friendly PIN Mnemonic helps you memorizing your 4-digit PIN. Start by entering the PIN.</string>
     <string name="welcome">Welcome</string>
-    <string name="okay">Ok</string>
-    <string name="viewhelp">Voir l\'aide</string>
+    <string name="okay">Okay</string>
+    <string name="viewhelp">View Help</string>
 </resources>
