@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_overview_heading">Genel bakış</string>
+    <string name="help">Yardım</string>
+    <string name="help_privacy_heading">Gizlilik Bilgisi</string>
+    <string name="help_permissions_heading">İzinler</string>
+    <string name="about">Hakkında</string>
+    <string name="version_number">Sürüm v%s</string>
+    <string name="about_author">Yazarlar:</string>
+    <string name="about_affiliation">ile bağlantılı olarak</string>
+    <string name="about_author_contributors">ve katkıda bulunanlar.</string>
+    <string name="okay">Tamam</string>
+    <string name="help_button">Yardımı Görüntüle</string>
+    <string name="viewhelp">Yardımı Görüntüle</string>
+    <string name="action_about">Hakkında</string>
+    <string name="welcome">Hoş geldiniz</string>
+</resources>
