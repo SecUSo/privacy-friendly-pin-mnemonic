@@ -1,5 +1,18 @@
 # Changelog
 
+<a id="v2.0.5"></a>
+## [Privacy Friendly Pin Mnemonic (v2.0.5)](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.5) - 2025-04-19
+
+## What's Changed
+* Updates App-Info by [@coderPaddyS](https://github.com/coderPaddyS) in [#24](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/24)
+* [Adds weblate notice to README. by [@coderPaddyS](https://github.com/coderPaddyS) in https://github.com/SecUSo/privacy-friendly-pin-mnemonic/pull/25
+
+
+**Full Changelog**: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.4...v2.0.5
+
+[Changes][v2.0.5]
+
+
 <a id="v2.0.4"></a>
 ## [Privacy Friendly Pin Mnemonic (v2.0.4)](https://github.com/SecUSo/privacy-friendly-pin-mnemonic/releases/tag/v2.0.4) - 2025-01-02
 
@@ -88,6 +101,7 @@ This is version 1 of the Android application Privacy Friendly PIN Mnemonic. This
 [Changes][1.0]
 
 
+[v2.0.5]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.4...v2.0.5
 [v2.0.4]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0.1...v2.0.3
 [v2.0.1]: https://github.com/SecUSo/privacy-friendly-pin-mnemonic/compare/v2.0...v2.0.1
